@@ -1,0 +1,10 @@
+body {
+  background-color: #fff;
+}
+
+#logo img {
+    margin-left: 0;
+    margin-right: auto;
+    color: transparent;
+    max-width: 249px;
+}
