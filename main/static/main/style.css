@@ -1,0 +1,57 @@
+#logo img {
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 249px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn.btn-primary{
+    background-color: transparent;
+    color: #0097b2;
+    border-color: #0097b2;
+    }
+    
+.btn.btn-primary:hover,
+.btn.btn-primary:focus{
+    background-color: #0097b2;
+    color: white;
+    }
+
+.form-control:focus,
+.form-control:active,
+.form-control:hover{
+    border-color: #0097b2;
+    box-shadow: none;
+}
+
+#carouselExampleIndicators{
+    margin: 20px;
+}
+
+.navbar.navbar-expand-lg{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+} 
+
+body{
+    margin-top: 120px;
+}
+
+.card-recommended {
+    float: left;
+    display: block;
+    width: 300px;
+    margin: 20px;
+    border-color: #0097b2;
+    }
+
+#accordionFlushExample{
+    width: 320px;
+    margin-left: 60px;
+}
+
+.body-container{
+    margin-left: 400px;
+}

@@ -1,4 +1,5 @@
-.vscode
+venv/
 db.sqlite3
-__pycache__/
-.git
+__pycache__
+.idea
+.vscode
