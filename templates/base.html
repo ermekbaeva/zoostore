@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static "main/style.css" %}">
+    <!-- Favicons for different platforms 
+    <link rel="apple-touch-icon" sizes="180x180" href="deps/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static "main/favicon-32x32.png" %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static "main/favicon-16x16.png" %}">
+    <link rel="manifest" href="deps/favicon/site.webmanifest">-->
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a href="index.html">
+                <div id="logo">
+                    <img src="{% static "main/images/logo.png" %}">
+                </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary" type="submit" >Search</button>
+                    </form>
+                </div>
+            </div>
+            <ul class="navbar-nav d-flex flex-row me-1">
+                <li class="nav-item">      
+                        <a class="nav-link" href="carts/cart.html"><i class="bi bi-cart"></i> Cart</a>   
+                </li>
+                <li class="nav-item">      
+                  <a class="nav-link" href="carts/login.html">Log in</a>  
+                </li>
+                <li class="nav-item">      
+                  <button class="btn btn-primary" id="signup" type="submit" >Sign up</button>  
+                </li>      
+            </ul>
+        </nav>
+    </header>
+
+      <div class="body-container">
+                
+
+                <div class="row">
+                        {% block menu %}
+                        {% endblock %}
+                
+                        {% block carousel %}
+                        {% endblock %}
+                </div>
+
+                          {% block cardblocksone %}
+                          {% endblock %}
+                  
+                          {% block cardblockstwo %}
+                          {% endblock %}
+      </div> 
+                  
+
+                      <div class="container">
+                        <footer class="py-3 my-4">
+                          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                            <li class="nav-item"><a href="{% url "main:index" %}" class="nav-link px-2 text-muted">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Profile</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                            <li class="nav-item"><a href="{% url "main:about" %}" class="nav-link px-2 text-muted">About</a></li>
+                          </ul>
+                          <p class="text-center text-muted">© 2022 Company, Inc</p>
+                        </footer>
+                      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -25,7 +25,7 @@
 }
 
 #carouselExampleIndicators{
-    margin: 20px;
+    margin-left: 350px;
 }
 
 .navbar.navbar-expand-lg{
@@ -41,15 +41,14 @@ body{
 
 .card-recommended {
     float: left;
-    
-    width: 300px;
-    margin: 20px;
+    width: 100px;
+    margin: 30px;
     border-color: #0097b2;
-    margin-right: 150px;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
-    height: 100%;
-    margin-bottom: 20px;
+    height: 570px;
+    padding-left: 10pt;
+    padding-top:10pt;
     }
 
 .card-recommended:hover,
@@ -60,13 +59,8 @@ body{
 
 #accordionFlushExample{
     width: 320px;
-    position: fixed;
     margin-left: 30px;
     color-scheme:var(--bs-nav-link-color);
-}
-
-.body-container{
-    margin-left: 400px;
 }
 
 .sale{
@@ -103,4 +97,12 @@ body{
   #signup:hover{
     background-color: var(--bs-gray-700);
     color:white;
+  }
+
+  #blocksOne{
+    margin-left: 300px;
+  }
+
+  #blocksTwo{
+    margin-left: 300px;
   }

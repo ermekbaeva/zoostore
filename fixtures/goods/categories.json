@@ -1,0 +1,1 @@
+[{"model": "goods.categories", "pk": 2, "fields": {"name": "Cats", "slug": "cats"}}, {"model": "goods.categories", "pk": 3, "fields": {"name": "Dogs", "slug": "dogs"}}, {"model": "goods.categories", "pk": 4, "fields": {"name": "Birds", "slug": "birds"}}, {"model": "goods.categories", "pk": 5, "fields": {"name": "Small pets", "slug": "small-pets"}}]
