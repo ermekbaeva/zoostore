@@ -42,11 +42,13 @@
                 <li class="nav-item">      
                         <a class="nav-link" href="carts/cart.html"><i class="bi bi-cart"></i> Cart</a>   
                 </li>
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i> My profile
-                    </a>
-                    <ul class="dropdown-menu">
+                <li class="nav-item">      
+                  <a class="nav-link" href="carts/login.html">Log in</a>  
+                </li>
+                <li class="nav-item">      
+                  <button class="btn btn-primary" id="signup" type="submit" >Sign up</button>  
+                </li>
+                    {% comment %} <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="carts/cart.html">Cart</a></li>
                         <li><a class="dropdown-item" href="users/profile.html">Account</a>
                         </li>
@@ -55,7 +57,7 @@
                             <hr class="dropdown-divider">
                         </li>
                         <li><a class="dropdown-item" href="#">Sign out</a></li>
-                    </ul>
+                    </ul> {% endcomment %}
                 </li>
             </ul>
         </nav>
@@ -108,12 +110,12 @@
                   </div>
                 </div>
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                       Small pets
                     </button>
                   </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">Food</div>
                     <div class="accordion-body">Toys</div>
                     <div class="accordion-body">Cat carrier</div>
@@ -124,7 +126,7 @@
         <!-- Контент -->
         <div class="body-container">
             <div class="row mt-1">
-                <div class="col-lg-10">
+                <div class="col-lg-11">
                     <!-- Контент на странице -->
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-inner">
@@ -140,48 +142,80 @@
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Предыдущий</span>
+                        <span class="visually-hidden">Previous</span>
                       </button>
                       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Следующий</span>
+                        <span class="visually-hidden">Next</span>
                       </button>
                     </div>
                 </div>
                 <div class="col-lg-2">
                     <!-- Пустой блок на Ваше усмотрение -->
                 </div>
-                
-                <p>АКЦИИ</p>
-                <div class="col-lg-10">
+                <div class="sale">SALE</div>
+                <div class="col-lg-12">
                     <div class="card-recommended" style="width: 18rem;">
-                        <img class="card-img-top" src="{% static "main/images/large_96_52_96_10_nd-prime-adult-mini-wild-boar-apple-800x1066.png" %}" alt="Card image cap">
+                        <img class="card-img-top rounded" src="{% static "main/images/large_96_52_96_10_nd-prime-adult-mini-wild-boar-apple-800x1066.png" %}" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <h5 class="card-title">
+                            Farmina N&D Prime adult food</h5>
+                          <p class="card-text">FARMINA N&D Prime Dry Dog Food, Adult, Grain-Free, 5-kg, Wild boar and Apple.</p>
                           <a href="#" class="btn btn-primary">Add to cart</a>
                         </div>
                       </div>
 
                       <div class="card-recommended" style="width: 18rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top rounded" src="{% static "main/images/hc_sterilised_adult_atlantik_lac-800x1066.jpg" %}" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <h5 class="card-title">Happy cat for sterilised</h5>
+                          <p class="card-text">The balanced complete food, with its reduced fat content and the optimum amounts of satisfying fibre, helps your cat keep to their ideal weight. </p>
                           <a href="#" class="btn btn-primary">Add to cart</a>
                         </div>
                       </div>
 
                       <div class="card-recommended" style="width: 18rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <img class="card-img-top rounded" src="{% static "main/images/6118765707-800x1066.jpg"%}" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <h5 class="card-title">Best dinner for adult&kitten</h5>
+                          <p class="card-text">Best Dinner Adult & Kitten Beef & Potato, 5 kg</p>
                           <a href="#" class="btn btn-primary">Add to cart</a>
                         </div>
                       </div>
+                      
                 </div>
-            </div>
+                <div class="col-lg-2">
+                  <!-- Пустой блок на Ваше усмотрение -->
+              </div>
+                <div class="sale">RECOMMENDED</div>
+                    <div class="col-lg-12">
+                        <div class="card-recommended" style="width: 18rem;">
+                            <img class="card-img-top rounded" src="{% static "main/images/6005106761.jpg" %}" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Royal Canin Adult Persian</h5>
+                              <p class="card-text">Exclusive formula - Omega 3 & Omega 6 fatty acids.</p>
+                              <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                          </div>
+    
+                          <div class="card-recommended" style="width: 18rem;">
+                            <img class="card-img-top rounded" src="{% static "main/images/6005117905.jpg" %}" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Royal Canin Urinary Care</h5>
+                              <p class="card-text">Balanced and complete feed for adult cats - Recommended to help maintain urinary tract health.</p>
+                              <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                          </div>
+    
+                          <div class="card-recommended" style="width: 18rem;">
+                            <img class="card-img-top rounded" src="{% static "main/images/6005117965.jpg"%}" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Royal Canin Hair&Skin Care</h5>
+                              <p class="card-text">Balanced and complete feed for adult cats - Recommended to support a healthy skin and coat.</p>
+                              <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                          </div>
+            </div>          
         </div>
     </section>
     <footer class="py-4 bg-light">
@@ -189,7 +223,6 @@
             <p class="m-0 text-center">Copyright &copy; Moonlight 2024</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
