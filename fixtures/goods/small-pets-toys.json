@@ -1,0 +1,158 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 2102,
+        "fields": {
+            "name": "Exercise Ball for Hamsters and Small Pets",
+            "price": 5.99,
+            "slug": "Exercise-Ball-for-Hamsters-and-Small-Pets",
+            "category": 5,
+            "subcategory": 29,
+            "image": "petstore.com/cdn/shop/products/product-image-793098045_540x.jpg?v=1580500536"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2103,
+        "fields": {
+            "name": "Ware™ Willow Barbell Small Animal Toys Large",
+            "price": 15.49,
+            "slug": "Ware™-Willow-Barbell-Small-Animal-Toys-Large",
+            "category": 5,
+            "subcategory": 29,
+            "image": "petstore.com/cdn/shop/products/791611031575_e4ef4000-069a-4077-becb-2de9c910fdb1_540x.jpg?v=1619215380"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2104,
+        "fields": {
+            "name": "Ware™ Atomic Nut Ball Small Animal Toys Large",
+            "price": 16.32,
+            "slug": "Ware™-Atomic-Nut-Ball-Small-Animal-Toys-Large",
+            "category": 5,
+            "subcategory": 29,
+            "image": "petstore.com/cdn/shop/products/791611032275_b70c06da-6626-46bb-89e8-676695979f59_540x.jpg?v=1619215313"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2105,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Shake, Rattle & Roll for Small Animal",
+            "price": 14.4,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Shake,-Rattle-&-Roll-for-Small-Animal",
+            "category": 5,
+            "subcategory": 29,
+            "image": "petstore.com/cdn/shop/products/744845963112_b256d796-f887-408c-81e9-169e4d31396e_540x.jpg?v=1619214991"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2106,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Deluxe Color Dangly for Small Animal",
+            "price": 11.58,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Deluxe-Color-Dangly-for-Small-Animal",
+            "category": 5,
+            "subcategory": 29,
+            "image": "petstore.com/cdn/shop/products/744845963204_7adeb004-7a2b-4622-b7aa-e2a90556a67d_540x.jpg?v=1619215007"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2107,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Deluxe Vine Ball for Small Animal",
+            "price": 15.07,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Deluxe-Vine-Ball-for-Small-Animal",
+            "category": 5,
+            "subcategory": 29,
+            "image": "petstore.com/cdn/shop/products/744845963082_14b8c9da-e67e-4aa4-9e35-9c4deff1896e_540x.jpg?v=1619215107"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2108,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Curly Vine Ball for Small Animal",
+            "price": 15.85,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Curly-Vine-Ball-for-Small-Animal",
+            "category": 5,
+            "subcategory": 29,
+            "image": "petstore.com/cdn/shop/products/744845963372_e56f47b2-0fc3-47cc-a6fb-ce1d316228a6_540x.jpg?v=1619215405"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2109,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Curly Vine Ring for Small Animal",
+            "price": 13.03,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Curly-Vine-Ring-for-Small-Animal",
+            "category": 5,
+            "subcategory": 29,
+            "image": "petstore.com/cdn/shop/products/744845963051_4d53032e-2c2e-4208-a134-02e0f6b8f6ef_540x.jpg?v=1619215080"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2110,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Crinkle Barrel for Small Animal",
+            "price": 13.02,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Crinkle-Barrel-for-Small-Animal",
+            "category": 5,
+            "subcategory": 29,
+            "image": "petstore.com/cdn/shop/products/744845963105_34ed8076-d429-40ba-b776-c118b62a6473_540x.jpg?v=1619215010"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2111,
+        "fields": {
+            "name": "Marshall® Pop-N-Play Ball Pit for Ferret",
+            "price": 47.92,
+            "slug": "Marshall®-Pop-N-Play-Ball-Pit-for-Ferret",
+            "category": 5,
+            "subcategory": 29,
+            "image": "petstore.com/cdn/shop/products/766501003727_540x.jpg?v=1619216634"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2112,
+        "fields": {
+            "name": "Ware™ Nature Chews Balls 3 Pack",
+            "price": 17.35,
+            "slug": "Ware™-Nature-Chews-Balls-3-Pack",
+            "category": 5,
+            "subcategory": 29,
+            "image": "petstore.com/cdn/shop/products/1030462_336d99f1-8998-4b88-95da-6dd28f0195ea_540x.jpg?v=1619215708"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2113,
+        "fields": {
+            "name": "Mighty® Medium Micro Ball Rabbit Dog Toys 3.5 X 9 X 12 Inch",
+            "price": 41.66,
+            "slug": "Mighty®-Medium-Micro-Ball-Rabbit-Dog-Toys-3.5-X-9-X-12-Inch",
+            "category": 5,
+            "subcategory": 29,
+            "image": "petstore.com/cdn/shop/products/1020636_540x.jpg?v=1619216696"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2114,
+        "fields": {
+            "name": "Ware™ Edible Treats Ball 4 Inch",
+            "price": 15.46,
+            "slug": "Ware™-Edible-Treats-Ball-4-Inch",
+            "category": 5,
+            "subcategory": 29,
+            "image": "petstore.com/cdn/shop/products/1030660_501227a7-69f2-4a66-9859-827793abccd6_540x.jpg?v=1619216467"
+        }
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 2165,
+        "fields": {
+            "name": "Tropiclean® Berry Breeze Deodorizing Dog & Cat Spray 8 Oz",
+            "price": 22.33,
+            "slug": "Tropiclean®-Berry-Breeze-Deodorizing-Dog-&-Cat-Spray-8-Oz-3",
+            "category": 5,
+            "subcategory": 31,
+            "image": "petstore.com/cdn/shop/products/5861312_eca22557-f62b-462d-9069-6c88458e93c6_540x.jpg?v=1619216539"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2166,
+        "fields": {
+            "name": "Tropiclean® Papaya Mist Deodorizing Dog & Cat Spray 8 Oz",
+            "price": 22.33,
+            "slug": "Tropiclean®-Papaya-Mist-Deodorizing-Dog-&-Cat-Spray-8-Oz-3",
+            "category": 5,
+            "subcategory": 31,
+            "image": "petstore.com/cdn/shop/products/5861305_d2645f2c-998b-4914-af9d-2499489ec799_540x.jpg?v=1619216536"
+        }
+    }
+]

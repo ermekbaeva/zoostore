@@ -1,0 +1,146 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 2197,
+        "fields": {
+            "name": "Oxbow Animal Health® Poof! Chinchilla Dust Bath 2.5 Lbs",
+            "price": 22.27,
+            "slug": "Oxbow-Animal-Health®-Poof!-Chinchilla-Dust-Bath-2.5-Lbs",
+            "category": 5,
+            "subcategory": 33,
+            "image": "petstore.com/cdn/shop/products/744845402789_4c657ac0-8b4d-4188-b89e-8b36a9ac074a_540x.jpg?v=1619217918"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2198,
+        "fields": {
+            "name": "Oxbow Animal Health® Natural Science Vitamin C Support 60 Count",
+            "price": 19.89,
+            "slug": "Oxbow-Animal-Health®-Natural-Science-Vitamin-C-Support-60-Count",
+            "category": 5,
+            "subcategory": 33,
+            "image": "petstore.com/cdn/shop/products/744845711034_828f3fcf-23d8-4449-a2cc-42fd6063bea3_540x.jpg?v=1619215931"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2199,
+        "fields": {
+            "name": "Oxbow Animal Health® Natural Science Multi-Vitamin Support 60 Count",
+            "price": 19.89,
+            "slug": "Oxbow-Animal-Health®-Natural-Science-Multi-Vitamin-Support-60-Count",
+            "category": 5,
+            "subcategory": 33,
+            "image": "petstore.com/cdn/shop/products/744845711010_6219dc82-4ad8-4236-aa32-4ae7e7e266f5_540x.jpg?v=1619215932"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2200,
+        "fields": {
+            "name": "Oxbow Animal Health® Natural Science Digestive Support 60 Count",
+            "price": 19.92,
+            "slug": "Oxbow-Animal-Health®-Natural-Science-Digestive-Support-60-Count",
+            "category": 5,
+            "subcategory": 33,
+            "image": "petstore.com/cdn/shop/products/744845710808_24aa13a0-9f94-4efc-81c7-b91d50eabf33_540x.jpg?v=1619216235"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2201,
+        "fields": {
+            "name": "Oxbow Animal Health® Natural Science Urinary Support 60 Count",
+            "price": 19.87,
+            "slug": "Oxbow-Animal-Health®-Natural-Science-Urinary-Support-60-Count",
+            "category": 5,
+            "subcategory": 33,
+            "image": "petstore.com/cdn/shop/products/744845710907_63acf899-bc4b-4db2-af93-e4d4e8dc28de_540x.jpg?v=1619215743"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2202,
+        "fields": {
+            "name": "Oxbow Animal Health® Natural Science Papaya Support 60 Count",
+            "price": 20.45,
+            "slug": "Oxbow-Animal-Health®-Natural-Science-Papaya-Support-60-Count",
+            "category": 5,
+            "subcategory": 33,
+            "image": "petstore.com/cdn/shop/products/744845962283_7ca54377-739c-4c70-959e-62b0f0a86d5a_540x.jpg?v=1619215622"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2203,
+        "fields": {
+            "name": "Oxbow Animal Health® Natural Science Skin & Coat Support 60 Count",
+            "price": 19.89,
+            "slug": "Oxbow-Animal-Health®-Natural-Science-Skin-&-Coat-Support-60-Count",
+            "category": 5,
+            "subcategory": 33,
+            "image": "petstore.com/cdn/shop/products/744845711058_3540e68f-745e-4627-9718-d82625fb72bc_540x.jpg?v=1619215934"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2204,
+        "fields": {
+            "name": "Oxbow Animal Health® Natural Science Joint Support 60 Count",
+            "price": 19.87,
+            "slug": "Oxbow-Animal-Health®-Natural-Science-Joint-Support-60-Count",
+            "category": 5,
+            "subcategory": 33,
+            "image": "petstore.com/cdn/shop/products/744845711003_de0b3fad-cbfa-477e-9d26-1c7ddf0e6e6b_540x.jpg?v=1619215741"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2205,
+        "fields": {
+            "name": "Oxbow Animal Health® Critical Care Apple-Banana 454 Gm",
+            "price": 45.96,
+            "slug": "Oxbow-Animal-Health®-Critical-Care-Apple-Banana-454-Gm",
+            "category": 5,
+            "subcategory": 33,
+            "image": "petstore.com/cdn/shop/products/744845701059_540x.jpg?v=1619217356"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2206,
+        "fields": {
+            "name": "Oxbow Animal Health® Critical Care Apple-Banana 141 Gm",
+            "price": 22.79,
+            "slug": "Oxbow-Animal-Health®-Critical-Care-Apple-Banana-141-Gm",
+            "category": 5,
+            "subcategory": 33,
+            "image": "petstore.com/cdn/shop/products/744845701011_6e28ec18-9fd3-4ea2-8c87-8eb01710c581_540x.jpg?v=1619215556"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2207,
+        "fields": {
+            "name": "Oxbow Animal Health® Critical Care Anise 454 Gm",
+            "price": 45.96,
+            "slug": "Oxbow-Animal-Health®-Critical-Care-Anise-454-Gm",
+            "category": 5,
+            "subcategory": 33,
+            "image": "petstore.com/cdn/shop/products/744845701042_540x.jpg?v=1619217357"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2208,
+        "fields": {
+            "name": "Oxbow Animal Health® Critical Care Anise 141 Gm",
+            "price": 22.79,
+            "slug": "Oxbow-Animal-Health®-Critical-Care-Anise-141-Gm",
+            "category": 5,
+            "subcategory": 33,
+            "image": "petstore.com/cdn/shop/products/744845701004_25a95cbd-2088-4aaa-b464-825490ef371b_540x.jpg?v=1619215557"
+        }
+    }
+]

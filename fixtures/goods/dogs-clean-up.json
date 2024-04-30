@@ -1,0 +1,158 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 600,
+        "fields": {
+            "name": "Nite Ize® Pack-A-Poo® Dispenser + Refill Bags 3.6 X 1.8 Inch",
+            "price": 19.54,
+            "slug": "Nite-Ize®-Pack-A-Poo®-Dispenser-+-Refill-Bags-3.6-X-1.8-Inch",
+            "category": 3,
+            "subcategory": 14,
+            "image": "petstore.com/cdn/shop/products/094664040519_570e74cd-af5f-4dd1-9ba3-1e43b6b7610e_720x.jpg?v=1619215391"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 601,
+        "fields": {
+            "name": "Nite Ize® Pack-A-Poo® Dispenser + Refill Bags 3.6 X 1.8 Inch 4 Count",
+            "price": 22.87,
+            "slug": "Nite-Ize®-Pack-A-Poo®-Dispenser-+-Refill-Bags-3.6-X-1.8-Inch-4-Count",
+            "category": 3,
+            "subcategory": 14,
+            "image": "petstore.com/cdn/shop/products/094664042094_72f8b10b-3c9d-411c-b690-6b6051c54c00_720x.jpg?v=1619216357"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 602,
+        "fields": {
+            "name": "Earth Rated® Leash Dispenser with 15 Unscented Bags 15 Bags",
+            "price": 11.6,
+            "slug": "Earth-Rated®-Leash-Dispenser-with-15-Unscented-Bags-15-Bags",
+            "category": 3,
+            "subcategory": 14,
+            "image": "petstore.com/cdn/shop/products/870856000376_ce31572e-9a51-4266-ae6a-f08cc1b336e7_720x.jpg?v=1619215148"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 603,
+        "fields": {
+            "name": "Stall DRY® Absorbent & Deodorizer 40.12 Lbs",
+            "price": 39.6,
+            "slug": "Stall-DRY®-Absorbent-&-Deodorizer-40.12-Lbs",
+            "category": 3,
+            "subcategory": 14,
+            "image": "petstore.com/cdn/shop/products/058633001352_720x.jpg?v=1619219970"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 604,
+        "fields": {
+            "name": "Tropiclean® Spa Tear Stain Remover for Dog 8 Oz",
+            "price": 22.54,
+            "slug": "Tropiclean®-Spa-Tear-Stain-Remover-for-Dog-8-Oz",
+            "category": 3,
+            "subcategory": 14,
+            "image": "petstore.com/cdn/shop/products/645095700260_4a8a7894-4802-4651-b049-9da9ad84d5f9_720x.jpg?v=1619216544"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 605,
+        "fields": {
+            "name": "Earth Rated® Unscented Refill Rolls 8 Refill Rolls 120 Bags/8 Rolls",
+            "price": 17.52,
+            "slug": "Earth-Rated®-Unscented-Refill-Rolls-8-Refill-Rolls-120-Bags/8-Rolls",
+            "category": 3,
+            "subcategory": 14,
+            "image": "petstore.com/cdn/shop/products/870856000185_22db4516-2ec6-4ac1-8d86-75a31617ad25_720x.jpg?v=1619217183"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 606,
+        "fields": {
+            "name": "Earth Rated® Unscented Compostable Refill Rolls 60 Bags/4 Rolls",
+            "price": 20.17,
+            "slug": "Earth-Rated®-Unscented-Compostable-Refill-Rolls-60-Bags/4-Rolls",
+            "category": 3,
+            "subcategory": 14,
+            "image": "petstore.com/cdn/shop/products/870856000048_ff4a7ce9-5014-401d-af8f-49b200aa36a9_720x.jpg?v=1619216513"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 607,
+        "fields": {
+            "name": "Earth Rated® Unscented Bags with Handles 120 Bags",
+            "price": 17.35,
+            "slug": "Earth-Rated®-Unscented-Bags-with-Handles-120-Bags",
+            "category": 3,
+            "subcategory": 14,
+            "image": "petstore.com/cdn/shop/products/870856000345_2e5fe734-b39b-4051-a310-0aed6e3f771e_720x.jpg?v=1619216479"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 608,
+        "fields": {
+            "name": "Earth Rated® Unscented Bags on a Single Roll 300 Bags",
+            "price": 25.78,
+            "slug": "Earth-Rated®-Unscented-Bags-on-a-Single-Roll-300-Bags",
+            "category": 3,
+            "subcategory": 14,
+            "image": "petstore.com/cdn/shop/products/870856000253_80e7b9cd-14da-4ce8-8721-4a79822dd7f3_720x.jpg?v=1619216567"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 609,
+        "fields": {
+            "name": "Earth Rated® Leash Dispenser with 15 Lavender Scented Bags 15 Bags",
+            "price": 11.74,
+            "slug": "Earth-Rated®-Leash-Dispenser-with-15-Lavender-Scented-Bags-15-Bags",
+            "category": 3,
+            "subcategory": 14,
+            "image": "petstore.com/cdn/shop/products/870856000031_2badb92a-7cc2-4e1b-b4e2-1472f2013366_720x.jpg?v=1619216446"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 610,
+        "fields": {
+            "name": "Earth Rated® Lavender Scented Refill Rolls 8 Refill Rolls 120 Bags/8 Rolls",
+            "price": 17.52,
+            "slug": "Earth-Rated®-Lavender-Scented-Refill-Rolls-8-Refill-Rolls-120-Bags/8-Rolls",
+            "category": 3,
+            "subcategory": 14,
+            "image": "petstore.com/cdn/shop/products/870856000024_5dd18861-20ca-40e1-912f-ec6ef725da4b_720x.jpg?v=1619217184"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 611,
+        "fields": {
+            "name": "Earth Rated® Lavender Scented Bags with Handles 120 Bags",
+            "price": 17.52,
+            "slug": "Earth-Rated®-Lavender-Scented-Bags-with-Handles-120-Bags",
+            "category": 3,
+            "subcategory": 14,
+            "image": "petstore.com/cdn/shop/products/870856000055_88d926a7-6111-41c3-8127-87f23438d488_720x.jpg?v=1619217186"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 612,
+        "fields": {
+            "name": "Earth Rated® Lavender Scented Bags on a Single Roll 300 Bags",
+            "price": 25.95,
+            "slug": "Earth-Rated®-Lavender-Scented-Bags-on-a-Single-Roll-300-Bags",
+            "category": 3,
+            "subcategory": 14,
+            "image": "petstore.com/cdn/shop/products/870856000079_35584092-8b95-40bc-bde5-7479202572aa_720x.jpg?v=1619217259"
+        }
+    }
+]

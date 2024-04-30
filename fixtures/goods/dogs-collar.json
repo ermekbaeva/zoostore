@@ -1,0 +1,614 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 623,
+        "fields": {
+            "name": "Sturdy Basic Nylon Dog Collar with Quick Snap Buckle",
+            "price": 5.99,
+            "slug": "Sturdy-Basic-Nylon-Dog-Collar-with-Quick-Snap-Buckle",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/product-image-848512282_540x.jpg?v=1581568682"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 624,
+        "fields": {
+            "name": "Sturdy Basic Nylon Dog Lead Leash",
+            "price": 15.99,
+            "slug": "Sturdy-Basic-Nylon-Dog-Lead-Leash",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/product-image-999449165_540x.jpg?v=1581569064"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 625,
+        "fields": {
+            "name": "PetSafe® 6 Volt Lithium Battery 2 Pack",
+            "price": 23.8,
+            "slug": "PetSafe®-6-Volt-Lithium-Battery-2-Pack",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/729849105423_599ec7ba-40c6-4c04-ab56-73d1d7612be5_540x.jpg?v=1619215091"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 626,
+        "fields": {
+            "name": "Kong® EZ Clear™ Dog Collar Small",
+            "price": 23.74,
+            "slug": "Kong®-EZ-Clear™-Dog-Collar-Small",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/035585081311_90d436a6-e965-4d19-9f3b-965535d477c3_540x.jpg?v=1619215443"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 627,
+        "fields": {
+            "name": "Kong® Cloud™ Dog Collar Blue X-Small",
+            "price": 28.45,
+            "slug": "Kong®-Cloud™-Dog-Collar-Blue-X-Small",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/035585081328_31bae30e-9710-4727-bd55-83b363048fc2_540x.jpg?v=1619215419"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 628,
+        "fields": {
+            "name": "Kong® Cloud™ Dog Collar Blue Small",
+            "price": 32.62,
+            "slug": "Kong®-Cloud™-Dog-Collar-Blue-Small",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/035585081335_75076661-cb68-479b-9c48-0fce35abfeea_540x.jpg?v=1619215421"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 629,
+        "fields": {
+            "name": "ThunderEase® Calming Collar for Dog Large",
+            "price": 43.77,
+            "slug": "ThunderEase®-Calming-Collar-for-Dog-Large",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/819505014166_540x.jpg?v=1619215330"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 630,
+        "fields": {
+            "name": "ThunderEase® Calming Collar for Dog Small",
+            "price": 43.76,
+            "slug": "ThunderEase®-Calming-Collar-for-Dog-Small",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/819505014159_540x.jpg?v=1619215200"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 631,
+        "fields": {
+            "name": "PetSafe® Gentle Leader® No Pull Dog Head Collar Black Color Large",
+            "price": 37.57,
+            "slug": "PetSafe®-Gentle-Leader®-No-Pull-Dog-Head-Collar-Black-Color-Large",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/759023019086_540x.jpg?v=1619215128"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 632,
+        "fields": {
+            "name": "Nite Ize® Nitehowl® Led Safety Necklace for Dog Pink Color",
+            "price": 28.19,
+            "slug": "Nite-Ize®-Nitehowl®-Led-Safety-Necklace-for-Dog-Pink-Color",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/094664042056_23978862-79f7-4074-a3ab-13660c178e2b_540x.jpg?v=1619215484"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 633,
+        "fields": {
+            "name": "Nite Ize® Nitehowl® Led Safety Necklace for Dog Blue Color",
+            "price": 27.98,
+            "slug": "Nite-Ize®-Nitehowl®-Led-Safety-Necklace-for-Dog-Blue-Color",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/094664036949_1de4c142-70f7-471b-b875-9d1723b8ac0f_540x.jpg?v=1619215476"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 634,
+        "fields": {
+            "name": "Nite Ize® Leashlit™ Led Micro Flashlight for Dog 8.46 X 4.13 X 0.72 Inch",
+            "price": 29.84,
+            "slug": "Nite-Ize®-Leashlit™-Led-Micro-Flashlight-for-Dog-8.46-X-4.13-X-0.72-Inch",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/094664043381_07c72e69-4455-4343-b034-33f927b75555_540x.jpg?v=1619215232"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 635,
+        "fields": {
+            "name": "Nite Ize® Spotlit™ Collar Light - Disc-O Select™ 1.3 X 2.1 X 0.8 Inch",
+            "price": 23.69,
+            "slug": "Nite-Ize®-Spotlit™-Collar-Light---Disc-O-Select™-1.3-X-2.1-X-0.8-Inch",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/094664042469_8ff1d4a4-b738-4fa9-83b2-02429fac8a2d_540x.jpg?v=1619214968"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 636,
+        "fields": {
+            "name": "Nite Ize® Petlit® Collar Light for Dog Crystal Color 1.73 X 0.97 X 0.62 Inch",
+            "price": 15.98,
+            "slug": "Nite-Ize®-Petlit®-Collar-Light-for-Dog-Crystal-Color-1.73-X-0.97-X-0.62-Inch",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/094664022300_f66eeb87-3178-468c-8478-652fa43543a5_540x.jpg?v=1619214965"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 637,
+        "fields": {
+            "name": "Nite Ize® Petlit® Collar Light for Dog Pink Color 1.73 X 0.97 X 0.62 Inch",
+            "price": 15.98,
+            "slug": "Nite-Ize®-Petlit®-Collar-Light-for-Dog-Pink-Color-1.73-X-0.97-X-0.62-Inch",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/094664024748_89c48f3f-14ca-4634-a37c-56dc497b5833_540x.jpg?v=1619214966"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 638,
+        "fields": {
+            "name": "Nite Ize® Nitehowl® Led Safety Necklace for Dog Red Color",
+            "price": 27.97,
+            "slug": "Nite-Ize®-Nitehowl®-Led-Safety-Necklace-for-Dog-Red-Color",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/094664034488_674f49a3-55f8-47b0-9d0d-4de8a39a7ba2_540x.jpg?v=1619215439"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 639,
+        "fields": {
+            "name": "Nite Ize® Nitehowl® Led Safety Necklace for Dog Orange Color",
+            "price": 28.19,
+            "slug": "Nite-Ize®-Nitehowl®-Led-Safety-Necklace-for-Dog-Orange-Color",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/094664038806_401e6847-205a-47f3-9aa1-2e0910c1d95e_540x.jpg?v=1619215478"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 640,
+        "fields": {
+            "name": "Nite Ize® Nitehowl® Led Safety Necklace for Dog Green Color",
+            "price": 27.98,
+            "slug": "Nite-Ize®-Nitehowl®-Led-Safety-Necklace-for-Dog-Green-Color",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/094664036932_b3c2f529-abdf-43b0-8bf4-b387a8a6640c_540x.jpg?v=1619215475"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 641,
+        "fields": {
+            "name": "Coastal® Walk 'n Train!® Dog Head Halter Black Color Size 03",
+            "price": 39.35,
+            "slug": "Coastal®-Walk-'n-Train!®-Dog-Head-Halter-Black-Color-Size-03",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/076484513015_540x.jpg?v=1619215194"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 642,
+        "fields": {
+            "name": "Coastal® Walk 'n Train!® Dog Head Halter Black Color Size 02",
+            "price": 36.56,
+            "slug": "Coastal®-Walk-'n-Train!®-Dog-Head-Halter-Black-Color-Size-02",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/076484512018_540x.jpg?v=1619215190"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 643,
+        "fields": {
+            "name": "Coastal® Herm. Sprenger® Ultra-Plus Prong Dog Training Collar Chrome Color 3.8 MM X 20 Inch",
+            "price": 74.63,
+            "slug": "Coastal®-Herm.-Sprenger®-Ultra-Plus-Prong-Dog-Training-Collar-Chrome-Color-3.8-MM-X-20-Inch",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/076484530005_540x.jpg?v=1619217691"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 644,
+        "fields": {
+            "name": "PetSafe® Citronella/Unscented Spray Bark Dog Collar",
+            "price": 194.94,
+            "slug": "PetSafe®-Citronella/Unscented-Spray-Bark-Dog-Collar",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/729849163683_540x.jpg?v=1619216951"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 645,
+        "fields": {
+            "name": "Coastal® Titan® Dog Prong Training Collar Chrome Color 3 MM X 18 Inch",
+            "price": 33.34,
+            "slug": "Coastal®-Titan®-Dog-Prong-Training-Collar-Chrome-Color-3-MM-X-18-Inch",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/076484093487_66465fca-eb47-40a4-b35e-25128d519a2c_540x.jpg?v=1619215838"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 646,
+        "fields": {
+            "name": "Coastal® Herm. Sprenger® Ultra-Plus Prong Dog Training Collar Chrome Color 3 MM X 16 Inch",
+            "price": 50.55,
+            "slug": "Coastal®-Herm.-Sprenger®-Ultra-Plus-Prong-Dog-Training-Collar-Chrome-Color-3-MM-X-16-Inch",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/76723_540x.jpg?v=1619217528"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 647,
+        "fields": {
+            "name": "Starmark® Pro-Training Dog Collar® Small",
+            "price": 23.93,
+            "slug": "Starmark®-Pro-Training-Dog-Collar®-Small",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/873199000379_861309c8-f2d0-430b-9293-2bd4230c9adf_540x.jpg?v=1619216419"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 648,
+        "fields": {
+            "name": "PetSafe® Gentle Leader® No Pull Dog Head Collar Black Color Medium",
+            "price": 37.63,
+            "slug": "PetSafe®-Gentle-Leader®-No-Pull-Dog-Head-Collar-Black-Color-Medium",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/759023019208_540x.jpg?v=1619215671"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 649,
+        "fields": {
+            "name": "Coastal® Herm. Sprenger® Ultra-Plus Prong Dog Training Collar Chrome Color 3.25 MM X 18 Inch",
+            "price": 58.44,
+            "slug": "Coastal®-Herm.-Sprenger®-Ultra-Plus-Prong-Dog-Training-Collar-Chrome-Color-3.25-MM-X-18-Inch",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/076484525001_540x.jpg?v=1619217626"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 650,
+        "fields": {
+            "name": "Coastal® Titan® Dog Prong Training Collar with One-Handed Quick Release Snap Chrome Color 3 MM X 18 Inch",
+            "price": 35.56,
+            "slug": "Coastal®-Titan®-Dog-Prong-Training-Collar-with-One-Handed-Quick-Release-Snap-Chrome-Color-3-MM-X-18-Inch",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/076484560026_540x.jpg?v=1619215840"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 651,
+        "fields": {
+            "name": "Coastal® Best Fit® Adjustable Mesh Dog Muzzle Black Color Size 05",
+            "price": 26.39,
+            "slug": "Coastal®-Best-Fit®-Adjustable-Mesh-Dog-Muzzle-Black-Color-Size-05",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/076484076084_e1246d5a-7ac7-42ad-8e02-db2b2e1af77e_540x.jpg?v=1619216380"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 652,
+        "fields": {
+            "name": "PetSafe® Easy Walk® No Pull Dog Harness Red Color Medium",
+            "price": 48.33,
+            "slug": "PetSafe®-Easy-Walk®-No-Pull-Dog-Harness-Red-Color-Medium",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/759023067643_540x.jpg?v=1619216857"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 653,
+        "fields": {
+            "name": "PetSafe® Easy Walk® No Pull Dog Harness Red Color Large",
+            "price": 48.28,
+            "slug": "PetSafe®-Easy-Walk®-No-Pull-Dog-Harness-Red-Color-Large",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/759023067650_540x.jpg?v=1619216649"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 654,
+        "fields": {
+            "name": "PetSafe® Easy Walk® No Pull Dog Harness Black Color Small/Medium",
+            "price": 48.26,
+            "slug": "PetSafe®-Easy-Walk®-No-Pull-Dog-Harness-Black-Color-Small/Medium",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/759023073392_540x.jpg?v=1619216363"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 655,
+        "fields": {
+            "name": "PetSafe® Easy Walk® No Pull Dog Harness Black Color Small",
+            "price": 48.14,
+            "slug": "PetSafe®-Easy-Walk®-No-Pull-Dog-Harness-Black-Color-Small",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/759023067735_540x.jpg?v=1619215916"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 656,
+        "fields": {
+            "name": "PetSafe® Easy Walk® No Pull Dog Harness Black Color Medium/Large",
+            "price": 48.23,
+            "slug": "PetSafe®-Easy-Walk®-No-Pull-Dog-Harness-Black-Color-Medium/Large",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/759023073453_540x.jpg?v=1619216678"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 657,
+        "fields": {
+            "name": "PetSafe® Easy Walk® No Pull Dog Harness Black Color Medium",
+            "price": 48.2,
+            "slug": "PetSafe®-Easy-Walk®-No-Pull-Dog-Harness-Black-Color-Medium",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/759023067742_540x.jpg?v=1619216361"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 658,
+        "fields": {
+            "name": "PetSafe® Easy Walk® No Pull Dog Harness Black Color Large",
+            "price": 48.31,
+            "slug": "PetSafe®-Easy-Walk®-No-Pull-Dog-Harness-Black-Color-Large",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/759023067759_540x.jpg?v=1619216755"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 659,
+        "fields": {
+            "name": "Nite Ize® Petlit® Collar Light for Dog Paw Color 1.73 X 0.97 X 0.62 Inch",
+            "price": 16.34,
+            "slug": "Nite-Ize®-Petlit®-Collar-Light-for-Dog-Paw-Color-1.73-X-0.97-X-0.62-Inch",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/094664022317_9b3c4d5d-ced2-4537-b402-69c85d2e5222_540x.jpg?v=1619217404"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 660,
+        "fields": {
+            "name": "Kong® EZ Clear™ Dog Collar XX-Large",
+            "price": 40.43,
+            "slug": "Kong®-EZ-Clear™-Dog-Collar-XX-Large",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/035585081007_540x.jpg?v=1619217404"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 661,
+        "fields": {
+            "name": "Kong® EZ Clear™ Dog Collar Medium",
+            "price": 27.85,
+            "slug": "Kong®-EZ-Clear™-Dog-Collar-Medium",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/035585081212_6c836311-e243-43fd-a71b-7b10dd37847e_540x.jpg?v=1619215821"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 662,
+        "fields": {
+            "name": "Kong® EZ Clear™ Dog Collar Large",
+            "price": 29.91,
+            "slug": "Kong®-EZ-Clear™-Dog-Collar-Large",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/035585081113_1c05985c-96b0-4794-b0d7-59e097ddbadf_540x.jpg?v=1619216267"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 663,
+        "fields": {
+            "name": "Kong® Cloud™ Dog Collar Blue X-Large",
+            "price": 58.22,
+            "slug": "Kong®-Cloud™-Dog-Collar-Blue-X-Large",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/035585081366_540x.jpg?v=1619217405"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 664,
+        "fields": {
+            "name": "Coastal® Titan® Dog Prong Training Collar Chrome Color 3.3 MM X 20 Inch",
+            "price": 39.16,
+            "slug": "Coastal®-Titan®-Dog-Prong-Training-Collar-Chrome-Color-3.3-MM-X-20-Inch",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/076484093494_540x.jpg?v=1619216627"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 665,
+        "fields": {
+            "name": "Coastal® Best Fit® Adjustable Mesh Dog Muzzle Black Color Size 07",
+            "price": 27.44,
+            "slug": "Coastal®-Best-Fit®-Adjustable-Mesh-Dog-Muzzle-Black-Color-Size-07",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/076484076107_7e93b397-3010-4d41-97ae-4445741f5516_540x.jpg?v=1619216689"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 666,
+        "fields": {
+            "name": "Coastal® Best Fit® Adjustable Mesh Dog Muzzle Black Color Size 06",
+            "price": 26.41,
+            "slug": "Coastal®-Best-Fit®-Adjustable-Mesh-Dog-Muzzle-Black-Color-Size-06",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/076484076091_250f7ae0-6870-48de-8c9a-177b6dc815b5_540x.jpg?v=1619216571"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 667,
+        "fields": {
+            "name": "Coastal® Best Fit® Adjustable Mesh Dog Muzzle Black Color Size 04",
+            "price": 24.63,
+            "slug": "Coastal®-Best-Fit®-Adjustable-Mesh-Dog-Muzzle-Black-Color-Size-04",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/076484076077_86e6918b-3e45-4aa6-9018-3664a3b256a0_540x.jpg?v=1619216256"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 668,
+        "fields": {
+            "name": "Coastal® Best Fit® Adjustable Mesh Dog Muzzle Black Color Size 03",
+            "price": 24.6,
+            "slug": "Coastal®-Best-Fit®-Adjustable-Mesh-Dog-Muzzle-Black-Color-Size-03",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/076484076060_9edb72f3-0891-4b3e-bfc5-eb428e9594fc_540x.jpg?v=1619215946"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 669,
+        "fields": {
+            "name": "Starmark® Pro-Training Dog Collar® Large",
+            "price": 29.05,
+            "slug": "Starmark®-Pro-Training-Dog-Collar®-Large",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/50768_f38fe119-b302-4d12-bdc2-d5da96db6756_540x.jpg?v=1619217590"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 670,
+        "fields": {
+            "name": "Kong® Cloud™ Dog Collar Blue Large",
+            "price": 49.69,
+            "slug": "Kong®-Cloud™-Dog-Collar-Blue-Large",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/035585081359_540x.jpg?v=1619217024"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 671,
+        "fields": {
+            "name": "Kong® EZ Clear™ Dog Collar X-Large",
+            "price": 34.52,
+            "slug": "Kong®-EZ-Clear™-Dog-Collar-X-Large",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/035585081014_540x.jpg?v=1619216805"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 672,
+        "fields": {
+            "name": "Kong® Cloud™ Dog Collar Blue Medium",
+            "price": 41.16,
+            "slug": "Kong®-Cloud™-Dog-Collar-Blue-Medium",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/035585081342_540x.jpg?v=1619216305"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 673,
+        "fields": {
+            "name": "ThunderLeash® No-Pull Standard Leash for Dog Black Color Large",
+            "price": 52.48,
+            "slug": "ThunderLeash®-No-Pull-Standard-Leash-for-Dog-Black-Color-Large",
+            "category": 3,
+            "subcategory": 16,
+            "image": "petstore.com/cdn/shop/products/819505010793_540x.jpg?v=1619215853"
+        }
+    }
+]

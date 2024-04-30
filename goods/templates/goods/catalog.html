@@ -82,10 +82,14 @@
         <div class="col" id="blocksOne">
         {% for product in goods %}
                     <div class="card-recommended" style="width: 18rem;">
-                    <img class="card-img-top rounded" src="{% static "main/images/large_96_52_96_10_nd-prime-adult-mini-wild-boar-apple-800x1066.png" %}" alt="Card image cap">
+                    {% if product.image != 'None' %}
+                    <img class="card-img-top rounded" src="https://{{ product.image }}" alt={{ product.name }}>
+                    {% else %}
+                    <img src = "{% static "main/static/main/images/360_F_470299797_UD0eoVMMSUbHCcNJCdv2t8B2g1GVqYgs.jpg" %}" class="card-img-top rounded" alt={{ product.name }}>
+                    {% endif %}
                     <div class="card-body">
                     <h5 class="card-title">
-                        {{ product.description }}</h5>
+                        {{ product.name }}</h5>
                     <p class="card-text text-truncate">{{ product.price }}</p>
                     <a href="#" class="btn btn-primary">Add to cart</a>
                     </div>

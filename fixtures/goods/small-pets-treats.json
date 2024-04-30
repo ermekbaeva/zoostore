@@ -1,0 +1,602 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 2115,
+        "fields": {
+            "name": "Ware™ Stick Ball Treats",
+            "price": 13.6,
+            "slug": "Ware™-Stick-Ball-Treats",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/1030653_7ec06921-0471-45b1-897f-d3d472e84241_540x.jpg?v=1619214962"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2116,
+        "fields": {
+            "name": "Oxbow Animal Health® Simple Rewards Veggie Treats 2 Oz",
+            "price": 14.21,
+            "slug": "Oxbow-Animal-Health®-Simple-Rewards-Veggie-Treats-2-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845960074_ba0e4073-0726-4ca5-942a-023971e7e354_540x.jpg?v=1619215257"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2117,
+        "fields": {
+            "name": "Oxbow Animal Health® Simple Rewards Baked Treats with Apple & Banana 2 Oz",
+            "price": 13.04,
+            "slug": "Oxbow-Animal-Health®-Simple-Rewards-Baked-Treats-with-Apple-&-Banana-2-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845960234_2fdc4e27-8999-4102-9b38-99b56cbb3abc_540x.jpg?v=1619215248"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2118,
+        "fields": {
+            "name": "Oxbow Animal Health® Simple Rewards Baked Treats with Peppermint 2 Oz",
+            "price": 13.04,
+            "slug": "Oxbow-Animal-Health®-Simple-Rewards-Baked-Treats-with-Peppermint-2-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845960197_23e826d7-bf85-4b65-a7aa-75f03eeee495_540x.jpg?v=1619215254"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2119,
+        "fields": {
+            "name": "Oxbow Animal Health® Simple Rewards Baked Treats with Cranberry 2 Oz",
+            "price": 13.04,
+            "slug": "Oxbow-Animal-Health®-Simple-Rewards-Baked-Treats-with-Cranberry-2-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845960227_b22f494a-3d7f-40ab-a4c0-473dbff3a9c3_540x.jpg?v=1619215251"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2120,
+        "fields": {
+            "name": "Oxbow Animal Health® Simple Rewards Timothy Treats 1.4 Oz",
+            "price": 14.21,
+            "slug": "Oxbow-Animal-Health®-Simple-Rewards-Timothy-Treats-1.4-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845960050_a8e49854-3dbf-4e4f-8e7c-1895448834e8_540x.jpg?v=1619215154"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2121,
+        "fields": {
+            "name": "Oxbow Animal Health® Simple Rewards Strawberry Treats 0.5 Oz",
+            "price": 15.62,
+            "slug": "Oxbow-Animal-Health®-Simple-Rewards-Strawberry-Treats-0.5-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845960012_679ccea7-a7b0-4af1-9049-dcdacfd5c848_540x.jpg?v=1619214967"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2122,
+        "fields": {
+            "name": "Oxbow Animal Health® Simple Rewards Banana Treats 1 Oz",
+            "price": 15.63,
+            "slug": "Oxbow-Animal-Health®-Simple-Rewards-Banana-Treats-1-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845960036_46d79805-1bf1-45de-b874-0213c3d53635_540x.jpg?v=1619215044"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2123,
+        "fields": {
+            "name": "Oxbow Animal Health® Simple Rewards Baked Treats with Bell Pepper 2 Oz",
+            "price": 13.04,
+            "slug": "Oxbow-Animal-Health®-Simple-Rewards-Baked-Treats-with-Bell-Pepper-2-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845960180_39a514bc-6d9a-4b45-84b8-534b7e9a294c_540x.jpg?v=1619215253"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2124,
+        "fields": {
+            "name": "Oxbow Animal Health® Simple Rewards Baked Treats with Carrot & Dill 2 Oz",
+            "price": 13.04,
+            "slug": "Oxbow-Animal-Health®-Simple-Rewards-Baked-Treats-with-Carrot-&-Dill-2-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845960173_ebf33cfa-d4b6-4d4a-8790-4ceed9aabb5b_540x.jpg?v=1619215250"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2125,
+        "fields": {
+            "name": "Oxbow Animal Health® Organic Meadow Hay 40 Oz",
+            "price": 26.23,
+            "slug": "Oxbow-Animal-Health®-Organic-Meadow-Hay-40-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845960579_9aff0e2f-c26a-4bd4-bcec-4c2d045add2e_540x.jpg?v=1619217928"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2126,
+        "fields": {
+            "name": "Oxbow Animal Health® Organic Meadow Hay 15 Oz",
+            "price": 16.32,
+            "slug": "Oxbow-Animal-Health®-Organic-Meadow-Hay-15-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845710402_31cbafd6-0f19-41e9-bd1a-475b667c8ad6_540x.jpg?v=1619217176"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2127,
+        "fields": {
+            "name": "Oxbow Animal Health® Orchard Grass Hay 15 Oz",
+            "price": 15.56,
+            "slug": "Oxbow-Animal-Health®-Orchard-Grass-Hay-15-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845402956_3767f783-a856-47ab-9b96-afa494f7a6ab_540x.jpg?v=1619217149"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2128,
+        "fields": {
+            "name": "Oxbow Animal Health® Oat Hay 15 Oz",
+            "price": 15.57,
+            "slug": "Oxbow-Animal-Health®-Oat-Hay-15-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845402703_507c9455-095f-49ff-a467-7bfb3c8ed4ae_540x.jpg?v=1619217175"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2129,
+        "fields": {
+            "name": "Oxbow Animal Health® Hay Blends Western Timothy & Orchard Grass 90 Oz",
+            "price": 30.8,
+            "slug": "Oxbow-Animal-Health®-Hay-Blends-Western-Timothy-&-Orchard-Grass-90-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845810072_540x.jpg?v=1619218686"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2130,
+        "fields": {
+            "name": "Oxbow Animal Health® Hay Blends Western Timothy & Orchard Grass 40 Oz",
+            "price": 25.66,
+            "slug": "Oxbow-Animal-Health®-Hay-Blends-Western-Timothy-&-Orchard-Grass-40-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845810065_e1db349d-aaae-46d1-bbd5-1acbaa15231a_540x.jpg?v=1619217927"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2131,
+        "fields": {
+            "name": "Oxbow Animal Health® Hay Blends Western Timothy & Orchard Grass 20 Oz",
+            "price": 16.23,
+            "slug": "Oxbow-Animal-Health®-Hay-Blends-Western-Timothy-&-Orchard-Grass-20-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845810058_119fff72-64d1-4f55-8f1a-f37ea0be300a_540x.jpg?v=1619217486"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2132,
+        "fields": {
+            "name": "Oxbow Animal Health® Harvest Stacks Western Timothy with Chamomile 35 Oz",
+            "price": 28.07,
+            "slug": "Oxbow-Animal-Health®-Harvest-Stacks-Western-Timothy-with-Chamomile-35-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845405032_1534793d-188c-4d9a-b787-9fbc8b4dc554_540x.jpg?v=1619217861"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2133,
+        "fields": {
+            "name": "Oxbow Animal Health® Harvest Stacks Western Timothy with Carrots 35 Oz",
+            "price": 28.07,
+            "slug": "Oxbow-Animal-Health®-Harvest-Stacks-Western-Timothy-with-Carrots-35-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845405025_35e14447-59bb-4971-8836-f13245d53d57_540x.jpg?v=1619217860"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2134,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Timothy Surprise for Small Animal",
+            "price": 13.02,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Timothy-Surprise-for-Small-Animal",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845963044_24b9d76d-43ba-484b-869c-9f428683556e_540x.jpg?v=1619214972"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2135,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Timothy Apples & Stix for Small Animal 3 Count",
+            "price": 13.03,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Timothy-Apples-&-Stix-for-Small-Animal-3-Count",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845963136_90275200-46b1-4622-8fe6-10914b6262ab_540x.jpg?v=1619215105"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2136,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Timbells for Small Animal",
+            "price": 14.43,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Timbells-for-Small-Animal",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845963143_50293448-efd3-4488-88f3-70fb32d74b9a_540x.jpg?v=1619215306"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2137,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Timmy Pops for Small Animal 3 Count",
+            "price": 13.28,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Timmy-Pops-for-Small-Animal-3-Count",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845963129_e3d07595-eb95-4fa1-b9b9-e68042e8e5a4_540x.jpg?v=1619217053"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2138,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Crazy Hay Ball for Small Animal",
+            "price": 12.42,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Crazy-Hay-Ball-for-Small-Animal",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845963273_20d0a025-88e9-483b-8016-3f9fd323ceee_540x.jpg?v=1619215008"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2139,
+        "fields": {
+            "name": "Oxbow Animal Health® Alfalfa Hay 15 Oz",
+            "price": 15.57,
+            "slug": "Oxbow-Animal-Health®-Alfalfa-Hay-15-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845402154_d2604d66-8191-48ce-a195-9af89834255c_540x.jpg?v=1619217174"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2140,
+        "fields": {
+            "name": "Oxbow Animal Health® Botanical Hay 15 Oz",
+            "price": 16.35,
+            "slug": "Oxbow-Animal-Health®-Botanical-Hay-15-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845405001_c3871ee0-0051-45c9-b922-cfdda1e0be5b_540x.jpg?v=1619217178"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2141,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Stix & Hay for Small Animal",
+            "price": 13.02,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Stix-&-Hay-for-Small-Animal",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845962962_b6e38431-d05a-4a8a-860b-6bf3b8c0f91c_540x.jpg?v=1619215011"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2142,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Crazy Shakers for Small Animal",
+            "price": 13.02,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Crazy-Shakers-for-Small-Animal",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845963099_a295d1de-df38-49d8-a225-2276b8f542ac_540x.jpg?v=1619215009"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2143,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Apple Stick Dangly Small Animal Chew",
+            "price": 13.03,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Apple-Stick-Dangly-Small-Animal-Chew",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845963150_08b15b25-c5be-4768-b00b-6ecdd6134be4_540x.jpg?v=1619215083"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2144,
+        "fields": {
+            "name": "Oxbow Animal Health® Bene Terra Organic Barley Biscuits 2.65 Oz",
+            "price": 15.29,
+            "slug": "Oxbow-Animal-Health®-Bene-Terra-Organic-Barley-Biscuits-2.65-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845710501_0aa212f8-760a-4fb1-89d2-a7d47660db11_540x.jpg?v=1619215505"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2145,
+        "fields": {
+            "name": "Oxbow Animal Health® Alfalfa Hay 9 Lbs",
+            "price": 42.4,
+            "slug": "Oxbow-Animal-Health®-Alfalfa-Hay-9-Lbs",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845402185_540x.jpg?v=1619218898"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2146,
+        "fields": {
+            "name": "Vitakraft® Drops with Strawberry Hamster Treats 5.3 Oz",
+            "price": 16.06,
+            "slug": "Vitakraft®-Drops-with-Strawberry-Hamster-Treats-5.3-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/051233254517_21fa33eb-19cf-45d5-83b5-35a693a084ed_540x.jpg?v=1619216473"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2147,
+        "fields": {
+            "name": "Oxbow Animal Health® Western Timothy Hay 25 Lbs",
+            "price": 72.61,
+            "slug": "Oxbow-Animal-Health®-Western-Timothy-Hay-25-Lbs",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845402277_540x.jpg?v=1619219702"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2148,
+        "fields": {
+            "name": "Vitakraft® Drops with Orange Guinea Pig Treats 5.3 Oz",
+            "price": 16.06,
+            "slug": "Vitakraft®-Drops-with-Orange-Guinea-Pig-Treats-5.3-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/051233254463_44e9c42d-1447-4aa0-a37f-954832ef91f4_540x.jpg?v=1619216471"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2149,
+        "fields": {
+            "name": "Sunseed® Golden Millet Spray for Birds 5 Lbs",
+            "price": 80.93,
+            "slug": "Sunseed®-Golden-Millet-Spray-for-Birds-5-Lbs",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/087535109118_540x.jpg?v=1619218648"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2150,
+        "fields": {
+            "name": "Vitakraft® Crunch Sticks Wild Berry & Honey Flavor for Small Animals 4 Oz",
+            "price": 14.47,
+            "slug": "Vitakraft®-Crunch-Sticks-Wild-Berry-&-Honey-Flavor-for-Small-Animals-4-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/3257532_822a6db5-2dcf-4d12-92a9-3c9940fc1b13_540x.jpg?v=1619216459"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2151,
+        "fields": {
+            "name": "Vitakraft® Slims with Alfalfa Small Animal Treats 1.76 Oz",
+            "price": 12.29,
+            "slug": "Vitakraft®-Slims-with-Alfalfa-Small-Animal-Treats-1.76-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/051233256764_af6ace8a-0fc7-4f25-a134-32d9eb2e9467_540x.jpg?v=1619215234"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2152,
+        "fields": {
+            "name": "Vitakraft® Drops with Wild Berry Rabbit Treats 5.3 Oz",
+            "price": 16.06,
+            "slug": "Vitakraft®-Drops-with-Wild-Berry-Rabbit-Treats-5.3-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/051233254432_ffecb6be-4370-4c6e-ba5c-20470a554454_540x.jpg?v=1619216470"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2153,
+        "fields": {
+            "name": "Sunseed® Sunsations Natural Timothy Hay for Small Animal 28 Oz",
+            "price": 40.11,
+            "slug": "Sunseed®-Sunsations-Natural-Timothy-Hay-for-Small-Animal-28-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/087535880703_540x.jpg?v=1619217695"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2154,
+        "fields": {
+            "name": "Oxbow Animal Health® Western Timothy Hay 50 Lbs",
+            "price": 80.82,
+            "slug": "Oxbow-Animal-Health®-Western-Timothy-Hay-50-Lbs",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845402826_540x.jpg?v=1619220013"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2155,
+        "fields": {
+            "name": "Oxbow Animal Health® Timothy CLUB Twists 6 Count",
+            "price": 11.74,
+            "slug": "Oxbow-Animal-Health®-Timothy-CLUB-Twists-6-Count",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845403199_18093aee-bf93-484a-b150-9040c07ad849_540x.jpg?v=1619216447"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2156,
+        "fields": {
+            "name": "Oxbow Animal Health® Timothy CLUB Twists 220 X 60 mm",
+            "price": 14.56,
+            "slug": "Oxbow-Animal-Health®-Timothy-CLUB-Twists-220-X-60-mm",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845403182_72608cdd-ce03-4b87-af6c-efa4c6d902a3_540x.jpg?v=1619216460"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2157,
+        "fields": {
+            "name": "Oxbow Animal Health® Timothy CLUB Tunnel 10 X 7.5 X 7 Inch",
+            "price": 25.57,
+            "slug": "Oxbow-Animal-Health®-Timothy-CLUB-Tunnel-10-X-7.5-X-7-Inch",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845403113_5899d337-7ef1-4ba4-a1b6-5d4fba6e6723_540x.jpg?v=1619216565"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2158,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Hide & Chews Roll for Small Animal",
+            "price": 21.71,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Hide-&-Chews-Roll-for-Small-Animal",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845963068_bcb9ecf9-d3b8-466e-98f8-8224dfa07b15_540x.jpg?v=1619217117"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2159,
+        "fields": {
+            "name": "Oxbow Animal Health® Enriched Life Apple Stick Bundle Small Animal Treats",
+            "price": 14.52,
+            "slug": "Oxbow-Animal-Health®-Enriched-Life-Apple-Stick-Bundle-Small-Animal-Treats",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/744845963167_87fcc629-ae1c-4c24-8408-15ef54290593_540x.jpg?v=1619216210"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2160,
+        "fields": {
+            "name": "Sunseed® Vita Prima™ Sun Salad for Guinea Pigs 10 Oz",
+            "price": 17.24,
+            "slug": "Sunseed®-Vita-Prima™-Sun-Salad-for-Guinea-Pigs-10-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/5360663_30771e14-d44f-41ba-81cd-a9ee158c03e3_540x.jpg?v=1619216820"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2161,
+        "fields": {
+            "name": "Sunseed® Vita Prima™ Wigglers & Berries Trail Mix Treats for Hedgehogs 2.5 Oz",
+            "price": 14.71,
+            "slug": "Sunseed®-Vita-Prima™-Wigglers-&-Berries-Trail-Mix-Treats-for-Hedgehogs-2.5-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/5360359_4d3cfb93-ac6f-4569-ab10-ac86079f9b28_540x.jpg?v=1619215403"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2162,
+        "fields": {
+            "name": "Ware™ Himalayan Salt On A Rope 1 Oz",
+            "price": 11.43,
+            "slug": "Ware™-Himalayan-Salt-On-A-Rope-1-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/1031049_6d832d9d-6687-4033-916f-a5bc7d127f09_540x.jpg?v=1619215046"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2163,
+        "fields": {
+            "name": "Sunseed® Animalovens Apple Strudels 4 Oz",
+            "price": 13.17,
+            "slug": "Sunseed®-Animalovens-Apple-Strudels-4-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/5348043_dc4216ba-9cc9-438e-a6c0-68c25e17b173_540x.jpg?v=1619215635"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2164,
+        "fields": {
+            "name": "Sunseed® Vita Prima™ Sun Drops™ Advanced Daily V Liquid Vitamin Supplement for Small Animals 1 Oz",
+            "price": 23.1,
+            "slug": "Sunseed®-Vita-Prima™-Sun-Drops™-Advanced-Daily-V-Liquid-Vitamin-Supplement-for-Small-Animals-1-Oz",
+            "category": 5,
+            "subcategory": 30,
+            "image": "petstore.com/cdn/shop/products/5360946_8a0f29c2-b6ae-4e81-8afe-71cf5141bc3a_540x.jpg?v=1619215064"
+        }
+    }
+]

@@ -1,0 +1,974 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 1537,
+        "fields": {
+            "name": "Ark Naturals® Gray Muzzle Brain’s Best Friend Cat & Dog Chewy Treats 90 Count",
+            "price": 28.6,
+            "slug": "Ark-Naturals®-Gray-Muzzle-Brain’s-Best-Friend-Cat-&-Dog-Chewy-Treats-90-Count-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/632634710033_ec788c5b-2824-4b32-aa8c-c674c87302c2_540x.jpg?v=1619215825"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1538,
+        "fields": {
+            "name": "ThunderEase® Calming Diffuser Refill for Multi Cat 30 Days",
+            "price": 47.74,
+            "slug": "ThunderEase®-Calming-Diffuser-Refill-for-Multi-Cat-30-Days",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/819505014227_540x.jpg?v=1619215387"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1539,
+        "fields": {
+            "name": "ThunderEase® Calming Spray for Cat 1 Oz",
+            "price": 41.69,
+            "slug": "ThunderEase®-Calming-Spray-for-Cat-1-Oz",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/819505011103_540x.jpg?v=1619215195"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1540,
+        "fields": {
+            "name": "ThunderEase® Calming Diffuser Refill for Cat 30 Days",
+            "price": 47.8,
+            "slug": "ThunderEase®-Calming-Diffuser-Refill-for-Cat-30-Days",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/819505014210_540x.jpg?v=1619215388"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1541,
+        "fields": {
+            "name": "Homeopet® Feline Uti+ Homeopathic Remedy 15 Ml",
+            "price": 32.08,
+            "slug": "Homeopet®-Feline-Uti+-Homeopathic-Remedy-15-Ml",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/704959147655_625bcf65-cdc5-4950-9ec7-95b11f674361_540x.jpg?v=1619215383"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1542,
+        "fields": {
+            "name": "Vetri-Science Laboratories® Nu Cat™ Multivitamin Cat Supplement 30 Count",
+            "price": 21.09,
+            "slug": "Vetri-Science-Laboratories®-Nu-Cat™-Multivitamin-Cat-Supplement-30-Count",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/4004192_e52b3a72-8b1e-45f4-b7af-f3eaae36ca52_540x.jpg?v=1619215286"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1543,
+        "fields": {
+            "name": "Vetri-Science Laboratories® Glycoflex® Plus Joint Support Cat Supplement 30 Count",
+            "price": 29.17,
+            "slug": "Vetri-Science-Laboratories®-Glycoflex®-Plus-Joint-Support-Cat-Supplement-30-Count",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/4004123_b55f8555-008e-4dd8-a0f9-37009712f240_540x.jpg?v=1619215440"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1544,
+        "fields": {
+            "name": "Pet Naturals of Vermont® L-Lysine Cat Supplement 60 Count",
+            "price": 22.28,
+            "slug": "Pet-Naturals-of-Vermont®-L-Lysine-Cat-Supplement-60-Count",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/026664983466_12ab7078-1fe5-4a7f-9168-0039cd386c13_540x.jpg?v=1619217569"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1545,
+        "fields": {
+            "name": "Pet Naturals of Vermont® Calming® Cat Chews 30 Count",
+            "price": 21.6,
+            "slug": "Pet-Naturals-of-Vermont®-Calming®-Cat-Chews-30-Count",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/026664003638_5f6fd736-97ee-42d4-875a-e7af64a430ec_540x.jpg?v=1619215322"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1546,
+        "fields": {
+            "name": "Holistic Hound® PCR Hemp Oil 100mg for Cat & Dog 1 Oz",
+            "price": 36.2,
+            "slug": "Holistic-Hound®-PCR-Hemp-Oil-100mg-for-Cat-&-Dog-1-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/867199000279_540x.jpg?v=1619215188"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1547,
+        "fields": {
+            "name": "Pet Naturals of Vermont® Hairball Cat Chews 30 Count",
+            "price": 16.65,
+            "slug": "Pet-Naturals-of-Vermont®-Hairball-Cat-Chews-30-Count",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/026664003669_125fa1fa-570b-45ea-baf0-dcdfe7f67310_540x.jpg?v=1619215316"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1548,
+        "fields": {
+            "name": "Pet Naturals of Vermont® Daily Probiotic for Cat 30 Count",
+            "price": 18.67,
+            "slug": "Pet-Naturals-of-Vermont®-Daily-Probiotic-for-Cat-30-Count",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/026664975331_8e5cc3c7-c4d6-4f07-b31c-a13af89fd199_540x.jpg?v=1619215423"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1549,
+        "fields": {
+            "name": "Pet Naturals of Vermont® Daily Multivitamin for Cat 30 Count",
+            "price": 21.2,
+            "slug": "Pet-Naturals-of-Vermont®-Daily-Multivitamin-for-Cat-30-Count",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/026664004079_25e7ceae-d3a9-4c28-9787-f81da7a7e2ee_540x.jpg?v=1619215262"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1550,
+        "fields": {
+            "name": "Homeopet® Worms Clear Remedy for Cats 15 Ml",
+            "price": 32.06,
+            "slug": "Homeopet®-Worms-Clear-Remedy-for-Cats-15-Ml",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/704959047306_732d99a8-4084-4ce8-ac71-a7de1d987895_540x.jpg?v=1619215243"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1551,
+        "fields": {
+            "name": "Holistic Hound® PCR Oil Blended with Organic Coconut Oil 250mg for Cat & Dog 1 Oz",
+            "price": 70.76,
+            "slug": "Holistic-Hound®-PCR-Oil-Blended-with-Organic-Coconut-Oil-250mg-for-Cat-&-Dog-1-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/867199000286_540x.jpg?v=1619215203"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1552,
+        "fields": {
+            "name": "Holistic Hound® PCR Hemp Oil 500mg for Cat & Dog 1 Oz",
+            "price": 100.97,
+            "slug": "Holistic-Hound®-PCR-Hemp-Oil-500mg-for-Cat-&-Dog-1-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/867199000224_540x.jpg?v=1619215206"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1553,
+        "fields": {
+            "name": "Holistic Hound® PCR Hemp Oil 250mg for Cat & Dog 1 Oz",
+            "price": 64.97,
+            "slug": "Holistic-Hound®-PCR-Hemp-Oil-250mg-for-Cat-&-Dog-1-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/867199000231_540x.jpg?v=1619215202"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1554,
+        "fields": {
+            "name": "Holistic Hound® Mighty Mojo Mushroom Powder Supplement for Cat & Dog 4.5 Oz",
+            "price": 50.15,
+            "slug": "Holistic-Hound®-Mighty-Mojo-Mushroom-Powder-Supplement-for-Cat-&-Dog-4.5-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/867199000293_540x.jpg?v=1619215898"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1555,
+        "fields": {
+            "name": "Emerald Pet® Urinary Tract Control Feline Health Treats 2.5 Oz",
+            "price": 17.49,
+            "slug": "Emerald-Pet®-Urinary-Tract-Control-Feline-Health-Treats-2.5-Oz",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/853258004449_06bfe3c2-a517-4620-ab73-a577a309cb87_540x.jpg?v=1619215349"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1556,
+        "fields": {
+            "name": "Feliway® Classic Diffuser Refill for Cat",
+            "price": 45.72,
+            "slug": "Feliway®-Classic-Diffuser-Refill-for-Cat",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/4001296_540x.jpg?v=1619215369"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1557,
+        "fields": {
+            "name": "Emerald Pet® Grain Free Tuna Feline Dental Treats 3 Oz",
+            "price": 13.91,
+            "slug": "Emerald-Pet®-Grain-Free-Tuna-Feline-Dental-Treats-3-Oz",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/853258004036_1f54b235-1869-498a-b5b2-049497f82dde_540x.jpg?v=1619215448"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1558,
+        "fields": {
+            "name": "Emerald Pet® Grain Free Salmon Feline Dental Treats 3 Oz",
+            "price": 13.91,
+            "slug": "Emerald-Pet®-Grain-Free-Salmon-Feline-Dental-Treats-3-Oz",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/853258004029_7600febd-ab19-4c18-9e86-aeb38fde0b29_540x.jpg?v=1619215446"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1559,
+        "fields": {
+            "name": "Emerald Pet® Grain Free Chicken Feline Dental Treats 3 Oz",
+            "price": 13.91,
+            "slug": "Emerald-Pet®-Grain-Free-Chicken-Feline-Dental-Treats-3-Oz",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/853258004012_eb8a0192-2bb8-4e4c-bd33-2db6c8518981_540x.jpg?v=1619215445"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1560,
+        "fields": {
+            "name": "Emerald Pet® Hairball Control Feline Health Treats 2.5 Oz",
+            "price": 17.49,
+            "slug": "Emerald-Pet®-Hairball-Control-Feline-Health-Treats-2.5-Oz",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/853258004432_96518b4e-b7d4-4705-bdde-e11b84fe8f6c_540x.jpg?v=1619215348"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1561,
+        "fields": {
+            "name": "Feliway® MultiCat Diffuser Refill",
+            "price": 45.72,
+            "slug": "Feliway®-MultiCat-Diffuser-Refill",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/4001333_540x.jpg?v=1619215370"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1562,
+        "fields": {
+            "name": "Emerald Pet® Grain Free Turducky Feline Dental Treats 3 Oz",
+            "price": 13.91,
+            "slug": "Emerald-Pet®-Grain-Free-Turducky-Feline-Dental-Treats-3-Oz",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/853258004081_f0f88285-1975-4221-acc9-524370fc4ac1_540x.jpg?v=1619215455"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1563,
+        "fields": {
+            "name": "Elanco Endurosyn Feline Digestive Oral Gel for Cats 5oz",
+            "price": 41.49,
+            "slug": "Elanco-Endurosyn-Feline-Digestive-Oral-Gel-for-Cats-5oz",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/724089646552_540x.jpg?v=1619214989"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1564,
+        "fields": {
+            "name": "Emerald Pet® Grain Free Catnip Feline Dental Treats 3 Oz",
+            "price": 13.91,
+            "slug": "Emerald-Pet®-Grain-Free-Catnip-Feline-Dental-Treats-3-Oz",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/853258004098_89c2f5fd-4ef2-4d2a-b55b-2cf851394f23_540x.jpg?v=1619215454"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1565,
+        "fields": {
+            "name": "Tropiclean® Alcohol-Free Ear Wash for Dogs & Cats 4 Oz",
+            "price": 18.49,
+            "slug": "Tropiclean®-Alcohol-Free-Ear-Wash-for-Dogs-&-Cats-4-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/645095410015_825e0da3-20a2-49ae-9252-311c552ea72f_540x.jpg?v=1619215727"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1566,
+        "fields": {
+            "name": "Animal Essentials® Tranquility Blend Herbal Formula for Cat & Dog 2 Oz",
+            "price": 46.02,
+            "slug": "Animal-Essentials®-Tranquility-Blend-Herbal-Formula-for-Cat-&-Dog-2-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289000427_540x.jpg?v=1619215294"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1567,
+        "fields": {
+            "name": "Animal Essentials® Tranquility Blend Herbal Formula for Cat & Dog 1 Oz",
+            "price": 31.26,
+            "slug": "Animal-Essentials®-Tranquility-Blend-Herbal-Formula-for-Cat-&-Dog-1-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289000410_a8965381-2abd-4bdb-996a-d73db2baefc2_540x.jpg?v=1619215027"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1568,
+        "fields": {
+            "name": "Animal Essentials® Seasonal Allergy Support Herbal Formula for Cat & Dog 2 Oz",
+            "price": 46.02,
+            "slug": "Animal-Essentials®-Seasonal-Allergy-Support-Herbal-Formula-for-Cat-&-Dog-2-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289000724_540x.jpg?v=1619215293"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1569,
+        "fields": {
+            "name": "Animal Essentials® Milk Thistle Herbal Extract for Cat & Dog 1 Oz",
+            "price": 31.26,
+            "slug": "Animal-Essentials®-Milk-Thistle-Herbal-Extract-for-Cat-&-Dog-1-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289009215_540x.jpg?v=1619215031"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1570,
+        "fields": {
+            "name": "Animal Essentials® Heart Health Cardiovascular Support for Cat & Dog 1 Oz",
+            "price": 31.26,
+            "slug": "Animal-Essentials®-Heart-Health-Cardiovascular-Support-for-Cat-&-Dog-1-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289000915_53fc1664-82a0-4812-94f8-c8e543dabe14_540x.jpg?v=1619215035"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1571,
+        "fields": {
+            "name": "Animal Essentials® Seasonal Allergy Support Herbal Formula for Cat & Dog 1 Oz",
+            "price": 31.26,
+            "slug": "Animal-Essentials®-Seasonal-Allergy-Support-Herbal-Formula-for-Cat-&-Dog-1-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289000717_94f28e86-28e0-44d9-8ecc-8e3168ea29a3_540x.jpg?v=1619215028"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1572,
+        "fields": {
+            "name": "Animal Essentials® Tinkle Tonic Herbal Formula for Cat & Dog 2 Oz",
+            "price": 46.02,
+            "slug": "Animal-Essentials®-Tinkle-Tonic-Herbal-Formula-for-Cat-&-Dog-2-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289000625_540x.jpg?v=1619215290"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1573,
+        "fields": {
+            "name": "Animal Essentials® Tinkle Tonic Herbal Formula for Cat & Dog 1 Oz",
+            "price": 31.26,
+            "slug": "Animal-Essentials®-Tinkle-Tonic-Herbal-Formula-for-Cat-&-Dog-1-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289000618_418d186c-2811-4463-8f34-2ccb800e1619_540x.jpg?v=1619215025"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1574,
+        "fields": {
+            "name": "Animal Essentials® Liver Defense for Cat & Dog 1 Oz",
+            "price": 31.26,
+            "slug": "Animal-Essentials®-Liver-Defense-for-Cat-&-Dog-1-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289001028_1a438e79-03f5-4461-84dd-7c53fd5c4a46_540x.jpg?v=1619215030"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1575,
+        "fields": {
+            "name": "Animal Essentials® Ginger/Mint Daily Digestion for Cat & Dog 1 Oz",
+            "price": 31.26,
+            "slug": "Animal-Essentials®-Ginger/Mint-Daily-Digestion-for-Cat-&-Dog-1-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289001318_9d18692c-dbf3-4a1b-953f-e6c2fc168bd2_540x.jpg?v=1619215036"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1576,
+        "fields": {
+            "name": "Animal Essentials® Joint Support for Cat & Dog 1 Oz",
+            "price": 31.26,
+            "slug": "Animal-Essentials®-Joint-Support-for-Cat-&-Dog-1-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289000519_9847dac0-e268-4411-9b40-5ac2a50d64db_540x.jpg?v=1619215033"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1577,
+        "fields": {
+            "name": "Animal Essentials® Colon Rescue Herbal GL Support for Cat & Dog 2 Oz",
+            "price": 46.02,
+            "slug": "Animal-Essentials®-Colon-Rescue-Herbal-GL-Support-for-Cat-&-Dog-2-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289001202_540x.jpg?v=1619215292"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1578,
+        "fields": {
+            "name": "Animal Essentials® Detox Blend Liver Support for Cat & Dog 1 Oz",
+            "price": 31.26,
+            "slug": "Animal-Essentials®-Detox-Blend-Liver-Support-for-Cat-&-Dog-1-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289000113_15a91896-18e5-4d02-85cf-4bbf168a9733_540x.jpg?v=1619215032"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1579,
+        "fields": {
+            "name": "Animal Essentials® Colon Rescue Herbal GL Support for Cat & Dog 1 Oz",
+            "price": 31.26,
+            "slug": "Animal-Essentials®-Colon-Rescue-Herbal-GL-Support-for-Cat-&-Dog-1-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289001004_95f55015-82b1-4173-a527-e34eb46ab4f0_540x.jpg?v=1619215029"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1580,
+        "fields": {
+            "name": "Pet Naturals of Vermont® Urinary Tract Support Cat Chews 60 Count",
+            "price": 31.38,
+            "slug": "Pet-Naturals-of-Vermont®-Urinary-Tract-Support-Cat-Chews-60-Count",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/026664005571_b5421e4e-92a2-4612-8a00-ee4bf2eff8ad_540x.jpg?v=1619215648"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1581,
+        "fields": {
+            "name": "Synergy Labs® Richard’s Organics™ Chicken Flavor Hairball Remedy for Cat 4 Oz",
+            "price": 24.22,
+            "slug": "Synergy-Labs®-Richard’s-Organics™-Chicken-Flavor-Hairball-Remedy-for-Cat-4-Oz",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/736990004802_70a89a30-6b10-42ca-850d-f0be17020cf9_540x.jpg?v=1619215883"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1582,
+        "fields": {
+            "name": "Synergy Labs® Dr. Gold's® Ear Therapy for Cat & Dog 4 Oz",
+            "price": 20.74,
+            "slug": "Synergy-Labs®-Dr.-Gold's®-Ear-Therapy-for-Cat-&-Dog-4-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/736990001603_00c41c9f-794e-4f60-aa89-652bb3e7c107_540x.jpg?v=1619215752"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1583,
+        "fields": {
+            "name": "Zymox® Shampoo for Itchy Inflamed Skin for Cat & Dog 1 Gal",
+            "price": 127.87,
+            "slug": "Zymox®-Shampoo-for-Itchy-Inflamed-Skin-for-Cat-&-Dog-1-Gal-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/667334229127_540x.jpg?v=1619218861"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1584,
+        "fields": {
+            "name": "Pet Ag® KMR® Kitten Milk Replacer Powder for Kitten 12 Oz",
+            "price": 48.03,
+            "slug": "Pet-Ag®-KMR®-Kitten-Milk-Replacer-Powder-for-Kitten-12-Oz",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/020279995111_540x.jpg?v=1619217008"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1585,
+        "fields": {
+            "name": "Animal Essentials® Herbal Green Alternative Antioxidant Formula for Cat & Dog 300 Gm",
+            "price": 59.49,
+            "slug": "Animal-Essentials®-Herbal-Green-Alternative-Antioxidant-Formula-for-Cat-&-Dog-300-Gm-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/630694000040_540x.jpg?v=1619216856"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1586,
+        "fields": {
+            "name": "Pet Ag® KMR® Kitten Milk Replacer Powder for Kitten 6 Oz",
+            "price": 35.27,
+            "slug": "Pet-Ag®-KMR®-Kitten-Milk-Replacer-Powder-for-Kitten-6-Oz",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/020279995081_540x.jpg?v=1619216165"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1587,
+        "fields": {
+            "name": "Homeopet® Fireworks Homeopathic Claming Aid for Pets 15 Ml",
+            "price": 31.48,
+            "slug": "Homeopet®-Fireworks-Homeopathic-Claming-Aid-for-Pets-15-Ml-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/704959147228_76643585-50fa-4679-bf53-fa274f9a57fe_540x.jpg?v=1619216604"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1588,
+        "fields": {
+            "name": "Vetri-Science Laboratories® UT Strength Feline Bite-Sized Cat Chews 60 Count",
+            "price": 41.47,
+            "slug": "Vetri-Science-Laboratories®-UT-Strength-Feline-Bite-Sized-Cat-Chews-60-Count",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/4275561_540x.jpg?v=1619216036"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1589,
+        "fields": {
+            "name": "Vetri-Science Laboratories® Probiotic Everyday Cat Chews 60 Count",
+            "price": 26.83,
+            "slug": "Vetri-Science-Laboratories®-Probiotic-Everyday-Cat-Chews-60-Count",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/4005113_8fd16842-a724-4565-a531-d52298f96307_540x.jpg?v=1619215871"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1590,
+        "fields": {
+            "name": "Vetri-Science Laboratories® Hairball Cat Chews 60 Count",
+            "price": 23.45,
+            "slug": "Vetri-Science-Laboratories®-Hairball-Cat-Chews-60-Count",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/4005084_d7bcc8b1-bd1c-480e-9f59-9cc9a527348e_540x.jpg?v=1619215895"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1591,
+        "fields": {
+            "name": "Homeopet® Digestive Upsets Pets Supplement 15 Ml",
+            "price": 31.48,
+            "slug": "Homeopet®-Digestive-Upsets-Pets-Supplement-15-Ml-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/704959147242_20431607-a171-4ba1-a6f0-fc41aee25cfb_540x.jpg?v=1619216600"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1592,
+        "fields": {
+            "name": "Homeopet® Cough Drops for Pets 15 Ml",
+            "price": 31.48,
+            "slug": "Homeopet®-Cough-Drops-for-Pets-15-Ml-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/704959147068_ce780e05-ac3e-4bea-88a5-0506a1033b7a_540x.jpg?v=1619216599"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1593,
+        "fields": {
+            "name": "Vetri-Science Laboratories® Composure™ Feline Bite-Sized Cat Chews 30 Count",
+            "price": 23.59,
+            "slug": "Vetri-Science-Laboratories®-Composure™-Feline-Bite-Sized-Cat-Chews-30-Count-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/4278135_81f81d89-4f24-47b0-be32-b655aaf0739b_540x.jpg?v=1619215870"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1594,
+        "fields": {
+            "name": "Animal Essentials® Herbal Ear Rinse for Cat & Dog 4 Oz",
+            "price": 32.02,
+            "slug": "Animal-Essentials®-Herbal-Ear-Rinse-for-Cat-&-Dog-4-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/796289002018_4a87a88d-e905-498b-bacc-baf6912418bb_540x.jpg?v=1619215835"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1595,
+        "fields": {
+            "name": "Zymox® Shampoo for Itchy Inflamed Skin for Cat & Dog 12 Oz",
+            "price": 32.73,
+            "slug": "Zymox®-Shampoo-for-Itchy-Inflamed-Skin-for-Cat-&-Dog-12-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/667334229028_d35d384e-0445-4268-8ddc-4bb47022ba23_540x.jpg?v=1619216988"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1596,
+        "fields": {
+            "name": "Zymox® Oratene® Brushless Oral Care Water Additive for Cat & Dog 4 Oz",
+            "price": 39.49,
+            "slug": "Zymox®-Oratene®-Brushless-Oral-Care-Water-Additive-for-Cat-&-Dog-4-Oz-2",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/667334504019_540x.jpg?v=1619216104"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1597,
+        "fields": {
+            "name": "Zymox® Oratene® Brushless Oral Care Toothpaste Gel for Cat & Dog 2.5 Oz",
+            "price": 34.57,
+            "slug": "Zymox®-Oratene®-Brushless-Oral-Care-Toothpaste-Gel-for-Cat-&-Dog-2.5-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/667334502503_540x.jpg?v=1619215415"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1598,
+        "fields": {
+            "name": "Zymox® Enzymatic Ear Solution Inflammation Relief with 5% hydrocortisone for Cat & Dog 1.25 Oz",
+            "price": 46.7,
+            "slug": "Zymox®-Enzymatic-Ear-Solution-Inflammation-Relief-with-5%-hydrocortisone-for-Cat-&-Dog-1.25-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/667334211252_540x.jpg?v=1619215201"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1599,
+        "fields": {
+            "name": "Animal Essentials® Seaweed Calcium for Dogs & Cats 12 Oz",
+            "price": 54.63,
+            "slug": "Animal-Essentials®-Seaweed-Calcium-for-Dogs-&-Cats-12-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/630694000033_540x.jpg?v=1619217010"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1600,
+        "fields": {
+            "name": "Animal Essentials® Plant Enzyme & Probiotics Digestive Supplement for Cat & Dog 300 Gm",
+            "price": 63.69,
+            "slug": "Animal-Essentials®-Plant-Enzyme-&-Probiotics-Digestive-Supplement-for-Cat-&-Dog-300-Gm-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/630694000088_540x.jpg?v=1619217013"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1601,
+        "fields": {
+            "name": "Animal Essentials® Plant Enzyme & Probiotics Digestive Supplement for Cat & Dog 100 Gm",
+            "price": 32.79,
+            "slug": "Animal-Essentials®-Plant-Enzyme-&-Probiotics-Digestive-Supplement-for-Cat-&-Dog-100-Gm-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/630694000071_e28f4cb8-6a16-4f11-876f-7b0ec176484a_540x.jpg?v=1619216992"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1602,
+        "fields": {
+            "name": "Homeopet® Worms Clear Remedy for Pets 15 Ml",
+            "price": 31.48,
+            "slug": "Homeopet®-Worms-Clear-Remedy-for-Pets-15-Ml-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/704959147143_aefcb39f-0007-42ef-aa92-e91dd6f15c12_540x.jpg?v=1619216597"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1603,
+        "fields": {
+            "name": "Homeopet® Travel Anxiety Relief Natural Homeopathic Remedy for Pets 15 Ml",
+            "price": 31.48,
+            "slug": "Homeopet®-Travel-Anxiety-Relief-Natural-Homeopathic-Remedy-for-Pets-15-Ml-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/704959147211_b14d19dc-5316-48ec-a00c-c24bcbd92be2_540x.jpg?v=1619216603"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1604,
+        "fields": {
+            "name": "Homeopet® Skin & Itch Relief for Pets 15 Ml",
+            "price": 31.48,
+            "slug": "Homeopet®-Skin-&-Itch-Relief-for-Pets-15-Ml-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/704959147129_8c2f1eba-8cf7-4234-8c21-c8f7909f7133_540x.jpg?v=1619216598"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1605,
+        "fields": {
+            "name": "Homeopet® Nose Relief Homeopathic Remedy for Pets 15 Ml",
+            "price": 31.48,
+            "slug": "Homeopet®-Nose-Relief-Homeopathic-Remedy-for-Pets-15-Ml-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/704959147020_7ab48292-1079-400e-9f84-1a9e5e39c13a_540x.jpg?v=1619216602"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1606,
+        "fields": {
+            "name": "Homeopet® Leaks No More for Pets 15 Ml",
+            "price": 31.48,
+            "slug": "Homeopet®-Leaks-No-More-for-Pets-15-Ml-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/704959147273_0b71c46d-4d25-44da-a431-93d670b4c18e_540x.jpg?v=1619216601"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1607,
+        "fields": {
+            "name": "Ark Naturals® Royal Coat Express ™ Omega Mender Itch Ender Oil for Dog & Cat 16 Oz",
+            "price": 78.99,
+            "slug": "Ark-Naturals®-Royal-Coat-Express-™-Omega-Mender-Itch-Ender-Oil-for-Dog-&-Cat-16-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/4110093_540x.jpg?v=1619217418"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1608,
+        "fields": {
+            "name": "Tropiclean® Oral Care Gel for Cat",
+            "price": 22.5,
+            "slug": "Tropiclean®-Oral-Care-Gel-for-Cat-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/5001145_fb049220-49f5-4682-bc23-d0dfe8995210_540x.jpg?v=1619217234"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1609,
+        "fields": {
+            "name": "Ark Naturals® Royal Coat Express ™ Omega Mender Itch Ender Oil for Dog & Cat 8 Oz",
+            "price": 49.02,
+            "slug": "Ark-Naturals®-Royal-Coat-Express-™-Omega-Mender-Itch-Ender-Oil-for-Dog-&-Cat-8-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/81030_540x.jpg?v=1619216872"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1610,
+        "fields": {
+            "name": "Ark Naturals® Eyes So Bright for Cat & Dog 4 Oz",
+            "price": 43.24,
+            "slug": "Ark-Naturals®-Eyes-So-Bright-for-Cat-&-Dog-4-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/632634110024_540x.jpg?v=1619216632"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1611,
+        "fields": {
+            "name": "Tropiclean® Oxymed Anti-Itch Medicated Spray for Dog & Cat 8 Oz",
+            "price": 22.33,
+            "slug": "Tropiclean®-Oxymed-Anti-Itch-Medicated-Spray-for-Dog-&-Cat-8-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/5003316_fb984157-fe60-420b-98e6-044759ff9556_540x.jpg?v=1619216535"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1612,
+        "fields": {
+            "name": "Grizzly® Wild Alaskan Salmon Plus Cat Food Supplement 4 Oz",
+            "price": 20.98,
+            "slug": "Grizzly®-Wild-Alaskan-Salmon-Plus-Cat-Food-Supplement-4-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/10885_341ce4ac-5d58-47c3-981a-6b11ec0c346e_540x.jpg?v=1619216521"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1613,
+        "fields": {
+            "name": "Ark Naturals® Ears All Right for Cat & Dog 4 Oz",
+            "price": 33.4,
+            "slug": "Ark-Naturals®-Ears-All-Right-for-Cat-&-Dog-4-Oz-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/632634110031_cd711bfc-901d-4c85-905b-eb1572dd12d4_540x.jpg?v=1619216043"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1614,
+        "fields": {
+            "name": "Ark Naturals® Breath-Less Plaque-Zapper for Cat & Dog Medium to Large 30 Count",
+            "price": 38.36,
+            "slug": "Ark-Naturals®-Breath-Less-Plaque-Zapper-for-Cat-&-Dog-Medium-to-Large-30-Count-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/632634400118_540x.jpg?v=1619215910"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1615,
+        "fields": {
+            "name": "Ark Naturals® Gray Muzzle Old Dog Happy Joints Cat & Dog Chewy Treats 90 Count",
+            "price": 28.6,
+            "slug": "Ark-Naturals®-Gray-Muzzle-Old-Dog-Happy-Joints-Cat-&-Dog-Chewy-Treats-90-Count-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/632634710019_51d35c84-b9ae-46bd-a992-1db85c10352f_540x.jpg?v=1619215824"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1616,
+        "fields": {
+            "name": "Ark Naturals® Breath-Less Plaque-Zapper for Cat & Dog Small to Medium 30 Count",
+            "price": 36.88,
+            "slug": "Ark-Naturals®-Breath-Less-Plaque-Zapper-for-Cat-&-Dog-Small-to-Medium-30-Count-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/632634400101_540x.jpg?v=1619215842"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1617,
+        "fields": {
+            "name": "Ark Naturals® Gentle Digest Soft Chews for Dog 120 Count",
+            "price": 29.51,
+            "slug": "Ark-Naturals®-Gentle-Digest-Soft-Chews-for-Dog-120-Count-3",
+            "category": 2,
+            "subcategory": 9,
+            "image": "petstore.com/cdn/shop/products/632634210014_1307f5ac-265e-4ae6-be62-daf86c20abe7_540x.jpg?v=1619217570"
+        }
+    }
+]

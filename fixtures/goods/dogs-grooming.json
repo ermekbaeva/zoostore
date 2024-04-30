@@ -1,0 +1,458 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 685,
+        "fields": {
+            "name": "Tropiclean® Deep Cleaning Waterless Dog Shampoo 2.5 Gal",
+            "price": 126.34,
+            "slug": "Tropiclean®-Deep-Cleaning-Waterless-Dog-Shampoo-2.5-Gal",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/645095900127_540x.jpg?v=1619219568"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 686,
+        "fields": {
+            "name": "Tropiclean® Lime & Coconut Cat & Dog Shampoo 20 Oz",
+            "price": 25.5,
+            "slug": "Tropiclean®-Lime-&-Coconut-Cat-&-Dog-Shampoo-20-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/645095202443_13e0273a-cd92-47bf-8918-ec04f7030f97_540x.jpg?v=1619217508"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 687,
+        "fields": {
+            "name": "Ark Naturals® Neem Protect Spray for Cat & Dog 8 Oz",
+            "price": 30.09,
+            "slug": "Ark-Naturals®-Neem-Protect-Spray-for-Cat-&-Dog-8-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/632634110055_37bfc9d1-f0fd-4b96-92f5-4a25e01484f0_540x.jpg?v=1619216865"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 688,
+        "fields": {
+            "name": "Earthbath® Green Tea & Awapuhi Shed Control Shampoo for Cat & Dog 16 Oz",
+            "price": 31.05,
+            "slug": "Earthbath®-Green-Tea-&-Awapuhi-Shed-Control-Shampoo-for-Cat-&-Dog-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/4021917_5b9fa0fa-bcac-4795-b537-b79e3a575cdf_540x.jpg?v=1619217455"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 689,
+        "fields": {
+            "name": "Earthbath® Oatmeal & Aloe Shampoo for Cat & Dog 16 Oz",
+            "price": 31.05,
+            "slug": "Earthbath®-Oatmeal-&-Aloe-Shampoo-for-Cat-&-Dog-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84002_15c5ec99-e3ae-4cb4-917a-8d9a7e3037af_540x.jpg?v=1619217449"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 690,
+        "fields": {
+            "name": "Tropiclean® Berry Breeze Deodorizing Dog & Cat Spray 8 Oz",
+            "price": 22.33,
+            "slug": "Tropiclean®-Berry-Breeze-Deodorizing-Dog-&-Cat-Spray-8-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/5861312_eca22557-f62b-462d-9069-6c88458e93c6_540x.jpg?v=1619216539"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 691,
+        "fields": {
+            "name": "Tropiclean® Papaya Mist Deodorizing Dog & Cat Spray 8 Oz",
+            "price": 22.33,
+            "slug": "Tropiclean®-Papaya-Mist-Deodorizing-Dog-&-Cat-Spray-8-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/5861305_d2645f2c-998b-4914-af9d-2499489ec799_540x.jpg?v=1619216536"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 692,
+        "fields": {
+            "name": "Tropiclean® Spa Tear Stain Remover for Dogs & Cats 8 Oz",
+            "price": 115.16,
+            "slug": "Tropiclean®-Spa-Tear-Stain-Remover-for-Dogs-&-Cats-8-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/5700369_540x.jpg?v=1619216698"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 693,
+        "fields": {
+            "name": "Earthbath® Mango Tango® 2-in-1 Conditioning Shampoo for Cat & Dog 1 Gal",
+            "price": 82.37,
+            "slug": "Earthbath®-Mango-Tango®-2-in-1-Conditioning-Shampoo-for-Cat-&-Dog-1-Gal",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84078_540x.jpg?v=1619218853"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 694,
+        "fields": {
+            "name": "Earthbath® Fragrance Free Hypo-Allergenic Shampoo for Cat & Dog 1 Gal",
+            "price": 116.36,
+            "slug": "Earthbath®-Fragrance-Free-Hypo-Allergenic-Shampoo-for-Cat-&-Dog-1-Gal",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84028_540x.jpg?v=1619217837"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 695,
+        "fields": {
+            "name": "Earthbath® Oatmeal & Aloe Shampoo for Cat & Dog 1 Gal",
+            "price": 116.42,
+            "slug": "Earthbath®-Oatmeal-&-Aloe-Shampoo-for-Cat-&-Dog-1-Gal",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84105_540x.jpg?v=1619217840"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 696,
+        "fields": {
+            "name": "Tropiclean® Oxymed Hypo-Allergenic Shampoo for Dog & Cat 20 Oz",
+            "price": 26.16,
+            "slug": "Tropiclean®-Oxymed-Hypo-Allergenic-Shampoo-for-Dog-&-Cat-20-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/5003347_fbe87776-a03e-4457-ba98-3adca87ecb95_540x.jpg?v=1619217512"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 697,
+        "fields": {
+            "name": "Tropiclean® Oxymed Anti-Itch Medicated Shampoo for Dog & Cat 20 Oz",
+            "price": 26.16,
+            "slug": "Tropiclean®-Oxymed-Anti-Itch-Medicated-Shampoo-for-Dog-&-Cat-20-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/38075_d0ef90b9-d47e-4080-8b65-16a881027499_540x.jpg?v=1619217509"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 698,
+        "fields": {
+            "name": "Earthbath® Green Tea & Awapuhi Shed Control Conditioner for Cat & Dog 16 Oz",
+            "price": 31.05,
+            "slug": "Earthbath®-Green-Tea-&-Awapuhi-Shed-Control-Conditioner-for-Cat-&-Dog-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/4021924_49bc5006-07ac-463c-ac60-6e28cfb9c392_540x.jpg?v=1619217460"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 699,
+        "fields": {
+            "name": "Earthbath® Mediterranean Magic™ Deodorizing Shampoo for Cat & Dog 16 Oz",
+            "price": 31.05,
+            "slug": "Earthbath®-Mediterranean-Magic™-Deodorizing-Shampoo-for-Cat-&-Dog-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84014_0b66fdbc-7511-4bb5-aceb-c6e3fc7b0151_540x.jpg?v=1619217459"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 700,
+        "fields": {
+            "name": "Earthbath® Sweet Orange Oil Dirty Dog Shampoo 16 Oz",
+            "price": 31.05,
+            "slug": "Earthbath®-Sweet-Orange-Oil-Dirty-Dog-Shampoo-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84008_6ffbb2a1-e575-4d64-9162-dc701194694f_540x.jpg?v=1619217458"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 701,
+        "fields": {
+            "name": "Earthbath® Lavender Coat Brightening Shampoo for Cat & Dog 16 Oz",
+            "price": 31.05,
+            "slug": "Earthbath®-Lavender-Coat-Brightening-Shampoo-for-Cat-&-Dog-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84016_0623188b-0ef3-4c0f-b677-921e73758234_540x.jpg?v=1619217457"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 702,
+        "fields": {
+            "name": "Earthbath® Eucalyptus & Peppermint Soothing Stress Relief Shampoo for Cat & Dog 16 Oz",
+            "price": 31.05,
+            "slug": "Earthbath®-Eucalyptus-&-Peppermint-Soothing-Stress-Relief-Shampoo-for-Cat-&-Dog-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84006_a63e8498-c840-49bf-a8b7-1a3c7a05bfe2_540x.jpg?v=1619217456"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 703,
+        "fields": {
+            "name": "Earthbath® Oatmeal & Aloe Conditioner for Dog 16 Oz",
+            "price": 31.14,
+            "slug": "Earthbath®-Oatmeal-&-Aloe-Conditioner-for-Dog-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84018_761ce79e-4db1-4fdb-9f6b-af9800eda9ca_540x.jpg?v=1619217462"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 704,
+        "fields": {
+            "name": "Earthbath® Wild Cherry Ultra-Mild Puppy Shampoo 16 Oz",
+            "price": 31.05,
+            "slug": "Earthbath®-Wild-Cherry-Ultra-Mild-Puppy-Shampoo-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84005_7efa521e-4fca-463e-9616-6aaf3e680d69_540x.jpg?v=1619217454"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 705,
+        "fields": {
+            "name": "Earthbath® Tea Tree & Aloe Vera Hot Spot Relief Shampoo for Cat & Dog 16 Oz",
+            "price": 31.05,
+            "slug": "Earthbath®-Tea-Tree-&-Aloe-Vera-Hot-Spot-Relief-Shampoo-for-Cat-&-Dog-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84012_3e40a056-6202-4b2a-af58-342d7ffc0c9a_540x.jpg?v=1619217452"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 706,
+        "fields": {
+            "name": "Earthbath® Mango Tango® 2-in-1 Conditioning Shampoo for Cat & Dog 16 Oz",
+            "price": 31.05,
+            "slug": "Earthbath®-Mango-Tango®-2-in-1-Conditioning-Shampoo-for-Cat-&-Dog-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84000_32a2b5e9-5e4f-4412-8fce-efebd07148c1_540x.jpg?v=1619217452"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 707,
+        "fields": {
+            "name": "Earthbath® Fragrance Free Hypo-Allergenic Shampoo for Cat & Dog 16 Oz",
+            "price": 31.05,
+            "slug": "Earthbath®-Fragrance-Free-Hypo-Allergenic-Shampoo-for-Cat-&-Dog-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84010_4d49e633-5351-4069-afe0-b1d206ec2be5_540x.jpg?v=1619217450"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 708,
+        "fields": {
+            "name": "Earthbath® Fragrance Free Oatmeal & Aloe Conditioner for Cat & Dog 16 Oz",
+            "price": 30.99,
+            "slug": "Earthbath®-Fragrance-Free-Oatmeal-&-Aloe-Conditioner-for-Cat-&-Dog-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/4021412_a2dfcb88-2cfe-4896-8eab-ae12d5c19a4b_540x.jpg?v=1619217286"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 709,
+        "fields": {
+            "name": "Earthbath® Fragrance Free Oatmeal & Aloe Shampoo for Cat & Dog 16 Oz",
+            "price": 30.99,
+            "slug": "Earthbath®-Fragrance-Free-Oatmeal-&-Aloe-Shampoo-for-Cat-&-Dog-16-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/4021818_b55a94e5-2bb7-4340-8d6e-57ba934ec69d_540x.jpg?v=1619217285"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 710,
+        "fields": {
+            "name": "Earthbath® Wild Cherry Puppy Spritz 8 Oz",
+            "price": 24.9,
+            "slug": "Earthbath®-Wild-Cherry-Puppy-Spritz-8-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/4022075_01c3fed0-f28a-496a-ad9b-1bd43f106ea9_540x.jpg?v=1619216880"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 711,
+        "fields": {
+            "name": "Earthbath® Mediterranean Magic™ 3-in-1 Deodorizing Spritz For Dog 8 Oz",
+            "price": 24.9,
+            "slug": "Earthbath®-Mediterranean-Magic™-3-in-1-Deodorizing-Spritz-For-Dog-8-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84038_afb537fc-af89-49ab-8985-f74edc3caec4_540x.jpg?v=1619216879"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 712,
+        "fields": {
+            "name": "Earthbath® Lavender 3-in-1 Deodorizing Spritz For Dog 8 Oz",
+            "price": 24.9,
+            "slug": "Earthbath®-Lavender-3-in-1-Deodorizing-Spritz-For-Dog-8-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84036_22df20b5-96d6-4923-a568-254157317a13_540x.jpg?v=1619216878"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 713,
+        "fields": {
+            "name": "Earthbath® Mango Tango® 3-in-1 Deodorizing Spritz For Dog 8 Oz",
+            "price": 24.9,
+            "slug": "Earthbath®-Mango-Tango®-3-in-1-Deodorizing-Spritz-For-Dog-8-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84030_e06aebaf-44cd-44d9-abbb-527897472d3a_540x.jpg?v=1619216877"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 714,
+        "fields": {
+            "name": "Earthbath® Vanilla & Almond 3-in-1 Deodorizing Spritz for Dog 8 Oz",
+            "price": 24.9,
+            "slug": "Earthbath®-Vanilla-&-Almond-3-in-1-Deodorizing-Spritz-for-Dog-8-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84032_9f0be018-a7fb-435c-aa70-d69d10718444_540x.jpg?v=1619216875"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 715,
+        "fields": {
+            "name": "Earthbath® Tea Tree Oil & Aloe Vera Hot Spot Relief Spritz for Dog 8 Oz",
+            "price": 24.9,
+            "slug": "Earthbath®-Tea-Tree-Oil-&-Aloe-Vera-Hot-Spot-Relief-Spritz-for-Dog-8-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/84040_73b7aea4-6bd0-4d8a-a241-bfb8431b564f_540x.jpg?v=1619216874"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 716,
+        "fields": {
+            "name": "Ark Naturals® Neem Protect Shampoo for Cat & Dog 8 Oz",
+            "price": 27.6,
+            "slug": "Ark-Naturals®-Neem-Protect-Shampoo-for-Cat-&-Dog-8-Oz",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/632634110048_54cc4194-8f3f-4031-84b5-36a5e4f7193b_540x.jpg?v=1619216864"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 717,
+        "fields": {
+            "name": "Tropiclean® Oral Care Kit for Puppies 59 Ml",
+            "price": 25.27,
+            "slug": "Tropiclean®-Oral-Care-Kit-for-Puppies-59-Ml",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/5002005_dcf8dc0d-8dcc-470a-8c51-a689db49b923_540x.jpg?v=1619216031"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 718,
+        "fields": {
+            "name": "Kong® Dog Zoomgroom™ Raspberry",
+            "price": 21.75,
+            "slug": "Kong®-Dog-Zoomgroom™-Raspberry",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/035585511139_0c353e98-df67-495a-be89-4de330cd2f43_540x.jpg?v=1619215941"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 719,
+        "fields": {
+            "name": "Kong® Dog Zoomgroom™ Boysenberry",
+            "price": 21.75,
+            "slug": "Kong®-Dog-Zoomgroom™-Boysenberry",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/035585511115_d216079d-910f-4b85-b3f8-abb448193bde_540x.jpg?v=1619215940"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 720,
+        "fields": {
+            "name": "Earthbath® Tooth & Gum Wipes for Cat & Dog 25 Count",
+            "price": 21.01,
+            "slug": "Earthbath®-Tooth-&-Gum-Wipes-for-Cat-&-Dog-25-Count",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/4023102_b20def7c-848d-4ddf-bc96-b58ce6e63c6a_540x.jpg?v=1619215758"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 721,
+        "fields": {
+            "name": "Earthbath® Ear Wipes for Cat & Dog 25 Count",
+            "price": 21.01,
+            "slug": "Earthbath®-Ear-Wipes-for-Cat-&-Dog-25-Count",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/4023034_16795a88-ce04-4327-b892-1386f6afc17e_540x.jpg?v=1619215757"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 722,
+        "fields": {
+            "name": "Earthbath® Eye Wipes for Cat & Dog 25 Count",
+            "price": 21.01,
+            "slug": "Earthbath®-Eye-Wipes-for-Cat-&-Dog-25-Count",
+            "category": 3,
+            "subcategory": 18,
+            "image": "petstore.com/cdn/shop/products/4023041_38057495-3a63-452e-a76c-11aae1fb5b3a_540x.jpg?v=1619215756"
+        }
+    }
+]

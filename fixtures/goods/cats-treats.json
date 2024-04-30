@@ -1,0 +1,554 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 1827,
+        "fields": {
+            "name": "Grandma Lucy’s® Freeze Dried Liver Single Ingredient Cat & Dog Treats 3 Oz",
+            "price": 26.38,
+            "slug": "Grandma-Lucy’s®-Freeze-Dried-Liver-Single-Ingredient-Cat-&-Dog-Treats-3-Oz-3",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/884308580026_9dd45930-2520-4cd1-8716-1ea3898cd4b5_540x.jpg?v=1619215815"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1828,
+        "fields": {
+            "name": "Grandma Lucy’s® Freeze Dried Chicken Single Ingredient Cat & Dog Treats 4 Oz",
+            "price": 26.38,
+            "slug": "Grandma-Lucy’s®-Freeze-Dried-Chicken-Single-Ingredient-Cat-&-Dog-Treats-4-Oz-3",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/884308580019_9a80853c-af73-4ede-891c-88f39b555c04_540x.jpg?v=1619215814"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1829,
+        "fields": {
+            "name": "Ducky World Yeowww!® Catnip Tub 2 Oz",
+            "price": 20.09,
+            "slug": "Ducky-World-Yeowww!®-Catnip-Tub-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/812402000027_17a52762-257a-46bf-b3e4-c8b3ab946d48_540x.jpg?v=1619215261"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1830,
+        "fields": {
+            "name": "Wellness® Complete Health™ Kittles™ Grain Free Turkey & Cranberries Recipe Crunchy Cat Treats 2 Oz",
+            "price": 11.39,
+            "slug": "Wellness®-Complete-Health™-Kittles™-Grain-Free-Turkey-&-Cranberries-Recipe-Crunchy-Cat-Treats-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/076344900566_3ede8477-45d4-4e73-833b-c501bcb5abc8_540x.jpg?v=1619215453"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1831,
+        "fields": {
+            "name": "Wellness® Complete Health™ Kittles™ Grain Free Tuna & Cranberries Recipe Crunchy Cat Treats 2 Oz",
+            "price": 11.36,
+            "slug": "Wellness®-Complete-Health™-Kittles™-Grain-Free-Tuna-&-Cranberries-Recipe-Crunchy-Cat-Treats-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/076344900351_57f64f7f-294d-47aa-adf8-97dac5be2900_540x.jpg?v=1619215247"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1832,
+        "fields": {
+            "name": "Wellness® Complete Health™ Kittles™ Grain Free Salmon & Cranberries Recipe Crunchy Cat Treats 2 Oz",
+            "price": 11.36,
+            "slug": "Wellness®-Complete-Health™-Kittles™-Grain-Free-Salmon-&-Cranberries-Recipe-Crunchy-Cat-Treats-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/076344900337_20113fca-4040-45ac-b6ed-c959ebbf6786_540x.jpg?v=1619215246"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1833,
+        "fields": {
+            "name": "Wellness® Complete Health™ Kittles™ Grain Free Chicken & Cranberries Recipe Cat Treats 2 Oz",
+            "price": 11.36,
+            "slug": "Wellness®-Complete-Health™-Kittles™-Grain-Free-Chicken-&-Cranberries-Recipe-Cat-Treats-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/076344900344_a16f8b00-f6de-4318-b953-51f550143cc1_540x.jpg?v=1619215245"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1834,
+        "fields": {
+            "name": "Sojos® Natural Cat Turkey Liver Recipe Cat Treats 1 Oz",
+            "price": 17.5,
+            "slug": "Sojos®-Natural-Cat-Turkey-Liver-Recipe-Cat-Treats-1-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/9792250_cadc6cea-c02e-4b91-8b3f-157cb243ed95_540x.jpg?v=1619215089"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1835,
+        "fields": {
+            "name": "Meowijuana® Passion Flower, Lavender, & Catnip Blend Mice Dreams for Cat 26 Gm",
+            "price": 21.38,
+            "slug": "Meowijuana®-Passion-Flower,-Lavender,-&-Catnip-Blend-Mice-Dreams-for-Cat-26-Gm",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/714929800251_815d1319-0f6f-439c-9f68-3dac46d4ca35_540x.jpg?v=1619215461"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1836,
+        "fields": {
+            "name": "Meowijuana® Organic Catnip Spray 3 Oz",
+            "price": 22.13,
+            "slug": "Meowijuana®-Organic-Catnip-Spray-3-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/714929800121_1dee5aff-afba-4c06-83e1-8eee47db395f_540x.jpg?v=1619215468"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1837,
+        "fields": {
+            "name": "Meowijuana® Silvervine Sticks for Cat 6 Pack",
+            "price": 21.99,
+            "slug": "Meowijuana®-Silvervine-Sticks-for-Cat-6-Pack",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/714929807137_f5296d2b-cc94-42d9-a3db-899ef7cafbd5_540x.jpg?v=1619214995"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1838,
+        "fields": {
+            "name": "Meowijuana® Kalico Kush - Valerian Root & Catnip Blend Large 26 Gm",
+            "price": 21.56,
+            "slug": "Meowijuana®-Kalico-Kush---Valerian-Root-&-Catnip-Blend-Large-26-Gm",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/859442005124_15bc2be2-87f5-4bc1-bc56-e218eb4c5bbe_540x.jpg?v=1619215466"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1839,
+        "fields": {
+            "name": "Meowijuana® Crunchie Munchie Tuna Cat Treats 3 Oz",
+            "price": 17.6,
+            "slug": "Meowijuana®-Crunchie-Munchie-Tuna-Cat-Treats-3-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/714929807168_3fc445dc-8e33-465d-8fd4-f2a7c14243a8_540x.jpg?v=1619215902"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1840,
+        "fields": {
+            "name": "Holistic Hound® Lamb PCR Hemp & Mushroom Bite 7.5mg Cat & Dog Treats 40 Count",
+            "price": 71.62,
+            "slug": "Holistic-Hound®-Lamb-PCR-Hemp-&-Mushroom-Bite-7.5mg-Cat-&-Dog-Treats-40-Count-3",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/853028008028_540x.jpg?v=1619216339"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1841,
+        "fields": {
+            "name": "Redbarn® Salmon Protein Puffs High Protien Cat Treats",
+            "price": 13.38,
+            "slug": "Redbarn®-Salmon-Protein-Puffs-High-Protien-Cat-Treats",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/785184000267_7122cf06-97eb-43c2-a918-80169cfb2af8_540x.jpg?v=1619215043"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1842,
+        "fields": {
+            "name": "Redbarn® Chicken Protein Puffs High Protien Cat Treats",
+            "price": 13.38,
+            "slug": "Redbarn®-Chicken-Protein-Puffs-High-Protien-Cat-Treats",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/785184000304_c0111bda-fefa-4320-ae31-9d9d1472fa82_540x.jpg?v=1619215041"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1843,
+        "fields": {
+            "name": "Meowijuana® Purrple Passion - Silvervine & Catnip Blend Large 26 Gm",
+            "price": 21.56,
+            "slug": "Meowijuana®-Purrple-Passion---Silvervine-&-Catnip-Blend-Large-26-Gm",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/859442005100_6b568c72-8089-4acb-b271-3a9fda5254ae_540x.jpg?v=1619215464"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1844,
+        "fields": {
+            "name": "Meowijuana® Meowi-Waui - Primo Kitty Weed Large 18 Gm",
+            "price": 28.67,
+            "slug": "Meowijuana®-Meowi-Waui---Primo-Kitty-Weed-Large-18-Gm",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/859442005148_7507784e-8eed-4c9a-82bd-e7e31f09b515_540x.jpg?v=1619215479"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1845,
+        "fields": {
+            "name": "Meowijuana® Chamomile, Dandelion, & Catnip Blend Whisker Tickler for Cat 26 Gm",
+            "price": 21.38,
+            "slug": "Meowijuana®-Chamomile,-Dandelion,-&-Catnip-Blend-Whisker-Tickler-for-Cat-26-Gm",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/714929800244_a1e29b98-ef4c-4123-9910-71ad0b91e412_540x.jpg?v=1619215463"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1846,
+        "fields": {
+            "name": "Meowijuana® Catnip Spray 1 Oz",
+            "price": 20.16,
+            "slug": "Meowijuana®-Catnip-Spray-1-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/859442005964_5ffd5878-c2b4-4ec1-bdd6-c77ed3eb0e69_540x.jpg?v=1619215285"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1847,
+        "fields": {
+            "name": "Meowijuana® Catnibas™ King Meowy J's 7 Gm",
+            "price": 25.7,
+            "slug": "Meowijuana®-Catnibas™-King-Meowy-J's-7-Gm",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/714929799968_3e0addec-dfc8-4054-88be-0ded46f647c4_540x.jpg?v=1619215471"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1848,
+        "fields": {
+            "name": "Holistic Hound® Lamb PCR Hemp & Mushroom Bite 3mg Cat & Dog Treats 40 Count",
+            "price": 49.55,
+            "slug": "Holistic-Hound®-Lamb-PCR-Hemp-&-Mushroom-Bite-3mg-Cat-&-Dog-Treats-40-Count",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/853028008011_540x.jpg?v=1619216410"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1849,
+        "fields": {
+            "name": "Holistic Hound® Lamb PCR Hemp & Mushroom Bite 3mg Cat & Dog Treats 15 Count",
+            "price": 28.81,
+            "slug": "Holistic-Hound®-Lamb-PCR-Hemp-&-Mushroom-Bite-3mg-Cat-&-Dog-Treats-15-Count",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/867199000248_1043ee49-c5ef-4bd5-a071-356dd449a099_540x.jpg?v=1619215409"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1850,
+        "fields": {
+            "name": "Holistic Hound® Lamb PCR Hemp & Mushroom Bite 7.5mg Cat & Dog Treats 15 Count",
+            "price": 35.95,
+            "slug": "Holistic-Hound®-Lamb-PCR-Hemp-&-Mushroom-Bite-7.5mg-Cat-&-Dog-Treats-15-Count",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/853028008004_540x.jpg?v=1619216337"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1851,
+        "fields": {
+            "name": "Holistic Hound® Chicken PCR Hemp & Mushroom Bite 7.5mg Cat & Dog Treats 0.7 Oz Trial Pack",
+            "price": 17.43,
+            "slug": "Holistic-Hound®-Chicken-PCR-Hemp-&-Mushroom-Bite-7.5mg-Cat-&-Dog-Treats-0.7-Oz-Trial-Pack",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/867199000217_4359f6ff-cb21-4ab4-9d16-46be093bf757_540x.jpg?v=1619214977"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1852,
+        "fields": {
+            "name": "Holistic Hound® Chicken PCR Hemp & Mushroom Bite 3mg Cat & Dog Treats 7 Oz",
+            "price": 49.82,
+            "slug": "Holistic-Hound®-Chicken-PCR-Hemp-&-Mushroom-Bite-3mg-Cat-&-Dog-Treats-7-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/867199000262_540x.jpg?v=1619216413"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1853,
+        "fields": {
+            "name": "Green Coast Pet™ Full-Spectrum Hemp Whitefish Flavor Soft Chews Cat Treats 1.6 Oz",
+            "price": 28.19,
+            "slug": "Green-Coast-Pet™-Full-Spectrum-Hemp-Whitefish-Flavor-Soft-Chews-Cat-Treats-1.6-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/869121000470_ce544066-46c9-4649-8db4-9b818c71dd5a_540x.jpg?v=1619215185"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1854,
+        "fields": {
+            "name": "Blue Buffalo® Wilderness™ Grain Free Chicken & Turkey Soft-Moist Cat Treats 2 Oz",
+            "price": 14.67,
+            "slug": "Blue-Buffalo®-Wilderness™-Grain-Free-Chicken-&-Turkey-Soft-Moist-Cat-Treats-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/859610007905_9c6483fc-2b37-4ae2-ba83-4856303757cf_540x.jpg?v=1619215275"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1855,
+        "fields": {
+            "name": "Blue Buffalo® Wilderness™ Grain Free Chicken & Salmon Soft-Moist Cat Treats 2 Oz",
+            "price": 14.67,
+            "slug": "Blue-Buffalo®-Wilderness™-Grain-Free-Chicken-&-Salmon-Soft-Moist-Cat-Treats-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/859610007943_8484fd6e-eecc-4429-93cf-72cd8c41535a_540x.jpg?v=1619215273"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1856,
+        "fields": {
+            "name": "Blue Buffalo® Wilderness™ Grain Free Chicken & Duck Soft-Moist Cat Treats 2 Oz",
+            "price": 14.67,
+            "slug": "Blue-Buffalo®-Wilderness™-Grain-Free-Chicken-&-Duck-Soft-Moist-Cat-Treats-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/859610008315_291a2c3f-4beb-4561-8f44-e4513b4b779b_540x.jpg?v=1619215277"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1857,
+        "fields": {
+            "name": "Holistic Hound® Chicken PCR Hemp & Mushroom Bite 7.5mg Cat & Dog Treats 7 Oz",
+            "price": 72.14,
+            "slug": "Holistic-Hound®-Chicken-PCR-Hemp-&-Mushroom-Bite-7.5mg-Cat-&-Dog-Treats-7-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/867199000200_540x.jpg?v=1619216416"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1858,
+        "fields": {
+            "name": "Holistic Hound® Chicken PCR Hemp & Mushroom Bite 3mg Cat & Dog Treats 0.7 Oz Trial Pack",
+            "price": 14.58,
+            "slug": "Holistic-Hound®-Chicken-PCR-Hemp-&-Mushroom-Bite-3mg-Cat-&-Dog-Treats-0.7-Oz-Trial-Pack",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/867199000255_f5f4dd27-624f-42c2-a310-7713394fb7b0_540x.jpg?v=1619214973"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1859,
+        "fields": {
+            "name": "Castor & Pollux® Organix® Chicken Recipe Organic Cat Treats 2 Oz",
+            "price": 15.29,
+            "slug": "Castor-&-Pollux®-Organix®-Chicken-Recipe-Organic-Cat-Treats-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/780872085120_d2c4f19b-158a-4d2e-9ad3-007b985a9d5b_540x.jpg?v=1619215258"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1860,
+        "fields": {
+            "name": "Blue Buffalo® Wilderness™ Trout Flavor Grain Free Crunchy Cat Treats 2 Oz",
+            "price": 12.0,
+            "slug": "Blue-Buffalo®-Wilderness™-Trout-Flavor-Grain-Free-Crunchy-Cat-Treats-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/840243120338_faedc169-74ac-4fcb-a8ec-ab41af59af62_540x.jpg?v=1619215343"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1861,
+        "fields": {
+            "name": "Blue Buffalo® Wilderness™ Salmon Flavor Grain Free Crunchy Cat Treats 2 Oz",
+            "price": 12.0,
+            "slug": "Blue-Buffalo®-Wilderness™-Salmon-Flavor-Grain-Free-Crunchy-Cat-Treats-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/840243120314_4f298ad4-573c-489f-8360-33dc7f088ec5_540x.jpg?v=1619215340"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1862,
+        "fields": {
+            "name": "Blue Buffalo® Wilderness™ Grain Free Chicken & Trout Soft-Moist Cat Treats 2 Oz",
+            "price": 14.67,
+            "slug": "Blue-Buffalo®-Wilderness™-Grain-Free-Chicken-&-Trout-Soft-Moist-Cat-Treats-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/859610007967_0ec320e0-c10e-48c7-bf77-4b1b7365cffe_540x.jpg?v=1619215276"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1863,
+        "fields": {
+            "name": "Blue Buffalo® Wilderness™ Chicken Flavor Grain Free Crunchy Cat Treats 2 Oz",
+            "price": 12.0,
+            "slug": "Blue-Buffalo®-Wilderness™-Chicken-Flavor-Grain-Free-Crunchy-Cat-Treats-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/840243120291_dca04585-6bf8-4106-a99e-02ce82681685_540x.jpg?v=1619215341"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1864,
+        "fields": {
+            "name": "Blue Buffalo® Kitty Cravings® with Real Chicken Crunchy Cat Treats 2 Oz",
+            "price": 11.64,
+            "slug": "Blue-Buffalo®-Kitty-Cravings®-with-Real-Chicken-Crunchy-Cat-Treats-2-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/840243120215_76b47606-e94f-47cc-b368-27f018d0f66e_540x.jpg?v=1619215337"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1865,
+        "fields": {
+            "name": "Cat-Man-Doo™ X-Large Dried Bonito Flakes Cat Treats 1 Oz",
+            "price": 22.41,
+            "slug": "Cat-Man-Doo™-X-Large-Dried-Bonito-Flakes-Cat-Treats-1-Oz-3",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/689076840620_efd92142-efe3-4a1c-b29d-2a9e399664b7_540x.jpg?v=1619215022"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1866,
+        "fields": {
+            "name": "Cat-Man-Doo™ Life Essentials Freeze-Dried Chicken Cat Treats 2 Oz",
+            "price": 24.32,
+            "slug": "Cat-Man-Doo™-Life-Essentials-Freeze-Dried-Chicken-Cat-Treats-2-Oz-3",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/705105790350_e27cdded-8edc-4e5d-9ed8-95205b6587c5_540x.jpg?v=1619215263"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1867,
+        "fields": {
+            "name": "Cat-Man-Doo™ X-Large Dried Bonito Flakes Cat Treats 0.5 Oz",
+            "price": 18.66,
+            "slug": "Cat-Man-Doo™-X-Large-Dried-Bonito-Flakes-Cat-Treats-0.5-Oz-3",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/689076260428_8e41c557-fab1-471b-bc91-ca064476e0cc_540x.jpg?v=1619214979"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1868,
+        "fields": {
+            "name": "Cat-Man-Doo™ Life Essentials Freeze Dried Sirloin Beef Nugget for Cat & Dog 3 Oz",
+            "price": 28.1,
+            "slug": "Cat-Man-Doo™-Life-Essentials-Freeze-Dried-Sirloin-Beef-Nugget-for-Cat-&-Dog-3-Oz-3",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/705105945026_47898c34-d066-47e7-96fa-bcc0bf247101_540x.jpg?v=1619215451"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1869,
+        "fields": {
+            "name": "Kong® Naturals Catnip Spray Cat Treats 1 Oz Small",
+            "price": 16.26,
+            "slug": "Kong®-Naturals-Catnip-Spray-Cat-Treats-1-Oz-Small",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/035585211220_073e7a7a-6710-4c89-b8d7-9b56b23453c6_540x.jpg?v=1619215055"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1870,
+        "fields": {
+            "name": "Wellness® Complete Health™ Kittles™ Grain Free Salmon & Cranberries Recipe Crunchy Cat Treats 6 Oz",
+            "price": 15.33,
+            "slug": "Wellness®-Complete-Health™-Kittles™-Grain-Free-Salmon-&-Cranberries-Recipe-Crunchy-Cat-Treats-6-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/076344900641_8856c908-bfc0-41bf-a2ac-0f0a7585053d_540x.jpg?v=1619216213"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1871,
+        "fields": {
+            "name": "Wellness® Complete Health™ Kittles™ Grain Free Tuna & Cranberries Recipe Crunchy Cat Treats 6 Oz",
+            "price": 15.33,
+            "slug": "Wellness®-Complete-Health™-Kittles™-Grain-Free-Tuna-&-Cranberries-Recipe-Crunchy-Cat-Treats-6-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/076344900597_3605188b-cd39-4520-8757-244c7a1b7798_540x.jpg?v=1619216211"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1872,
+        "fields": {
+            "name": "Kong® Naturals Premium Catnip Cat Treats 1 Oz",
+            "price": 14.19,
+            "slug": "Kong®-Naturals-Premium-Catnip-Cat-Treats-1-Oz",
+            "category": 2,
+            "subcategory": 7,
+            "image": "petstore.com/cdn/shop/products/035585450155_e7a852cf-9e15-4984-8f55-633824eb965a_540x.jpg?v=1619215052"
+        }
+    }
+]

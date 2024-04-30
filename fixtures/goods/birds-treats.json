@@ -1,0 +1,194 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 1998,
+        "fields": {
+            "name": "Lafeber's® Tropical Fruit Nutri-Berries for Parakeet, Cockatiels & Lovebirds 10 Oz",
+            "price": 20.75,
+            "slug": "Lafeber's®-Tropical-Fruit-Nutri-Berries-for-Parakeet,-Cockatiels-&-Lovebirds-10-Oz",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/041054826406_bf190c1e-cd3f-49b4-abbf-12da12ca75e1_540x.jpg?v=1619216824"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1999,
+        "fields": {
+            "name": "Lafeber's® Sunny Orchard Nutri-Berries for Parakeet, Cockatiel, Lovebird, & Conure 10 Lbs",
+            "price": 19.65,
+            "slug": "Lafeber's®-Sunny-Orchard-Nutri-Berries-for-Parakeet,-Cockatiel,-Lovebird,-&-Conure-10-Lbs",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/041054828400_e95c582b-8cea-4710-a0ad-6a6f7851069d_540x.jpg?v=1619218911"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2000,
+        "fields": {
+            "name": "Lafeber's® Cockatiel Nutri-Berries for Birds 4 Lbs",
+            "price": 64.8,
+            "slug": "Lafeber's®-Cockatiel-Nutri-Berries-for-Birds-4-Lbs",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/041054816421_540x.jpg?v=1619218348"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2001,
+        "fields": {
+            "name": "Lafeber's® Tropical Fruit Nutri-Berries for Parrots 10 Oz",
+            "price": 20.98,
+            "slug": "Lafeber's®-Tropical-Fruit-Nutri-Berries-for-Parrots-10-Oz",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/041054826505_67af8676-87d1-4545-a05f-e0e5de35697b_540x.jpg?v=1619216909"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2002,
+        "fields": {
+            "name": "Lafeber's® Tropical Fruit Nutri-Berries for Macaws & Cockatoos 10 Oz",
+            "price": 21.14,
+            "slug": "Lafeber's®-Tropical-Fruit-Nutri-Berries-for-Macaws-&-Cockatoos-10-Oz",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/041054826604_38dd4e3a-7d88-4286-906c-297fb66d059c_540x.jpg?v=1619216825"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2003,
+        "fields": {
+            "name": "Lafeber's® Sunny Orchard Nutri-Berries for Parrots 10 Lbs",
+            "price": 19.79,
+            "slug": "Lafeber's®-Sunny-Orchard-Nutri-Berries-for-Parrots-10-Lbs",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/041054828509_e805168b-b3aa-431d-8bd4-35079cbeb373_540x.jpg?v=1619218913"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2004,
+        "fields": {
+            "name": "Lafeber's® Garden Veggie Nutri-Berries for Parrots 10 Lbs",
+            "price": 19.91,
+            "slug": "Lafeber's®-Garden-Veggie-Nutri-Berries-for-Parrots-10-Lbs",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/041054823504_7195890f-e8f7-4823-b379-040cc618f2d3_540x.jpg?v=1619218914"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2005,
+        "fields": {
+            "name": "Lafeber's® Avi-Cakes for Small Birds 8 Lbs",
+            "price": 16.33,
+            "slug": "Lafeber's®-Avi-Cakes-for-Small-Birds-8-Lbs",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/041054860103_50806380-1ea9-44cf-8918-314bc0bf56a6_540x.jpg?v=1619218830"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2006,
+        "fields": {
+            "name": "Lafeber's® Avi-Cakes for Parrots 12 Lbs",
+            "price": 18.53,
+            "slug": "Lafeber's®-Avi-Cakes-for-Parrots-12-Lbs",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/041054860301_799aef3a-5ab9-4c45-abe5-4a73dfeab850_540x.jpg?v=1619219087"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2007,
+        "fields": {
+            "name": "Lafeber's® Avi-Cakes for Cockatoos & Macaws 1 Lbs",
+            "price": 23.22,
+            "slug": "Lafeber's®-Avi-Cakes-for-Cockatoos-&-Macaws-1-Lbs",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/041054860509_d99bbdec-6a8b-4ef5-b8f7-c0f22e10ac32_540x.jpg?v=1619217236"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2008,
+        "fields": {
+            "name": "Lafeber's® El Paso Nutri-Berries for Parrots 10 Lbs",
+            "price": 19.91,
+            "slug": "Lafeber's®-El-Paso-Nutri-Berries-for-Parrots-10-Lbs",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/041054821500_ff380da3-92c0-4b8a-9f86-ef234779b39a_540x.jpg?v=1619218915"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2009,
+        "fields": {
+            "name": "Sunseed® Fantasy Fruit Mix Treats for Cockatiels & LoveBirds 11 Oz",
+            "price": 18.27,
+            "slug": "Sunseed®-Fantasy-Fruit-Mix-Treats-for-Cockatiels-&-LoveBirds-11-Oz",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/5593054_9ef17382-d834-4542-a06c-22c46e086553_540x.jpg?v=1619217189"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2010,
+        "fields": {
+            "name": "Sunseed® Fabulous Fruit Mix Treats for Parrots & Conures 12 Oz",
+            "price": 18.27,
+            "slug": "Sunseed®-Fabulous-Fruit-Mix-Treats-for-Parrots-&-Conures-12-Oz",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/5592057_6414648b-665d-4773-9501-61b60c4f5528_540x.jpg?v=1619217188"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2011,
+        "fields": {
+            "name": "Sunseed® Golden Millet Spray Natural Birds Treats 7 Oz",
+            "price": 15.94,
+            "slug": "Sunseed®-Golden-Millet-Spray-Natural-Birds-Treats-7-Oz",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/5109712_83403d88-bf62-4d5c-b5b7-401b3e0151c7_540x.jpg?v=1619216469"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2012,
+        "fields": {
+            "name": "Sunseed® Golden Millet Spray Natural Birds Treats 4 Oz",
+            "price": 12.66,
+            "slug": "Sunseed®-Golden-Millet-Spray-Natural-Birds-Treats-4-Oz",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/5109415_b92f3dff-1b63-443f-8dc3-dc9dadc0fb2a_540x.jpg?v=1619215918"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2013,
+        "fields": {
+            "name": "Sunseed® Garden Goodies Positively Papaya Tropical Treats for Birds & Small Animals 5 Oz",
+            "price": 14.91,
+            "slug": "Sunseed®-Garden-Goodies-Positively-Papaya-Tropical-Treats-for-Birds-&-Small-Animals-5-Oz",
+            "category": 4,
+            "subcategory": 25,
+            "image": "petstore.com/cdn/shop/products/5330192_1706d298-84f3-4887-b9b0-e9771b209873_540x.jpg?v=1619215922"
+        }
+    }
+]

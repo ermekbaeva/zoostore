@@ -1,0 +1,158 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 1524,
+        "fields": {
+            "name": "Loving Pets® Bella Bowls Classic Pet Dish Merlot Color Medium",
+            "price": 23.82,
+            "slug": "Loving-Pets®-Bella-Bowls-Classic-Pet-Dish-Merlot-Color-Medium",
+            "category": 2,
+            "subcategory": 5,
+            "image": "petstore.com/cdn/shop/products/842982074132_ca1bc466-96b5-4ef2-bc93-6959d4bd4d46_540x.jpg?v=1619217247"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1525,
+        "fields": {
+            "name": "Loving Pets® Bella Bowls Mettalic Pet Dish Grape Color Medium",
+            "price": 23.82,
+            "slug": "Loving-Pets®-Bella-Bowls-Mettalic-Pet-Dish-Grape-Color-Medium",
+            "category": 2,
+            "subcategory": 5,
+            "image": "petstore.com/cdn/shop/products/842982074590_378efc57-c509-4d5a-bf53-3fcfddf467ad_540x.jpg?v=1619217248"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1526,
+        "fields": {
+            "name": "Loving Pets® Bella Bowls Classic Pet Dish Espresso Color Medium",
+            "price": 23.82,
+            "slug": "Loving-Pets®-Bella-Bowls-Classic-Pet-Dish-Espresso-Color-Medium",
+            "category": 2,
+            "subcategory": 5,
+            "image": "petstore.com/cdn/shop/products/842982074057_c0748495-fbae-4103-af86-50c98c297e60_540x.jpg?v=1619217246"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1527,
+        "fields": {
+            "name": "PetSafe® Drinkwell® 360 Stainless Multi-Pet Pet Fountain for Cat & Dog",
+            "price": 184.87,
+            "slug": "PetSafe®-Drinkwell®-360-Stainless-Multi-Pet-Pet-Fountain-for-Cat-&-Dog",
+            "category": 2,
+            "subcategory": 5,
+            "image": "petstore.com/cdn/shop/products/729849137059_540x.jpg?v=1619218485"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1528,
+        "fields": {
+            "name": "Petmate® Stainless Steel Replendish Waterer Color 1 GAL Small",
+            "price": 87.22,
+            "slug": "Petmate®-Stainless-Steel-Replendish-Waterer-Color-1-GAL-Small",
+            "category": 2,
+            "subcategory": 5,
+            "image": "petstore.com/cdn/shop/products/029695243455_540x.jpg?v=1619217560"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1529,
+        "fields": {
+            "name": "OurPets® Premium Rubber-Bonded Stainless Steel Cat Dish 8 Oz",
+            "price": 17.71,
+            "slug": "OurPets®-Premium-Rubber-Bonded-Stainless-Steel-Cat-Dish-8-Oz",
+            "category": 2,
+            "subcategory": 5,
+            "image": "None"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1530,
+        "fields": {
+            "name": "Spot® Stoneware Saucer for Cat/Reptile 5 Inch",
+            "price": 15.83,
+            "slug": "Spot®-Stoneware-Saucer-for-Cat/Reptile-5-Inch",
+            "category": 2,
+            "subcategory": 5,
+            "image": "petstore.com/cdn/shop/products/077234061190_5f7366d2-6932-49bd-896b-6e560e3a3b53_540x.jpg?v=1619217439"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1531,
+        "fields": {
+            "name": "OurPets® Premium Rubber-Bonded Stainless Steel Cat Dish 8 Oz",
+            "price": 18.04,
+            "slug": "OurPets®-Premium-Rubber-Bonded-Stainless-Steel-Cat-Dish-8-Oz-2",
+            "category": 2,
+            "subcategory": 5,
+            "image": "petstore.com/cdn/shop/products/4043000_7233b9b4-6d5d-4e13-835d-4cb08a54fd01_540x.jpg?v=1619216482"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1532,
+        "fields": {
+            "name": "Universal Pet Food & Water Bowls",
+            "price": 22.99,
+            "slug": "Universal-Pet-Food-&-Water-Bowls",
+            "category": 2,
+            "subcategory": 5,
+            "image": "petstore.com/cdn/shop/products/product-image-933211341_540x.jpg?v=1580500536"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1533,
+        "fields": {
+            "name": "Petmate® Replendish® Feeder with Microban® Pearl Silver Gray Color 5 Lbs Small",
+            "price": 48.74,
+            "slug": "Petmate®-Replendish®-Feeder-with-Microban®-Pearl-Silver-Gray-Color-5-Lbs-Small",
+            "category": 2,
+            "subcategory": 5,
+            "image": "petstore.com/cdn/shop/products/029695244919_540x.jpg?v=1619218597"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1534,
+        "fields": {
+            "name": "Petmate® Deluxe Fresh Flow Fountain For Cats Bleached Linen Color 50 Oz Medium",
+            "price": 63.15,
+            "slug": "Petmate®-Deluxe-Fresh-Flow-Fountain-For-Cats-Bleached-Linen-Color-50-Oz-Medium",
+            "category": 2,
+            "subcategory": 5,
+            "image": "petstore.com/cdn/shop/products/029695248900_540x.jpg?v=1619218120"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1535,
+        "fields": {
+            "name": "OurPets® Premium Rubber-Bonded Stainless Steel Cat Dish 16 Oz",
+            "price": 22.32,
+            "slug": "OurPets®-Premium-Rubber-Bonded-Stainless-Steel-Cat-Dish-16-Oz",
+            "category": 2,
+            "subcategory": 5,
+            "image": "petstore.com/cdn/shop/products/4103360_a6bd563b-03a5-434c-98af-a2f3bf7f77ca_540x.jpg?v=1619217233"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1536,
+        "fields": {
+            "name": "OurPets® Premium Rubber-Bonded Stainless Steel Cat Dish 12 Oz",
+            "price": 19.8,
+            "slug": "OurPets®-Premium-Rubber-Bonded-Stainless-Steel-Cat-Dish-12-Oz",
+            "category": 2,
+            "subcategory": 5,
+            "image": "petstore.com/cdn/shop/products/4043017_f99f26b2-96d2-4122-9e6e-1f5c43dedfa1_540x.jpg?v=1619216971"
+        }
+    }
+]

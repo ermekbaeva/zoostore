@@ -1,0 +1,26 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 1825,
+        "fields": {
+            "name": "Stall DRY® Absorbent & Deodorizer 40.12 Lbs",
+            "price": 39.6,
+            "slug": "Stall-DRY®-Absorbent-&-Deodorizer-40.12-Lbs-2",
+            "category": 2,
+            "subcategory": 3,
+            "image": "petstore.com/cdn/shop/products/058633001352_540x.jpg?v=1619219970"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 1826,
+        "fields": {
+            "name": "Bone Shaped Pet Waste Bag Dispenser",
+            "price": 4.99,
+            "slug": "Bone-Shaped-Pet-Waste-Bag-Dispenser",
+            "category": 2,
+            "subcategory": 3,
+            "image": "petstore.com/cdn/shop/products/product-image-862715857_540x.jpg?v=1580500536"
+        }
+    }
+]
