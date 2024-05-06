@@ -1,86 +1,32 @@
 {% extends "base.html" %}
 {% load static %}
+{% load goods_tags %}
                 {% block menu %}
-                        <div class="col-md-3">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                              Cats
-                            </button>
-                          </h2>
-                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Food</div>
-                            <div class="accordion-body">Toys</div>
-                            <div class="accordion-body">Cat carrier</div>
-                            <div class="accordion-body">Beds</div>
-                            <div class="accordion-body">Doors</div>
-                            <div class="accordion-body">Clothing</div>
-                            <div class="accordion-body">Treats</div>
-                            <div class="accordion-body">Litter</div>
-                            <div class="accordion-body">Health Care</div>
-                            <div class="accordion-body">Collars</div>
+                <div class="col-md-3" id="sidemenu">
+                  <div class="row">
+                      <div class="col-4 col-sm-3 col-lg-6" id="sidebar{{ forloop.counter }}">
+                        {% tag_categories as categories %}
+                        {% for category in categories %}
+                          <div class="nav flex-column py-2">
+                              <a href="#menu{{ forloop.counter }}" class="nav-link collapsed text-truncate" data-bs-toggle="collapse" role="button"><b>{{ category.name }}</b></a>
+                              {% if category.pk == 2 %}
+                              <div class="collapse show ps-2" id="menu{{ forloop.counter }}" data-bs-parent="#sidebar{{ forloop.counter }}">
+                              {% else %}
+                              <div class="collapse ps-2" id="menu{{ forloop.counter }}" data-bs-parent="#sidebar{{ forloop.counter }}">
+                                {% endif %}
+                              {% tag_subcategories as subcategories %}
+                              {% for subcategory in subcategories %}
+                              {% if subcategory.category_id == category.pk %}
+                                  <a href="{% url "catalog:index" subcategory.slug %}" class="nav-link">{{ subcategory.name }}</a>
+                              {% endif %}
+                              {% endfor %}
+                              </div>
                           </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                              Dogs
-                            </button>
-                          </h2>
-                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Food</div>
-                            <div class="accordion-body">Toys</div>
-                            <div class="accordion-body">Beds</div>
-                            <div class="accordion-body">Clean up</div>
-                            <div class="accordion-body">Clothing & Apparel</div>
-                            <div class="accordion-body">Collars</div>
-                            <div class="accordion-body">Doors</div>
-                            <div class="accordion-body">Grooming</div>
-                            <div class="accordion-body">Health Care</div>
-                            <div class="accordion-body">Treats</div>
-                            <div class="accordion-body">Training</div> 
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                              Birds
-                            </button>
-                          </h2>
-                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Food</div>
-                            <div class="accordion-body">Toys</div>
-                            <div class="accordion-body">Grooming</div>
-                            <div class="accordion-body">Treats</div>
-                            <div class="accordion-body">Litter</div>
-                            <div class="accordion-body">Health Care</div> 
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingFour">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                            Small pets
-                            
-                          </button>
-                          
-                        </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">Food</div>
-                          <div class="accordion-body">Toys</div>
-                          <div class="accordion-body">Treats</div>
-                          <div class="accordion-body">Grooming</div>
-                          <div class="accordion-body">Litter</div>
-                          <div class="accordion-body">Health Care</div> 
-                        </div>
-                        
-                        </div>
-                        
-                          
-                        </div>
-                        </div>
-                        
-                  {% endblock %}
+                          {% endfor %}
+                      </div>
+                  </div>
+              </div>
+              {% endblock %}
 
                   {% block carousel %}
                               <div class="col-md-8">

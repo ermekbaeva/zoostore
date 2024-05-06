@@ -1,99 +1,137 @@
 {% extends "base.html" %}
 {% load static %}
+{% load goods_tags %}
             
         {% block menu %}
-        <div class="col-1">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Cats
-            </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Food</div>
-            <div class="accordion-body">Toys</div>
-            <div class="accordion-body">Cat carrier</div>
-            <div class="accordion-body">Beds</div>
-            <div class="accordion-body">Doors</div>
-            <div class="accordion-body">Clothing</div>
-            <div class="accordion-body">Treats</div>
-            <div class="accordion-body">Litter</div>
-            <div class="accordion-body">Health Care</div>
-            <div class="accordion-body">Collars</div>
-        </div>
-        </div>
-        <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Dogs
-            </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Food</div>
-            <div class="accordion-body">Toys</div>
-            <div class="accordion-body">Beds</div>
-            <div class="accordion-body">Clean up</div>
-            <div class="accordion-body">Clothing & Apparel</div>
-            <div class="accordion-body">Collars</div>
-            <div class="accordion-body">Doors</div>
-            <div class="accordion-body">Grooming</div>
-            <div class="accordion-body">Health Care</div>
-            <div class="accordion-body">Treats</div>
-            <div class="accordion-body">Training</div>
-        </div>
-        </div>
-        <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Birds
-            </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Food</div>
-            <div class="accordion-body">Toys</div>
-            <div class="accordion-body">Grooming</div>
-            <div class="accordion-body">Treats</div>
-            <div class="accordion-body">Litter</div>
-            <div class="accordion-body">Health Care</div>
-        </div>
-        </div>
-        <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingFour">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-            Small pets
-        </button>
-        </h2>
-        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Food</div>
-        <div class="accordion-body">Toys</div>
-        <div class="accordion-body">Treats</div>
-        <div class="accordion-body">Grooming</div>
-        <div class="accordion-body">Litter</div>
-        <div class="accordion-body">Health Care</div>
-        </div>
-        </div>
-        </div>
+        <div class="col-md-3" id="sidemenu">
+            <div class="row">
+                <div class="col-4 col-sm-3 col-lg-6" id="sidebar{{ forloop.counter }}">
+                  {% tag_categories as categories %}
+                  {% for category in categories %}
+                    <div class="nav flex-column py-2">
+                        <a href="#menu{{ forloop.counter }}" class="nav-link collapsed text-truncate" data-bs-toggle="collapse" role="button"><b>{{ category.name }}</b></a>
+                        {% if category.pk == 2 %}
+                        <div class="collapse show ps-2" id="menu{{ forloop.counter }}" data-bs-parent="#sidebar{{ forloop.counter }}">
+                        {% else %}
+                        <div class="collapse ps-2" id="menu{{ forloop.counter }}" data-bs-parent="#sidebar{{ forloop.counter }}">
+                          {% endif %}
+                        {% tag_subcategories as subcategories %}
+                        {% for subcategory in subcategories %}
+                        {% if subcategory.category_id == category.pk %}
+                            <a href="{% url "catalog:index" subcategory.slug %}" class="nav-link">{{ subcategory.name }}</a>
+                        {% endif %}
+                        {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
         {% endblock %}
 
 
         {% block carousel %}
-        <div class="col" id="blocksOne">
-        {% for product in goods %}
+
+        <div class="col" id="carouselExampleControls">
+          <!-- Sorting catalog-->
+          <div class="col" id="filter-dropdown">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Default
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <form action="{% url "catalog:index" slug_url %}" method="get">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="default" checked>
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Default
+                  </label>
+                </div> 
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault2" value="price" {% comment %}
+	{% if request.GET.order_by=='price' %}checked{% endif %}
+{% endcomment %}>
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Low to high
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault3" value="-price" {% comment %}
+	{% if request.GET.order_by=='-price' %}checked{% endif %}
+{% endcomment %}>
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    High to low
+                  </label>
+                </div>
+              </form>
+              </ul>
+	
+
+              <!-- Filter catalog-->
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                Price
+              </button>
+              <ul class="dropdown-menu" id="dropdown-price" aria-labelledby="dropdownMenuButton1">
+                <form action method="get" class="row">
+                  <div class="col col-sm-5">
+                    <label for="exampleInputFrom" class="form-label">From</label>
+                    <input type="text" class="form-control" id="exampleInputFrom">
+                  </div>
+                  <div class="col col-sm-5">
+                    <label for="exampleInputTo" class="form-label">To</label>
+                    <input type="text" class="form-control" id="exampleInputTo">
+                  </div>
+                  <div class="d-grid gap-4 d-md-block">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </ul>
+            </div>
+            </div>  
+
+                    <!-- Catalog cards -->
+                    {% for product in goods %}
                     <div class="card-recommended" style="width: 18rem;">
                     {% if product.image != 'None' %}
                     <img class="card-img-top rounded" src="https://{{ product.image }}" alt={{ product.name }}>
                     {% else %}
-                    <img src = "{% static "main/static/main/images/360_F_470299797_UD0eoVMMSUbHCcNJCdv2t8B2g1GVqYgs.jpg" %}" class="card-img-top rounded" alt={{ product.name }}>
+                    <img src = "{% static "main/images/360_F_470299797_UD0eoVMMSUbHCcNJCdv2t8B2g1GVqYgs.jpg" %}" class="card-img-top rounded" alt={{ product.name }}>
                     {% endif %}
                     <div class="card-body">
+                    {% comment %} <a href="{% url "catalog:product" product.slug %}"> {% endcomment %}
                     <h5 class="card-title">
                         {{ product.name }}</h5>
-                    <p class="card-text text-truncate">{{ product.price }}</p>
+                    <p class="card-text">{{ product.price }}</p>
                     <a href="#" class="btn btn-primary">Add to cart</a>
                     </div>
                     </div>
                     {% endfor %}
                     </div>              
+        {% endblock %}
+        
+        <!-- Pagination -->
+        {% block pagination %}
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item {% if not goods.has_previous %} disabled {% endif %}">
+                
+                <a class="page-link" href="{% if goods.has_previous %}?page={{goods.previous_page_number}} {% else %} # {% endif %}" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                  
+                </a>
+              </li>
+              {% for page in goods.paginator.page_range %}
+              {% if page >= goods.number|add:-2 and page <= goods.number|add:2 %}
+              <li class="page-item {% if goods.number == page %} active {% endif %}"><a class="page-link" href="?page={{ page }}">{{ page }}</a></li>
+              {% endif %}
+              {% endfor %}
+              <li class="page-item {% if not goods.has_next %} disabled {% endif %}">
+                
+                <a class="page-link" href="{% if goods.has_next %}?page={{goods.next_page_number}} {% else %} # {% endif %}" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                  
+                </a>
+              </li>
+            </ul>
+          </nav>
         {% endblock %}

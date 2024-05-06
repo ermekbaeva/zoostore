@@ -8,7 +8,7 @@ class Categories(models.Model):
         return self.name
 
     class Meta:
-        db_table='Category'
+        db_table='category'
         verbose_name = 'Category'
         verbose_name_plural = 'Categories'
 
@@ -21,7 +21,7 @@ class Subcategories(models.Model):
         return self.name
 
     class Meta:
-        db_table='Subcategory'
+        db_table='subcategory'
         verbose_name = 'Subcategory'
         verbose_name_plural = 'Subcategories'
 
@@ -35,13 +35,23 @@ class Products(models.Model):
     quantity=models.PositiveIntegerField(default=0)
     category = models.ForeignKey(Categories, on_delete=models.PROTECT, null=True, blank=True)
     subcategory = models.ForeignKey(Subcategories, on_delete=models.PROTECT, null=True, blank=True)
+    discount = models.DecimalField(default=0.00, max_digits=7, decimal_places=2)
 
     def __str__(self) -> str:
         return self.name
 
+    def display_id(self):
+        return f'{self.pk:05}'
+
+    def sell_price(self):
+        if self.discount:
+            return round(self.price-self.price*self.discount(100,2))
+        return self.price
+
     class Meta:
-        db_table='Product'
+        db_table='product'
         verbose_name = 'Product'
         verbose_name_plural = 'Products'
+        ordering = ("id",)
 
     
