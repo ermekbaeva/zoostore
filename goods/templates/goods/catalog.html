@@ -4,30 +4,26 @@
             
         {% block menu %}
         <div class="col-md-3" id="sidemenu">
-            <div class="row">
-                <div class="col-4 col-sm-3 col-lg-6" id="sidebar{{ forloop.counter }}">
+          <div class="row">
+              <div class="col-4 col-sm-3 col-lg-6" id="sidebar{{ forloop.counter }}">
                   {% tag_categories as categories %}
                   {% for category in categories %}
-                    <div class="nav flex-column py-2">
-                        <a href="#menu{{ forloop.counter }}" class="nav-link collapsed text-truncate" data-bs-toggle="collapse" role="button"><b>{{ category.name }}</b></a>
-                        {% if category.pk == 2 %}
-                        <div class="collapse show ps-2" id="menu{{ forloop.counter }}" data-bs-parent="#sidebar{{ forloop.counter }}">
-                        {% else %}
-                        <div class="collapse ps-2" id="menu{{ forloop.counter }}" data-bs-parent="#sidebar{{ forloop.counter }}">
-                          {% endif %}
+                  <div class="nav flex-column py-2">
+                      <a href="#menu{{ forloop.counter }}" class="nav-link collapsed text-truncate" data-bs-toggle="collapse" role="button"><b>{{ category.name }}</b></a>
+                      <div class="collapse ps-2 {% if category.slug in path_slug %}show{% endif %}" id="menu{{ forloop.counter }}" data-bs-parent="#sidebar{{ forloop.counter }}">
                         {% tag_subcategories as subcategories %}
                         {% for subcategory in subcategories %}
-                        {% if subcategory.category_id == category.pk %}
-                            <a href="{% url "catalog:index" subcategory.slug %}" class="nav-link">{{ subcategory.name }}</a>
-                        {% endif %}
-                        {% endfor %}
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-        {% endblock %}
+                          {% if subcategory.category_id == category.pk %}
+                          <a href="{% url "catalog:index" subcategory.slug %}" class="nav-link {% if path_slug == subcategory.slug %}active{% endif %}" id="subcategory-link">{{ subcategory.name }}</a>
+                          {% endif %}
+                          {% endfor %}
+                      </div>
+                  </div>
+                  {% endfor %}
+              </div>
+          </div>
+      </div>
+      {% endblock %}
 
 
         {% block carousel %}
@@ -37,32 +33,38 @@
           <div class="col" id="filter-dropdown">
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                {% if request.GET.order_by %}
+            {% if request.GET.order_by == 'price' %}
+                Low to high
+            {% elif request.GET.order_by == '-price' %}
+                High to low
+            {% else %}
                 Default
+            {% endif %}
+                {% else %}
+                  Default
+                {% endif %}
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <form action="{% url "catalog:index" slug_url %}" method="get">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="default" checked>
-                  <label class="form-check-label" for="flexRadioDefault1">
+                <form action="" method="get">
+                  <li>
+                  <button class="dropdown-item" type="submit" name="order_by" value="default">
                     Default
-                  </label>
-                </div> 
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault2" value="price" {% comment %}
-	{% if request.GET.order_by=='price' %}checked{% endif %}
-{% endcomment %}>
-                  <label class="form-check-label" for="flexRadioDefault2">
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="submit" name="order_by" value="price">
                     Low to high
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault3" value="-price" {% comment %}
-	{% if request.GET.order_by=='-price' %}checked{% endif %}
-{% endcomment %}>
-                  <label class="form-check-label" for="flexRadioDefault3">
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="submit" name="order_by" value="-price">
                     High to low
-                  </label>
-                </div>
+                  </button>
+                </li>
+                <!-- get value for filter -->
+                  <input type="hidden" name="min_price" value="{{ min_price }}">
+                  <input type="hidden" name="max_price" value="{{ max_price }}">
               </form>
               </ul>
 	
@@ -72,18 +74,21 @@
                 Price
               </button>
               <ul class="dropdown-menu" id="dropdown-price" aria-labelledby="dropdownMenuButton1">
-                <form action method="get" class="row">
+                <form action="" method="get" class="row">
                   <div class="col col-sm-5">
-                    <label for="exampleInputFrom" class="form-label">From</label>
-                    <input type="text" class="form-control" id="exampleInputFrom">
+                    <label for="exampleInputMin" class="form-label">Min</label>
+                    <input type="text" class="form-control" id="exampleInputMin" name="min_price" value="{{ min_price }}">
                   </div>
                   <div class="col col-sm-5">
-                    <label for="exampleInputTo" class="form-label">To</label>
-                    <input type="text" class="form-control" id="exampleInputTo">
+                    <label for="exampleInputMax" class="form-label">Max</label>
+                    <input type="text" class="form-control" id="exampleInputMax" name="max_price" value="{{ max_price }}">
                   </div>
                   <div class="d-grid gap-4 d-md-block">
+                  <a href="{% url "catalog:index" slug_url %}" role="button" class="btn btn-light">Reset</a>
                   <button type="submit" class="btn btn-primary">Submit</button>
                   </div>
+                  <!-- get value for order_by -->
+                 <input type="hidden" name="order_by" value="{{ order_by }}">
                 </form>
               </ul>
             </div>
@@ -115,19 +120,19 @@
             <ul class="pagination">
               <li class="page-item {% if not goods.has_previous %} disabled {% endif %}">
                 
-                <a class="page-link" href="{% if goods.has_previous %}?page={{goods.previous_page_number}} {% else %} # {% endif %}" aria-label="Previous">
+                <a class="page-link" href="{% if goods.has_previous %}?{% change_params page=goods.previous_page_number %} {% else %} # {% endif %}" aria-label="Previous">
                   <span aria-hidden="true">&laquo;</span>
                   
                 </a>
               </li>
               {% for page in goods.paginator.page_range %}
               {% if page >= goods.number|add:-2 and page <= goods.number|add:2 %}
-              <li class="page-item {% if goods.number == page %} active {% endif %}"><a class="page-link" href="?page={{ page }}">{{ page }}</a></li>
+              <li class="page-item {% if goods.number == page %} active {% endif %}"><a class="page-link" href="?{% change_params page=page %}">{{ page }}</a></li>
               {% endif %}
               {% endfor %}
               <li class="page-item {% if not goods.has_next %} disabled {% endif %}">
                 
-                <a class="page-link" href="{% if goods.has_next %}?page={{goods.next_page_number}} {% else %} # {% endif %}" aria-label="Next">
+                <a class="page-link" href="{% if goods.has_next %}?{% change_params page=goods.next_page_number %} {% else %} # {% endif %}" aria-label="Next">
                   <span aria-hidden="true">&raquo;</span>
                   
                 </a>

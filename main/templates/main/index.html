@@ -5,21 +5,17 @@
                 <div class="col-md-3" id="sidemenu">
                   <div class="row">
                       <div class="col-4 col-sm-3 col-lg-6" id="sidebar{{ forloop.counter }}">
-                        {% tag_categories as categories %}
-                        {% for category in categories %}
+                          {% tag_categories as categories %}
+                          {% for category in categories %}
                           <div class="nav flex-column py-2">
                               <a href="#menu{{ forloop.counter }}" class="nav-link collapsed text-truncate" data-bs-toggle="collapse" role="button"><b>{{ category.name }}</b></a>
-                              {% if category.pk == 2 %}
-                              <div class="collapse show ps-2" id="menu{{ forloop.counter }}" data-bs-parent="#sidebar{{ forloop.counter }}">
-                              {% else %}
-                              <div class="collapse ps-2" id="menu{{ forloop.counter }}" data-bs-parent="#sidebar{{ forloop.counter }}">
-                                {% endif %}
-                              {% tag_subcategories as subcategories %}
-                              {% for subcategory in subcategories %}
-                              {% if subcategory.category_id == category.pk %}
-                                  <a href="{% url "catalog:index" subcategory.slug %}" class="nav-link">{{ subcategory.name }}</a>
-                              {% endif %}
-                              {% endfor %}
+                              <div class="collapse ps-2 {% if category.slug in path_slug or forloop.first %}show{% endif %}" id="menu{{ forloop.counter }}" data-bs-parent="#sidebar{{ forloop.counter }}">
+                                {% tag_subcategories as subcategories %}
+                                {% for subcategory in subcategories %}
+                                  {% if subcategory.category_id == category.pk %}
+                                  <a href="{% url "catalog:index" subcategory.slug %}" class="nav-link {% if path_slug == subcategory.slug %}active{% endif %}" id="subcategory-link">{{ subcategory.name }}</a>
+                                  {% endif %}
+                                  {% endfor %}
                               </div>
                           </div>
                           {% endfor %}
