@@ -3,11 +3,14 @@ from goods.models import Products, Subcategories
 from django.shortcuts import get_object_or_404, get_list_or_404, render
 from django.core.paginator import Paginator
 
+from goods.utils import q_search
+
 def catalog(request, subcategory_slug=None):
     page = request.GET.get('page', 1)
     order_by=request.GET.get('order_by', "default")
     min_price = request.GET.get('min_price', 1)
     max_price = request.GET.get('max_price', 500)
+    query = request.GET.get('q', None)
 
     current_path = request.path
     resolved_match = resolve(current_path)
@@ -15,6 +18,8 @@ def catalog(request, subcategory_slug=None):
 
     if subcategory_slug == "all":
         goods = Products.objects.all()
+    elif query:
+        goods = q_search(query)
     else:
         goods = Products.objects.filter(subcategory__slug=subcategory_slug)
 

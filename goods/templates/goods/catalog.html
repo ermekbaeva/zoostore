@@ -46,19 +46,28 @@
                 {% endif %}
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <form action="" method="get">
+                <form action="{% if request.GET.q %} {% url "catalog:search" %} {% else %} {% url "catalog:index" slug_url %} {% endif %}" method="get">
                   <li>
                   <button class="dropdown-item" type="submit" name="order_by" value="default">
+                    {% if request.GET.q %}
+                    <input type="hidden" name="q" value="{{ request.GET.q }}">
+                    {% endif %}
                     Default
                   </button>
                 </li>
                 <li>
                   <button class="dropdown-item" type="submit" name="order_by" value="price">
+                    {% if request.GET.q %}
+                    <input type="hidden" name="q" value="{{ request.GET.q }}">
+                    {% endif %}
                     Low to high
                   </button>
                 </li>
                 <li>
                   <button class="dropdown-item" type="submit" name="order_by" value="-price">
+                    {% if request.GET.q %}
+                    <input type="hidden" name="q" value="{{ request.GET.q }}">
+                    {% endif %}
                     High to low
                   </button>
                 </li>
@@ -74,14 +83,20 @@
                 Price
               </button>
               <ul class="dropdown-menu" id="dropdown-price" aria-labelledby="dropdownMenuButton1">
-                <form action="" method="get" class="row">
+                <form action="{% if request.GET.q %} {% url "catalog:search" %} {% else %} {% url "catalog:index" slug_url %} {% endif %}" method="get" class="row">
                   <div class="col col-sm-5">
                     <label for="exampleInputMin" class="form-label">Min</label>
                     <input type="text" class="form-control" id="exampleInputMin" name="min_price" value="{{ min_price }}">
+                    {% if request.GET.q %}
+                    <input type="hidden" name="q" value="{{ request.GET.q }}">
+                    {% endif %}
                   </div>
                   <div class="col col-sm-5">
                     <label for="exampleInputMax" class="form-label">Max</label>
                     <input type="text" class="form-control" id="exampleInputMax" name="max_price" value="{{ max_price }}">
+                    {% if request.GET.q %}
+                    <input type="hidden" name="q" value="{{ request.GET.q }}">
+                    {% endif %}
                   </div>
                   <div class="d-grid gap-4 d-md-block">
                   <a href="{% url "catalog:index" slug_url %}" role="button" class="btn btn-light">Reset</a>
