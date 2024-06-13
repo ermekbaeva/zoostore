@@ -1,95 +1,79 @@
 {% extends "base.html" %}
 {% load static %}
+
+{% load goods_tags %}
+{% load custom_filters %}
             
-        {% block menu %}
-        <div class="col-1">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Cats
-            </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Food</div>
-            <div class="accordion-body">Toys</div>
-            <div class="accordion-body">Cat carrier</div>
-            <div class="accordion-body">Beds</div>
-            <div class="accordion-body">Doors</div>
-            <div class="accordion-body">Clothing</div>
-            <div class="accordion-body">Treats</div>
-            <div class="accordion-body">Litter</div>
-            <div class="accordion-body">Health Care</div>
-            <div class="accordion-body">Collars</div>
-        </div>
-        </div>
-        <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Dogs
-            </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Food</div>
-            <div class="accordion-body">Toys</div>
-            <div class="accordion-body">Beds</div>
-            <div class="accordion-body">Clean up</div>
-            <div class="accordion-body">Clothing & Apparel</div>
-            <div class="accordion-body">Collars</div>
-            <div class="accordion-body">Doors</div>
-            <div class="accordion-body">Grooming</div>
-            <div class="accordion-body">Health Care</div>
-            <div class="accordion-body">Treats</div>
-            <div class="accordion-body">Training</div>
-        </div>
-        </div>
-        <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Birds
-            </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Food</div>
-            <div class="accordion-body">Toys</div>
-            <div class="accordion-body">Grooming</div>
-            <div class="accordion-body">Treats</div>
-            <div class="accordion-body">Litter</div>
-            <div class="accordion-body">Health Care</div>
-        </div>
-        </div>
-        <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingFour">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-            Small pets
-        </button>
-        </h2>
-        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Food</div>
-        <div class="accordion-body">Toys</div>
-        <div class="accordion-body">Treats</div>
-        <div class="accordion-body">Grooming</div>
-        <div class="accordion-body">Litter</div>
-        <div class="accordion-body">Health Care</div>
-        </div>
-        </div>
-        </div>
-        </div>
-        {% endblock %}
-
-
-        {% block carousel %}
-        <div class="col" id="blocksOne">
-        {% for product in goods %}
-                    <div class="card-recommended" style="width: 18rem;">
-                    <img class="card-img-top rounded" src="{% static "main/images/large_96_52_96_10_nd-prime-adult-mini-wild-boar-apple-800x1066.png" %}" alt="Card image cap">
-                    <div class="card-body">
-                    <h5 class="card-title">
-                        {{ product.description }}</h5>
-                    <p class="card-text text-truncate">{{ product.price }}</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                    </div>
-                    </div>
+{% block menu %}
+<div class="col-md-3" id="sidemenu">
+    <div class="row">
+        <div class="col-4 col-sm-3 col-lg-6" id="sidebar{{ forloop.counter }}">
+            {% tag_categories as categories %}
+            {% for category in categories %}
+            <div class="nav flex-column py-2">
+                <a href="#menu{{ forloop.counter }}" class="nav-link collapsed text-truncate" data-bs-toggle="collapse" role="button"><b>{{ category.name }}</b></a>
+                <div class="collapse ps-2 {% if product.category|lower in category.slug %}show{% endif %}" id="menu{{ forloop.counter }}" data-bs-parent="#sidebar{{ forloop.counter }}">
+                  {% tag_subcategories as subcategories %}
+                  {% for subcategory in subcategories %}
+                    {% if subcategory.category_id == category.pk %}
+                    <a href="{% url "catalog:index" subcategory.slug %}" class="nav-link {% if product.subcategory|lower in subcategory.name|lower %}active{% endif %}" id="subcategory-link">{{ subcategory.name }}</a>
+                    {% endif %}
                     {% endfor %}
-                    </div>              
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+        {% block content %}
+        <!-- Страница товара -->
+        <div class="col" id="content">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{ product.image.url }}" class="img-fluid" alt="Product Image">
+        </div>
+        <div class="col-md-6">
+            <h1>{{ product.name }}</h1>
+            <h2>${{ product.price }}</h2>
+            <p class="mt-4">{{ product.name }}</p>
+            
+            <!-- Количество и добавление в корзину -->
+            <div class="mb-4">
+                {% if product.quantity == 0 %}
+                <label for="quantity" class="form-label">Quantity: Out of stock</label>
+                {% else %}
+                <label for="quantity" class="form-label">Quantity: {{ product.quantity }}</label>
+                {% endif %}
+            </div>
+            <button class="btn btn-primary btn-lg mb-3">Add to Cart</button>
+            <button class="btn btn-outline-secondary btn-lg mb-3">Add to Wishlist</button>
+
+            <!-- Отзывы -->
+            <h4>Reviews</h4>
+            <div class="mb-3">
+                <strong>John Doe</strong>
+                <span class="text-muted"> - 2 days ago</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="mb-3">
+                <strong>Jane Smith</strong>
+                <span class="text-muted"> - 5 days ago</span>
+                <p>Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+
+            <!-- Форма для добавления отзыва -->
+            <h4>Add a Review</h4>
+            <form>
+                <div class="mb-3">
+                    <label for="review" class="form-label">Your Review</label>
+                    <textarea class="form-control" id="review" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>             
         {% endblock %}

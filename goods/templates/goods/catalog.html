@@ -10,11 +10,11 @@
                   {% for category in categories %}
                   <div class="nav flex-column py-2">
                       <a href="#menu{{ forloop.counter }}" class="nav-link collapsed text-truncate" data-bs-toggle="collapse" role="button"><b>{{ category.name }}</b></a>
-                      <div class="collapse ps-2 {% if category.slug in path_slug %}show{% endif %}" id="menu{{ forloop.counter }}" data-bs-parent="#sidebar{{ forloop.counter }}">
+                      <div class="collapse ps-2 {% if category.slug in slug_url %}show{% endif %}" id="menu{{ forloop.counter }}" data-bs-parent="#sidebar{{ forloop.counter }}">
                         {% tag_subcategories as subcategories %}
                         {% for subcategory in subcategories %}
                           {% if subcategory.category_id == category.pk %}
-                          <a href="{% url "catalog:index" subcategory.slug %}" class="nav-link {% if path_slug == subcategory.slug %}active{% endif %}" id="subcategory-link">{{ subcategory.name }}</a>
+                          <a href="{% url "catalog:index" subcategory.slug %}" class="nav-link {% if slug_url == subcategory.slug %}active{% endif %}" id="subcategory-link">{{ subcategory.name }}</a>
                           {% endif %}
                           {% endfor %}
                       </div>
@@ -26,9 +26,9 @@
       {% endblock %}
 
 
-        {% block carousel %}
+        {% block content %}
 
-        <div class="col" id="carouselExampleControls">
+        <div class="col" id="content">
           <!-- Sorting catalog-->
           <div class="col" id="filter-dropdown">
             <div class="dropdown">
@@ -110,17 +110,31 @@
             </div>  
 
                     <!-- Catalog cards -->
+                    {% if request.GET.q %}
+                    <h6 class = 'mt-4'> Results:</h6>
+                    {% if not goods %}
+                    <link rel='stylesheet' href = "{% static "css/my_footer_css.css" %}">
+                    <p class = 'mt-4'>0 RESULTS</p>
+                    {% endif %}
+                    {% endif %}
+
                     {% for product in goods %}
                     <div class="card-recommended" style="width: 18rem;">
                     {% if product.image != 'None' %}
-                    <img class="card-img-top rounded" src="https://{{ product.image }}" alt={{ product.name }}>
+                    <img class="card-img-top rounded" src="{{ product.image.url }}" alt={{ product.name }}>
                     {% else %}
                     <img src = "{% static "main/images/360_F_470299797_UD0eoVMMSUbHCcNJCdv2t8B2g1GVqYgs.jpg" %}" class="card-img-top rounded" alt={{ product.name }}>
                     {% endif %}
                     <div class="card-body">
-                    {% comment %} <a href="{% url "catalog:product" product.slug %}"> {% endcomment %}
+                      <a href="{% url "catalog:product" product.slug %}">
                     <h5 class="card-title">
-                        {{ product.name }}</h5>
+                      {% autoescape off %}
+                      {% if product.headline %}
+                      {{ product.headline }}
+                      {% else %}
+                        {{ product.name }}
+                      {% endif %}
+                    {% endautoescape %}</h5>
                     <p class="card-text">{{ product.price }}</p>
                     <a href="#" class="btn btn-primary">Add to cart</a>
                     </div>
@@ -131,6 +145,7 @@
         
         <!-- Pagination -->
         {% block pagination %}
+        {% if goods %}
         <nav aria-label="Page navigation example">
             <ul class="pagination">
               <li class="page-item {% if not goods.has_previous %} disabled {% endif %}">
@@ -154,4 +169,5 @@
               </li>
             </ul>
           </nav>
+          {% endif %}
         {% endblock %}

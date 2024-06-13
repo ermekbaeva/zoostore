@@ -1,5 +1,5 @@
 from django.urls import resolve
-from goods.models import Products, Subcategories
+from goods.models import Products, Subcategories, Categories
 from django.shortcuts import get_object_or_404, get_list_or_404, render
 from django.core.paginator import Paginator
 
@@ -12,9 +12,6 @@ def catalog(request, subcategory_slug=None):
     max_price = request.GET.get('max_price', 500)
     query = request.GET.get('q', None)
 
-    current_path = request.path
-    resolved_match = resolve(current_path)
-    path_slug = resolved_match.kwargs.get('subcategory_slug')
 
     if subcategory_slug == "all":
         goods = Products.objects.all()
@@ -25,14 +22,12 @@ def catalog(request, subcategory_slug=None):
 
     if order_by and order_by!='default':
         goods=goods.order_by(order_by)
-    
-    # price_range = goods.filter(price__range=(min_price, max_price))
 
     if min_price or max_price:
         goods = goods.filter(price__range=(min_price, max_price))
         
 
-    paginator=Paginator(goods, 9)
+    paginator=Paginator(goods, 12)
     current_page = paginator.page(int(page))
 
     context = {
@@ -42,7 +37,6 @@ def catalog(request, subcategory_slug=None):
         'min_price': min_price,
         'max_price': max_price,
         'order_by': order_by,
-        'path_slug': path_slug,
     }
     
     return render(request, 'goods/catalog.html', context)
