@@ -5,14 +5,24 @@
 <div class="profile-container">
     <div class="profile-header">
         <div class="profile-avatar">
-            <img src="path/to/avatar.jpg" alt="User Avatar">
+            <img src="{% static "main/images/0d64989794b1a4c9d89bff571d3d5842.jpg" %}" alt="User Avatar">
+            <input type="file" class="form-control mt-3" id="id_image" name="image" accept="image/*">
         </div>
         <div class="profile-info">
-            <h5>John Doe</h5>
-            <p>First Name: John</p>
-            <p>Last Name: Doe</p>
-            <p>Username: johndoe</p>
-            <p>Email: johndoe@example.com</p>
+            <h5>{{ form.first_name.value }} {{ form.last_name.value }}</h5>
+            <p>First Name: {{ form.first_name.value }}</p>
+            <p>Last Name: {{ form.last_name.value }}</p>
+            <p>Username: {{ form.username.value }}</p>
+            <p>Email: {{ form.email.value }}</p>
+            <button class="btn btn-primary" id="edit-profile">Edit Profile</button>
+        </div>
+        <div class="edit-form">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-success">Save</button>
+                <button type="button" class="btn btn-secondary" id="cancel-edit">Cancel</button>
+            </form>
         </div>
     </div>
     <div class="profile-tabs">

@@ -92,9 +92,24 @@ body{
   margin-right: 30px;
   margin-left: 5px;
 }
+
 #signup:hover,
 #signup:active,
 #signup:focus{
+  background-color: var(--bs-gray-700);
+  color:white;
+}
+
+#logout{
+  border-color: var(--bs-gray-700);
+  color:var(--bs-gray-700);
+  margin-right: 30px;
+  margin-left: 5px;
+}
+
+#logout:hover,
+#logout:active,
+#logout:focus{
   background-color: var(--bs-gray-700);
   color:white;
 }
@@ -310,4 +325,10 @@ body{
 
 #product-quantity{
   margin-bottom: 10px;
+}
+
+#alert-message{
+  max-width: 1600px;
+  margin: auto;
+  margin-bottom: 30px;
 }

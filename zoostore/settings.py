@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     "mptt",
     "main.apps.MainConfig",
     "goods.apps.GoodsConfig",
-    'users',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
@@ -83,9 +83,9 @@ WSGI_APPLICATION = "zoostore.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "petshop",
-        "USER": "admin",
-        "PASSWORD": "petshopadmin43046755@",
+        "NAME": "petshopdb",
+        "USER": "petshop",
+        "PASSWORD": "petshop43046755@",
         "HOST": "localhost",
         "PORT": "5432",
     }
@@ -142,3 +142,6 @@ INTERNAL_IPS = [
     "127.0.0.1",
     # ...
 ]
+
+AUTH_USER_MODEL = 'users.User'
+LOGIN_URL = '/user/login/'
