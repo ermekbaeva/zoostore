@@ -332,3 +332,36 @@ body{
   margin: auto;
   margin-bottom: 30px;
 }
+
+.edit-form { 
+  display: none; 
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.edit-password-form{
+  display:none;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+#id_image{
+  margin-bottom: 20px;
+}
+
+.btn-secondary{
+  background-color: white;
+  color:var(--bs-gray-500);
+}
+
+.edit-form .btn{
+  width: 245px;
+}
+
+.edit-password-form .btn{
+  width: 245px;
+}

@@ -3,7 +3,8 @@ from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
-from users.forms import ProfileForm, UserLoginForm, UserRegistrationForm
+from users.forms import ProfileForm, UserLoginForm, UserRegistrationForm, CustomPasswordChangeForm
+from django.contrib.auth import update_session_auth_hash
 
 
 def login(request):
@@ -52,11 +53,27 @@ def profile(request):
         )
         if form.is_valid():
             form.save()
+            messages.success(request, 'Your profile was successfully updated!')
             return HttpResponseRedirect(reverse("user:profile"))
     else:
         form = ProfileForm(instance=request.user)
     context = {"title": "Home", "form": form}
     return render(request, "users/profile.html", context)
+
+@login_required
+def change_password(request):
+    if request.method == 'POST':
+        form = CustomPasswordChangeForm(user=request.user, data=request.POST)
+        if form.is_valid():
+            form.save()
+            update_session_auth_hash(request, form.user)
+            messages.success(request, 'Your password was successfully updated!')
+            return redirect('user:profile')
+    else:
+        form = CustomPasswordChangeForm(user=request.user)
+
+    context = {'form': form, }
+    return render(request, 'user/profile.html', context)
 
 @login_required
 def logout(request):
