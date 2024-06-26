@@ -80,3 +80,6 @@ def logout(request):
     auth.logout(request)
     messages.success(request, "logout successful")
     return redirect(reverse("main:index"))
+
+def users_cart(request):
+    return render(request, 'users/users_cart.html')
