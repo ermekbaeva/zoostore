@@ -48,7 +48,7 @@
                 <label for="quantity" class="form-label">Quantity: {{ product.quantity }}</label>
                 {% endif %}
             </div>
-            <button class="btn btn-primary btn-lg mb-3">Add to Cart</button>
+            <a href="{% url "cart:cart_add" product.slug %}" class="btn btn-primary">Add to cart</a>
             <button class="btn btn-outline-secondary btn-lg mb-3">Add to Wishlist</button>
 
             <!-- Отзывы -->

@@ -90,7 +90,7 @@ body{
   border-color: var(--bs-gray-700);
   color:var(--bs-gray-700);
   margin-right: 30px;
-  margin-left: 5px;
+  width:107px;
 }
 
 #signup:hover,
@@ -104,7 +104,7 @@ body{
   border-color: var(--bs-gray-700);
   color:var(--bs-gray-700);
   margin-right: 30px;
-  margin-left: 5px;
+  width:107px;
 }
 
 #logout:hover,
@@ -364,4 +364,19 @@ body{
 
 .edit-password-form .btn{
   width: 245px;
+}
+
+#cart-button{
+  width:107px;
+}
+
+.flexible-link {
+  width:80px;
+  margin-left: -15px;
+}
+
+#cart{
+  width:850px;
+  margin-left: auto;
+  margin-right: auto;
 }

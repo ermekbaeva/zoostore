@@ -136,7 +136,7 @@
                       {% endif %}
                     {% endautoescape %}</h5>
                     <p class="card-text">{{ product.price }}</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
+                    <a href="{% url "cart:cart_add" product.slug %}" class="btn btn-primary">Add to cart</a>
                     </div>
                     </div>
                     {% endfor %}
