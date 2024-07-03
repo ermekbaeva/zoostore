@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load carts_tags %}
 
 {% block content %}
 <div class="profile-container">
@@ -78,22 +79,8 @@
             </li>
         </ul>
         <div class="tab-content" id="profileTabContent">
+            {% user_carts request as carts %}
             {% include "carts/includes/included_cart.html" %}
-            {% comment %} <div class="tab-pane fade show active" id="cart" role="tabpanel" aria-labelledby="cart-tab">
-                <h5>Cart Items</h5>
-                <div class="cart-item d-flex align-items-center">
-                    <div class="mr-3">
-                        <p>Product 1</p>
-                        <div class="ml-auto" id="product-quantity">
-                            <button class="btn btn-secondary btn-sm">-</button>
-                            <span>2</span>
-                            <button class="btn btn-secondary btn-sm">+</button>
-                            <button class="btn btn-danger btn-sm">Remove</button>
-                        </div>
-                        <p>Price: $20.00</p>
-                    </div>
-                    
-                </div> {% endcomment %}
             </div>
             <div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">
                 <h5>Order History</h5>

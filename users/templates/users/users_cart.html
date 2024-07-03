@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
+{% load carts_tags %}
 
 {% block content %}
+{% user_carts request as carts %}
 {% include "carts/includes/included_cart.html" %}
 
 {% endblock %}

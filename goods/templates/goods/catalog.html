@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 {% load goods_tags %}
+
+{% load carts_tags %}
+{% user_carts request as carts %}
             
         {% block menu %}
         <div class="col-md-3" id="sidemenu">
@@ -136,7 +139,13 @@
                       {% endif %}
                     {% endautoescape %}</h5>
                     <p class="card-text">{{ product.price }}</p>
-                    <a href="{% url "cart:cart_add" product.slug %}" class="btn btn-primary">Add to cart</a>
+                    <div id="product-controls-{{ product.id }}">
+                    <form method="post" action="{% url 'cart:cart_add' %}" class="add-to-cart-form">
+                      {% csrf_token %}
+                      <input type="hidden" name="product_id" value="{{ product.id }}">
+                      <button type="submit" class="btn btn-primary add-to-cart">Add to cart</button>
+                    </form>
+                    </div>
                     </div>
                     </div>
                     {% endfor %}

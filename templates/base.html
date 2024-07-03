@@ -2,7 +2,7 @@
 {% load goods_tags %}
 
 {% load carts_tags %}
-
+{% user_carts request as carts %} 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,8 +46,8 @@
                 </div>
             </div>
             <ul class="navbar-nav d-flex flex-row me-1">
-                <li class="nav-item" id="cart-button">      
-                        <a class="nav-link" href="{% url "user:users_cart" %}"><i class="bi bi-cart"></i> Cart <span class="badge bg-secondary">0{{ carts.total_quantity }}</span></a>   
+                <li class="nav-item" id="cart-button">     
+                        <a class="nav-link" href="{% url "user:users_cart" %}"><i class="bi bi-cart"></i> Cart <span class="badge bg-secondary">{{ carts.total_quantity }}</span></a>   
                 </li>
                 {% if not user.is_authenticated %}
                 <li class="nav-item">      

@@ -1,4 +1,6 @@
 {% load static %}
+{% load carts_tags %}
+{% user_carts request as carts %}
 
 <div class="tab-pane fade show active" id="cart" role="tabpanel" aria-labelledby="cart-tab">
     <h2>Shopping Cart</h2>
@@ -20,22 +22,29 @@
                 <td>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary btn-decrease" type="button">-</button>
+                            <button class="btn btn-outline-secondary btn-decrease" type="button" data-cart-id="{{ cart.id }}" data-cart-change-url="{% url "cart:cart_change" %}">{% csrf_token %}-</button>
                         </div>
                         <input type="text" class="form-control text-center" value="{{ cart.total_quantity }}">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-secondary btn-increase" type="button">+</button>
+                            <button class="btn btn-outline-secondary btn-increase" type="button" data-cart-id="{{ cart.id }}" data-cart-change-url="{% url "cart:cart_change" %}">{% csrf_token %}+</button>
                         </div>
                     </div>
                 </td>
-                <td>{{ cart.products_price }}</td>
-                <td><button class="btn btn-danger btn-remove">Remove</button></td>
+                <td>{{ cart.products_price }}</td> 
+                <td><form method="post" action="{% url 'cart:cart_remove' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="cart_id" value="{{ cart.id }}">
+                    <button type="submit" class="btn btn-danger btn-remove">Remove</button>
+                  </form>
+            </td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
     <div class="text-right">
         <p class="cart-total">Total: {{ cart.products_price }}</p>
+        {% if carts %}
         <button class="btn btn-success">Checkout</button>
+        {% endif %}
     </div>
 </div>

@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
+{% load carts_tags %}
+{% user_carts request as carts %}
 
 {% block content %}
 <div class="signup-container">

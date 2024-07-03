@@ -1,4 +1,3 @@
-from django.urls import resolve
 from goods.models import Products, Subcategories, Categories
 from django.shortcuts import get_object_or_404, get_list_or_404, render
 from django.core.paginator import Paginator

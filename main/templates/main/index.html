@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
 {% load goods_tags %}
+{% load carts_tags %}
+{% user_carts request as carts %}
                 {% block menu %}
                 <div class="col-md-3" id="sidemenu">
                   <div class="row">
