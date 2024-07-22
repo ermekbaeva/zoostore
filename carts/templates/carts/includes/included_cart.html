@@ -16,26 +16,23 @@
         </thead>
         <tbody>
             {% for cart in carts %}
-            <tr>
+            <tr class="cart-item">
                 <td>{{ cart.product.name }}</td>
                 <td>{{ cart.product.sell_price }}</td>
                 <td>
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary btn-decrease" type="button" data-cart-id="{{ cart.id }}" data-cart-change-url="{% url "cart:cart_change" %}">{% csrf_token %}-</button>
+                            <button class="btn btn-outline-secondary btn-decrease" type="button" data-cart-id="{{ cart.id }}" data-url="{% url "cart:cart_change" %}">{% csrf_token %}-</button>
                         </div>
-                        <input type="text" class="form-control text-center" value="{{ cart.total_quantity }}">
+                        <input type="text" class="form-control text-center" value="{{ cart.quantity }}">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-secondary btn-increase" type="button" data-cart-id="{{ cart.id }}" data-cart-change-url="{% url "cart:cart_change" %}">{% csrf_token %}+</button>
+                            <button class="btn btn-outline-secondary btn-increase" type="button" data-cart-id="{{ cart.id }}" data-url="{% url "cart:cart_change" %}">{% csrf_token %}+</button>
                         </div>
                     </div>
                 </td>
                 <td>{{ cart.products_price }}</td> 
-                <td><form method="post" action="{% url 'cart:cart_remove' %}">
-                    {% csrf_token %}
-                    <input type="hidden" name="cart_id" value="{{ cart.id }}">
-                    <button type="submit" class="btn btn-danger btn-remove">Remove</button>
-                  </form>
+                <td>
+                    <a href="{% url 'cart:cart_remove' %}" data-cart-id="{{ cart.id }}" class="btn btn-danger btn-remove remove-from-cart">{% csrf_token %}Remove</a>
             </td>
             </tr>
             {% endfor %}

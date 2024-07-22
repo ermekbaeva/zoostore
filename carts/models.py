@@ -14,7 +14,7 @@ class CartQueryset(models.QuerySet):
 class Cart(models.Model):
     user = models.ForeignKey(to=User, on_delete=models.CASCADE)
     product = models.ForeignKey(to=Products, on_delete=models.CASCADE)
-    quantity = models.PositiveSmallIntegerField(default=0)
+    quantity = models.PositiveIntegerField(default=0)
     session_key=models.CharField(max_length=32, null=True, blank=True)
     created_timestamp = models.DateTimeField(auto_now_add=True)
     

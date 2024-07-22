@@ -50,11 +50,7 @@
                 <label for="quantity" class="form-label">Quantity: {{ product.quantity }}</label>
                 {% endif %}
             </div>
-            <form method="post" action="{% url 'cart:cart_add' %}">
-                {% csrf_token %}
-                <input type="hidden" name="product_id" value="{{ product.id }}">
-                <button type="submit" class="btn btn-primary add-to-cart">Add to cart</button>
-            </form>
+            <a href="{% url 'cart:cart_add' %}" data-product-id="{{product.id}}" class="btn btn-primary add-to-cart upsate-cart" id="add-cart">{% csrf_token %}Add to cart</a>
             
             <button class="btn btn-outline-secondary btn-lg mb-3">Add to Wishlist</button>
 

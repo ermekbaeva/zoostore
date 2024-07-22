@@ -41,75 +41,124 @@ jQuery(function(){
     });
 });
 
+//add item to cart
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.add-to-cart-form').forEach(form => {
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            let formData = new FormData(this);
-            fetch(this.action, {
+    document.querySelectorAll('.add-to-cart').forEach(function(button) {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            var productId = this.dataset.productId;
+            var addToCartUrl = this.getAttribute('href');
+            fetch(addToCartUrl, {
                 method: 'POST',
                 headers: {
-                    'X-CSRFToken': getCookie('csrftoken')
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRFToken': '{{ csrf_token }}'
                 },
-                body: formData
+                body: new URLSearchParams({ product_id: productId })
             })
             .then(response => response.json())
             .then(data => {
-                document.querySelector('#cart-items').innerHTML = data.cart_items_html;
-                document.querySelector('.badge').innerText = data.cart_total_quantity;
-
-                // Update the cart quantity in the navbar
-                document.querySelector('#cart-button .badge').innerText = data.cart_total_quantity;
-
-                // Update the product controls with - + buttons
-                let productId = formData.get('product_id');
-                let productControls = document.querySelector('#product-controls-' + productId);
-                productControls.innerHTML = `
-                    <div class="input-group">
-                        <button class="btn btn-outline-secondary decrement-quantity" data-product-id="${productId}">-</button>
-                        <input type="text" class="form-control quantity" value="1" readonly>
-                        <button class="btn btn-outline-secondary increment-quantity" data-product-id="${productId}">+</button>
-                        <a href="/cart/" class="btn btn-primary">В корзину</a>
-                    </div>
-                `;
-
-                // Add event listeners for new buttons
-                productControls.querySelector('.decrement-quantity').addEventListener('click', updateQuantity);
-                productControls.querySelector('.increment-quantity').addEventListener('click', updateQuantity);
+                if (data.success) {
+                    showAlert(data.message, 'success');
+                    document.getElementById('cart-counter').textContent = data.total_items;
+                } else {
+                    showAlert('Item was not added to cart', 'danger');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
             });
         });
     });
 });
 
-function getCookie(name) {
-    let cookieValue = null;
-    if (document.cookie && document.cookie !== '') {
-        const cookies = document.cookie.split(';');
-        for (let i = 0; i < cookies.length; i++) {
-            const cookie = cookies[i].trim();
-            if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                break;
-            }
-        }
-    }
-    return cookieValue;
+//delete item from cart
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.remove-from-cart').forEach(function(button) {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            var cartId = this.dataset.cartId;
+            var removeFromCartUrl = this.getAttribute('href');
+            fetch(removeFromCartUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: new URLSearchParams({ cart_id: cartId })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showAlert(data.message, 'success');
+                    document.getElementById('cart-counter').textContent = data.total_items;
+                    var cartItemElement = document.querySelector(`[data-cart-id="${cartId}"]`).closest('.cart-item');
+                    if (cartItemElement) {
+                        cartItemElement.remove();
+                    }
+                } else {
+                    showAlert('Item was not deleted from cart', 'danger');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    });
+});
+
+//show alert when you add or delete items in cart
+function showAlert(message, type) {
+    var alertContainer = document.getElementById('alert-container');
+    var alertDiv = document.createElement('div');
+    alertDiv.className = `alert alert-${type === 'success' ? 'success' : 'danger'} alert-dismissible fade show`;
+    alertDiv.setAttribute('role', 'alert');
+    alertDiv.innerHTML = `
+        ${message}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    `;
+
+    alertContainer.appendChild(alertDiv);
+
+    setTimeout(function() {
+        alertDiv.classList.remove('show');
+        alertDiv.classList.add('fade');
+        setTimeout(function() {
+            alertContainer.removeChild(alertDiv);
+        }, 500);
+    }, 4000);
 }
 
-function updateQuantity(event) {
-    let button = event.target;
-    let productId = button.getAttribute('data-product-id');
-    let quantityInput = button.closest('.input-group').querySelector('.quantity');
-    let newQuantity = parseInt(quantityInput.value);
-
-    if (button.classList.contains('decrement-quantity')) {
-        newQuantity = Math.max(newQuantity - 1, 1);
-    } else if (button.classList.contains('increment-quantity')) {
-        newQuantity += 1;
-    }
-
-    quantityInput.value = newQuantity;
-
-    // Here you can also add an AJAX call to update the quantity on the server if needed
-}
+//reduce quantity of items in cart
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.btn-decrease').forEach(function(button) {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            var cartId = this.dataset.cartId;
+            var quantity = this.value;
+            var updateQuantityUrl = this.getAttribute('href');
+            fetch(updateQuantityUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: new URLSearchParams({ cart_id: cartId, quantity: quantity })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showAlert(data.message, 'success');
+                    document.getElementById('cart-counter').textContent = data.total_items;
+                    document.querySelector(`#item-total-price-${cartId}`).textContent = data.item_total_price;
+                    document.getElementById('cart-total-price').textContent = data.cart_total_price;
+                } else {
+                    showAlert('Quantity was not changed', 'danger');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        });
+    });
+});
