@@ -129,28 +129,41 @@ function showAlert(message, type) {
     }, 4000);
 }
 
-//reduce quantity of items in cart
+//change quantity of items in cart after press "-" and "+" buttons
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.btn-decrease').forEach(function(button) {
+    document.querySelectorAll('.btn-decrease, .btn-increase').forEach(function(button) {
         button.addEventListener('click', function(e) {
             e.preventDefault();
-            var cartId = this.dataset.cartId;
-            var quantity = this.value;
-            var updateQuantityUrl = this.getAttribute('href');
-            fetch(updateQuantityUrl, {
+
+            var isDecrease = this.classList.contains('btn-decrease');
+            var form = this.closest('form');
+            var input = form.querySelector('.product-quantity');
+            var currentQuantity = parseInt(input.value);
+            var newQuantity = isDecrease ? currentQuantity - 1 : currentQuantity + 1;
+
+            if (isDecrease && currentQuantity === 1) {
+                // If the quantity is 1 and the decrease button is clicked, do nothing
+                return;
+            }
+
+            input.value = newQuantity;
+
+            var formData = new FormData(form);
+            formData.set('quantity', newQuantity);
+
+            fetch(form.action, {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded',
-                    'X-CSRFToken': '{{ csrf_token }}'
+                    'X-CSRFToken': formData.get('csrfmiddlewaretoken')
                 },
-                body: new URLSearchParams({ cart_id: cartId, quantity: quantity })
+                body: new URLSearchParams(formData)
             })
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
                     showAlert(data.message, 'success');
                     document.getElementById('cart-counter').textContent = data.total_items;
-                    document.querySelector(`#item-total-price-${cartId}`).textContent = data.item_total_price;
+                    document.querySelector(`#item-total-price-${formData.get('cart_id')}`).textContent = data.item_total_price;
                     document.getElementById('cart-total-price').textContent = data.cart_total_price;
                 } else {
                     showAlert('Quantity was not changed', 'danger');
