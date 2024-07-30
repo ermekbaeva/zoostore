@@ -1,3 +1,4 @@
+from decimal import Decimal
 from django.db import models
 
 from goods.models import Products
@@ -12,7 +13,7 @@ class CartQueryset(models.QuerySet):
         return 0
 
 class Cart(models.Model):
-    user = models.ForeignKey(to=User, on_delete=models.CASCADE)
+    user = models.ForeignKey(to=User, null=True, blank=True, on_delete=models.CASCADE)
     product = models.ForeignKey(to=Products, on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField(default=0)
     session_key=models.CharField(max_length=32, null=True, blank=True)
@@ -32,4 +33,4 @@ class Cart(models.Model):
         return f"Anonimous cart | Item {self.product.name} | Quantity {self.quantity}"
 
     def products_price(self):
-        return round(self.product.sell_price() * self.quantity, 2)
+        return round(self.product.sell_price() * Decimal(self.quantity), 2)

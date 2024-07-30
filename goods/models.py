@@ -1,3 +1,4 @@
+from decimal import Decimal
 from django.db import models
 from django.urls import reverse
 
@@ -47,7 +48,7 @@ class Products(models.Model):
     def sell_price(self):
         if self.discount:
             return round(self.price - self.price*self.discount/100, 2)
-        return self.price
+        return Decimal(self.price)
     
     def get_absolute_url(self):
         return reverse("catalog:product", kwargs={"product_slug": self.slug})

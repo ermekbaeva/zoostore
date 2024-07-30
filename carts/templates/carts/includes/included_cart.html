@@ -18,7 +18,7 @@
             {% for cart in carts %}
             <tr class="cart-item" data-cart-id="{{ cart.id }}">
                 <td>{{ cart.product.name }}</td>
-                <td>{{ cart.product.sell_price }}</td>
+                <td class="sell-price">{{ cart.product.sell_price }}</td>
                 <td>
                     <form action="{% url 'cart:cart_change' %}" method="POST">
                     {% csrf_token %}
@@ -34,7 +34,7 @@
                     </div>
                 </form>
                 </td>
-                <td>{{ cart.products_price }}</td> 
+                <td><p id="products-price-{{ cart.id }}">{{ cart.products_price }}</p></td> 
                 <td>
                     <a href="{% url 'cart:cart_remove' %}" data-cart-id="{{ cart.id }}" class="btn btn-danger btn-remove remove-from-cart">{% csrf_token %}Remove</a>
             </td>
@@ -43,7 +43,7 @@
         </tbody>
     </table>
     <div class="text-right">
-        <p class="cart-total">Total: {{ carts.total_price }}$</p>
+        <p class="cart-total">Total: <span id="total-price">{{ carts.total_price }}</span></p>
         {% if carts %}
         <button class="btn btn-success">Checkout</button>
         {% endif %}

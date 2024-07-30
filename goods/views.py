@@ -1,5 +1,5 @@
-from goods.models import Products, Subcategories, Categories
-from django.shortcuts import get_object_or_404, get_list_or_404, render
+from goods.models import Products
+from django.shortcuts import render
 from django.core.paginator import Paginator
 
 from goods.utils import q_search
@@ -10,7 +10,6 @@ def catalog(request, subcategory_slug=None):
     min_price = request.GET.get('min_price', 1)
     max_price = request.GET.get('max_price', 500)
     query = request.GET.get('q', None)
-
 
     if subcategory_slug == "all":
         goods = Products.objects.all()

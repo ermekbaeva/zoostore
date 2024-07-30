@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (data.success) {
                     showAlert(data.message, 'success');
                     document.getElementById('cart-counter').textContent = data.total_items;
+                    document.getElementById('total-price').textContent = data.total_price;
                     var cartItemElement = document.querySelector(`[data-cart-id="${cartId}"]`).closest('.cart-item');
                     if (cartItemElement) {
                         cartItemElement.remove();
@@ -126,7 +127,7 @@ function showAlert(message, type) {
         setTimeout(function() {
             alertContainer.removeChild(alertDiv);
         }, 500);
-    }, 4000);
+    }, 2000);
 }
 
 //change quantity of items in cart after press "-" and "+" buttons
@@ -163,8 +164,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (data.success) {
                     showAlert(data.message, 'success');
                     document.getElementById('cart-counter').textContent = data.total_items;
-                    document.querySelector(`#item-total-price-${formData.get('cart_id')}`).textContent = data.item_total_price;
-                    document.getElementById('cart-total-price').textContent = data.cart_total_price;
+                    document.getElementById('total-price').textContent = data.total_price;
+                    
+                    var productPriceElement = document.querySelector(`#products-price-${formData.get('cart_id')}`);
+                    if (productPriceElement) {
+                        productPriceElement.textContent = data.products_price;
+                    }
+                    
                 } else {
                     showAlert('Quantity was not changed', 'danger');
                 }
