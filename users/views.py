@@ -4,6 +4,7 @@ from django.urls import reverse
 from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
 from carts.models import Cart
+from orders.models import Order, OrderItem
 from users.forms import (
     ProfileForm,
     UserLoginForm,
@@ -11,6 +12,7 @@ from users.forms import (
     CustomPasswordChangeForm,
 )
 from django.contrib.auth import update_session_auth_hash
+from django.db.models import Prefetch
 
 
 def login(request):
@@ -71,7 +73,9 @@ def profile(request):
             return HttpResponseRedirect(reverse("user:profile"))
     else:
         form = ProfileForm(instance=request.user)
-    context = {"title": "Home", "form": form}
+
+    orders = (Order.objects.filter(user=request.user).prefetch_related(Prefetch("orderitem_set", queryset = OrderItem.objects.select_related("product"),)).order_by("-id"))
+    context = {"title": "Home", "form": form, "orders": orders}
     return render(request, "users/profile.html", context)
 
 

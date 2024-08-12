@@ -83,12 +83,37 @@
             {% include "carts/includes/included_cart.html" %}
             </div>
             <div class="tab-pane fade" id="orders" role="tabpanel" aria-labelledby="orders-tab">
-                <h5>Order History</h5>
+                <h5>Orders</h5>
+                {% for order in orders %}
                 <div class="order-item">
-                    <p>Order #12345</p>
-                    <p>Date: 01/01/2023</p>
-                    <p>Total: $50.00</p>
+                    <p>Order #{{ order.id }}</p>
+                    <p>Date: {{ order.created_timestamp }}   |   Status: {{ order.status }}   |   Is paid: {{ order.is_paid }}   |     Payment on get: {{ order.payment_on_get }}</p>
+                    <p>Phone number: {{ order.phone_number }}   |    Requires delivery: {{ order.requires_delivery }}    |    Address: {{ order.deivery_address }}</p>
+                    <p></p>
+                    <p>Total: {{ order.orderitem_set.total_price }}$</p>
+                    <table class="table table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in order.orderitem_set.all %}
+                            <tr class="cart-item" data-cart-id="{{ cart.id }}">
+                                <td>{{ item.name }}</td>
+                                <td class="sell-price">{{ item.product.sell_price }}</td>
+                                <td>{{ item.quantity }}</td>
+                                <td>{{ item.products_price }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                   
                 </div>
+                {% endfor %}
             </div>
         </div>
     </div>

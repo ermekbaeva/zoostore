@@ -31,7 +31,7 @@ def cart_add(request):
                 product=product,
                 quantity=1
             )
-        total_items = Cart.objects.filter(user=request.user if request.user.is_authenticated else None, session_key=session_key if not request.user.is_authenticated else None).total_quantity()
+        total_items = get_user_carts(request).total_quantity()
         return JsonResponse(
             {
                 "success": True,
@@ -64,7 +64,6 @@ def cart_change(request):
 
 @csrf_exempt
 def cart_remove(request):
-    print({request.method})
     if request.method == "POST":
         cart_id = request.POST.get("cart_id")
         cart = Cart.objects.get(id=cart_id)

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load carts_tags %}
+
+{% user_carts request as carts %}
+
+{% block content %}
+<div class="signup-container">
+    <div class="signup-header">
+        <h2>Order</h2>
+    </div>
+    <form action="{% url "orders:create_order" %}" method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="id_first_name">First name</label>
+            <input type="text" class="form-control" id="id_first_name" name="first_name" value="{% if form.first_name.value %} {{ form.first_name.value }} {% endif %}" placeholder="Enter first name" required>
+            {% if form.first_name.errors %}<div class="alert alert-danger alert-dissmissble fade show custom-alert">{{ form.first_name.errors }}</div>{% endif %}
+        </div>
+        <div class="form-group">
+            <label for="id_last_name">Last name</label>
+            <input type="text" class="form-control" id="id_last_name" name="last_name" value="{% if form.last_name.value %} {{ form.last_name.value }} {% endif %}" placeholder="Enter last name" required>
+            {% if form.last_name.errors %}<div class="alert alert-danger alert-dissmissble fade show custom-alert">{{ form.last_name.errors }}</div>{% endif %}
+        </div>
+        <div class="form-group">
+            <label for="id_phone_number">Phone number</label>
+            <input type="text" class="form-control" id="id_phone_number" name="phone_number" value="{% if form.phone_number.value %} {{ form.phone_number.value }} {% endif %}" placeholder="(000) 000-0000" required>
+            {% if form.phone_number.errors %}<div class="alert alert-danger alert-dissmissble fade show custom-alert">{{ form.phone_number.errors }}</div>{% endif %}
+        </div>
+        <div class="form-group">
+            <label for="id_requires_delivery">Requires delivery</label>
+            <select class="form-control" id="id_requires_delivery" name="requires_delivery">
+                <option value="1" {% if form.requires_delivery.value == "1" %}selected{% endif %}>Yes</option>
+                <option value="0" {% if form.requires_delivery.value == "0" %}selected{% endif %}>No</option>
+            </select>
+            </div>
+        <div class="form-group">
+            <label for="id_delivery_address">Delivery address</label>
+            <input type="text" class="form-control" id="id_delivery_address" name="delivery_address" value="{% if form.delivery_address.value %} {{ form.delivery_address.value }} {% endif %}" placeholder="Delivery address" required>
+            {% if form.password1.errors %}<div class="alert alert-danger alert-dissmissble fade show custom-alert">{{ form.password1.errors }}</div>{% endif %}
+        </div>
+        <div class="form-group">
+            <label for="id_payment_on_get">Payment on get</label>
+            <select class="form-control" id="id_payment_on_get" name="payment_on_get">
+                <option value="1" {% if form.payment_on_get.value == "1" %}selected{% endif %}>Yes</option>
+                <option value="0" {% if form.payment_on_get.value == "0" %}selected{% endif %}>No</option>
+            </select>
+        </div>
+        <button type="submit" id="signup-button" class="btn btn-primary btn-block">Order</button>
+    </form>
+</div>
+{% endblock %}
