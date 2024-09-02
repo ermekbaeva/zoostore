@@ -63,16 +63,12 @@ class CategoriesModelValidationTest(TestCase):
         self.category1 = Categories.objects.create(name="Toys", slug="toys")
 
     def test_slug_uniqueness(self):
-        # Создаем вторую категорию с тем же slug
         category2 = Categories(name="Games", slug="toys")
-        # Ожидаем, что произойдет ValidationError из-за уникальности slug
         with self.assertRaises(ValidationError):
             category2.full_clean()
 
     def test_name_max_length(self):
-        # Превышаем максимальную длину имени
-        category = Categories(name="x" * 151)  # Длина имени 151 символ
-        # Ожидаем ValidationError из-за превышения максимальной длины
+        category = Categories(name="x" * 151)
         with self.assertRaises(ValidationError):
             category.full_clean()
 
@@ -81,26 +77,22 @@ class ProductsModelValidationTest(TestCase):
         self.category = Categories.objects.create(name="Toys")
     
     def test_quantity_positive(self):
-        # Создаем продукт с отрицательным значением quantity
         product = Products(
             name="Bone Toy",
             price=Decimal("10.00"),
-            quantity=-1,  # Некорректное значение
+            quantity=-1, 
             category=self.category
         )
-        # Ожидаем ValidationError из-за отрицательного значения
         with self.assertRaises(ValidationError):
             product.full_clean()
 
     def test_price_decimal_places(self):
-        # Создаем продукт с более чем двумя знаками после запятой в цене
         product = Products(
             name="Bone Toy",
-            price=Decimal("10.123"),  # Некорректное значение
+            price=Decimal("10.123"),  
             quantity=1,
             category=self.category
         )
-        # Ожидаем ValidationError из-за некорректного числа знаков после запятой
         with self.assertRaises(ValidationError):
             product.full_clean()
 
@@ -110,22 +102,20 @@ class ProductsModelRequiredFieldsTest(TestCase):
 
     def test_name_required(self):
         product = Products(
-            name=None,  # None для обязательного поля
+            name=None,  
             price=Decimal("10.00"),
             quantity=1,
             category=self.category
         )
-        # Ожидаем ValidationError из-за отсутствия имени
         with self.assertRaises(ValidationError):
             product.full_clean()
 
     def test_price_required(self):
         product = Products(
             name="Bone Toy",
-            price=None,  # None для обязательного поля
+            price=None,  
             quantity=1,
             category=self.category
         )
-        # Ожидаем ValidationError из-за отсутствия цены
         with self.assertRaises(ValidationError):
             product.full_clean()
