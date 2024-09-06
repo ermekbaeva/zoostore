@@ -6,11 +6,9 @@ from goods.models import Categories, Products, Subcategories
 
 class GoodsURLsTest(TestCase):
     def setUp(self):
-        # Создаем категории и подкатегории
         self.category = Categories.objects.create(name="Dogs", slug="dogs")
         self.subcategory = Subcategories.objects.create(name="Dog Toys", slug="dogs-toys", category=self.category)
         
-        # Создаем тестовый продукт
         self.product = Products.objects.create(
             name="Jolly Pets Push-n-Play Dog Toys",
             slug="Jolly-Pets1-Push-n-Play1-Dog-Toys-Blue-Color-X-Large-14-Inch",

@@ -48,7 +48,7 @@ def create_order(request):
                         messages.success(request, "Order is registered")
                         return redirect("user:profile")
             except ValidationError as e:
-                messages.success(request, str(e))
+                messages.error(request, str(e))
                 return redirect('orders:create_order')
         else:
             messages.error(request, "Form is not valid")
