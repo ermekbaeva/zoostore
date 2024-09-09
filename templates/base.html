@@ -81,6 +81,10 @@
                 
 
                 <div class="row">
+                  <div id="alert-message-home" class="alert alert-success alert-dismissible fade show" role="alert">
+                    Hello! This site is a pet project created for educational purposes.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
                   {% include "includes/alert_message.html" %}
                         {% block menu %}
                         {% endblock %}
@@ -94,8 +98,6 @@
                           {% block cardblocksone %}
                           {% endblock %}
                   
-                          {% block cardblockstwo %}
-                          {% endblock %}
       </div> 
       {% block pagination %}
       {% endblock %}

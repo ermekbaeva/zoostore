@@ -333,6 +333,12 @@ body{
   margin-bottom: 30px;
 }
 
+#alert-message-home{
+  max-width: 1600px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
 #alert-container{
   max-width: 1600px;
   margin: auto;

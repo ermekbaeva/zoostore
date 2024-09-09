@@ -32,13 +32,13 @@
                                   <div id="content" class="carousel slide" data-bs-ride="carousel">
                                       <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                          <img src="{% static "main/images/osso.png" %}" class="d-block w-100" alt="1">
+                                          <img src="{% static "main/images/1.webp" %}" class="d-block w-100" alt="1">
                                         </div>
                                         <div class="carousel-item">
-                                          <img src="{% static "main/images/happy-dog.png" %}" class="d-block w-100" alt="2">
+                                          <img src="{% static "main/images/2.webp" %}" class="d-block w-100" alt="2">
                                         </div>
                                         <div class="carousel-item">
-                                          <img src="{% static "main/images/whiskas-mix.png" %}" class="d-block w-100" alt="3">
+                                          <img src="{% static "main/images/3.webp" %}" class="d-block w-100" alt="3">
                                         </div>
                                       </div>
                                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -58,7 +58,34 @@
                           
                     <div class="row justify-content-center" id="blocksOne">
                                     <div class="sale">SALE</div>
-                                    <div class="col-lg-10">
+                                    <!-- Catalog cards -->
+
+                                        {% for product in goods %}
+                                        <div class="card-recommended" style="width: 18rem;">
+                                        {% if product.image != 'None' %}
+                                        <img class="card-img-top rounded" src="{{ product.image.url }}" alt={{ product.name }}>
+                                        {% else %}
+                                        <img src = "{% static "main/images/360_F_470299797_UD0eoVMMSUbHCcNJCdv2t8B2g1GVqYgs.jpg" %}" class="card-img-top rounded" alt={{ product.name }}>
+                                        {% endif %}
+                                        <div class="card-body">
+                                          <a href="{% url "catalog:product" product.slug %}">
+                                        <h5 class="card-title">
+                                          {% autoescape off %}
+                                          {% if product.headline %}
+                                          {{ product.headline }}
+                                          {% else %}
+                                            {{ product.name }}
+                                          {% endif %}
+                                        {% endautoescape %}</h5>
+                                        <p class="card-text">{{ product.price }}</p>
+                                        <div id="product-controls-{{ product.id }}">
+                                        <a href="{% url 'cart:cart_add' %}" data-product-id="{{product.id}}" class="btn btn-primary add-to-cart upsate-cart" id="add-cart">{% csrf_token %}Add to cart</a>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        {% endfor %}
+                                        </div>              
+                                    {% comment %} <div class="col-lg-10">
                                           <div class="card-recommended" style="width: 18rem;">
                                             <img class="card-img-top rounded" src="{% static "main/images/large_96_52_96_10_nd-prime-adult-mini-wild-boar-apple-800x1066.png" %}" alt="Card image cap">
                                             <div class="card-body">
@@ -88,39 +115,5 @@
                                           </div>
                                         </div>
                                       </div>
-                            </div>
+                            </div> {% endcomment %}
                             {% endblock %}
-                            {% block cardblockstwo %}
-                                        <div class="row justify-content-center" id="blocksTwo">
-                                        <div class="sale">RECOMMENDED</div>
-                                          <div class="col-lg-10">
-                                            <div class="card-recommended" style="width: 18rem;">
-                                                <img class="card-img-top rounded" src="{% static "main/images/6005106761.jpg" %}" alt="Card image cap">
-                                                <div class="card-body">
-                                                  <h5 class="card-title">Royal Canin Adult Persian</h5>
-                                                  <p class="card-text text-truncate">Exclusive formula - Omega 3 & Omega 6 fatty acids.</p>
-                                                  <a href="#" class="btn btn-primary">Add to cart</a>
-                                                </div>
-                                              </div>
-                    
-                                            <div class="card-recommended" style="width: 18rem;">
-                                              <img class="card-img-top rounded" src="{% static "main/images/6005117905.jpg" %}" alt="Card image cap">
-                                              <div class="card-body">
-                                                <h5 class="card-title">Royal Canin Urinary Care</h5>
-                                                <p class="card-text text-truncate">Balanced and complete feed for adult cats - Recommended to help maintain urinary tract health.</p>
-                                                <a href="#" class="btn btn-primary">Add to cart</a>
-                                              </div>
-                                            </div>
-                    
-                                            <div class="card-recommended" style="width: 18rem;">
-                                              <img class="card-img-top rounded" src="{% static "main/images/6005117965.jpg"%}" alt="Card image cap">
-                                              <div class="card-body">
-                                                <h5 class="card-title">Royal Canin Hair&Skin Care</h5>
-                                                <p class="card-text text-truncate">Balanced and complete feed for adult cats - Recommended to support a healthy skin and coat.</p>
-                                                <a href="#" class="btn btn-primary">Add to cart</a>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div> 
-                                      </div>
-                                      {% endblock %}
