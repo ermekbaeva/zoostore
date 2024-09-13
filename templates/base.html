@@ -2,11 +2,11 @@
 {% load goods_tags %}
 
 {% load carts_tags %}
-{% user_carts request as carts %} 
+{% user_carts request as carts %}
 
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,11 +14,6 @@
     <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
     <link rel="stylesheet" href="{% static "font/bootstrap-icons.css" %}">
     <link rel="stylesheet" href="{% static "style.css" %}">
-    <!-- Favicons for different platforms 
-    <link rel="apple-touch-icon" sizes="180x180" href="deps/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{% static "main/favicon-32x32.png" %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static "main/favicon-16x16.png" %}">
-    <link rel="manifest" href="deps/favicon/site.webmanifest">-->
     <title>Home</title>
 </head>
 
@@ -46,27 +41,27 @@
                 </div>
             </div>
             <ul class="navbar-nav d-flex flex-row me-1">
-                <li class="nav-item" id="cart-button">     
-                        <a class="nav-link" href="{% url "user:users_cart" %}"><i class="bi bi-cart"></i> Cart <span id="cart-counter" class="badge bg-secondary quantity-badge">{{ carts.total_quantity }}</span></a>   
+                <li class="nav-item" id="cart-button">
+                        <a class="nav-link" href="{% url "user:users_cart" %}"><i class="bi bi-cart"></i> Cart <span id="cart-counter" class="badge bg-secondary quantity-badge">{{ carts.total_quantity }}</span></a>
                 </li>
                 {% if not user.is_authenticated %}
-                <li class="nav-item">      
-                  <a class="nav-link flexible-link" href="{% url "user:login" %}">Log in</a>  
+                <li class="nav-item">
+                  <a class="nav-link flexible-link" href="{% url "user:login" %}">Log in</a>
                 </li>
                 {% else %}
-                <li class="nav-item">      
-                  <a class="nav-link flexible-link" href="{% url "user:profile" %}">Profile</a>  
+                <li class="nav-item">
+                  <a class="nav-link flexible-link" href="{% url "user:profile" %}">Profile</a>
                 </li>
                 {% endif %}
                 {% if not user.is_authenticated %}
-                <li class="nav-item">      
+                <li class="nav-item">
                   <a class="btn btn-primary" id="signup" href="{% url "user:signup" %}">Sign up</a>
                 </li>
                 {% else %}
-                <li class="nav-item">      
+                <li class="nav-item">
                   <a class="btn btn-primary" id="logout" href="{% url "user:logout" %}">Log out</a>
-                </li>  
-                {% endif %}   
+                </li>
+                {% endif %}
             </ul>
         </nav>
     </header>
@@ -78,7 +73,7 @@
             <li class="breadcrumb-item active" aria-current="page"><a href="{% url "main:index" %}">Home</a></li>
           </ol>
         </nav>
-                
+
 
                 <div class="row">
                   <div id="alert-message-home" class="alert alert-success alert-dismissible fade show" role="alert">
@@ -89,16 +84,16 @@
                         {% block menu %}
                         {% endblock %}
 
-                        
-                
+
+
                         {% block content %}
                         {% endblock %}
                 </div>
 
                           {% block cardblocksone %}
                           {% endblock %}
-                  
-      </div> 
+
+      </div>
       {% block pagination %}
       {% endblock %}
 
