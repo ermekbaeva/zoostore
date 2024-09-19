@@ -17,7 +17,8 @@ Including another URLconf
 
 from django import views
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import include, path, re_path
+from django.views.static import serve
 from zoostore import settings
 from django.conf.urls.static import static
 
@@ -28,7 +29,11 @@ urlpatterns = [
     path("user/", include("users.urls", namespace="user")),
     path("cart/", include("carts.urls", namespace="cart")),
     path("orders/", include("orders.urls", namespace="orders")),
-]
+]+ (static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+  + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT))
+
+urlpatterns += [re_path(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
+                re_path(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT, }), ]
 
 if settings.DEBUG:
     urlpatterns += [
